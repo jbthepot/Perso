@@ -58,6 +58,6 @@ def affichage_gares_pays(code_pays):
 
 #Affichage des gares d'un pays particulier
 
-code_pays="FR" #France =FR, Allemagne = DE, grande Bretagne = GB, etc.
+code_pays="DK" #France =FR, Allemagne = DE, grande Bretagne = GB, etc.
 
 affichage_gares_pays(code_pays)
