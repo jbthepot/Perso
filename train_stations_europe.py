@@ -1,5 +1,5 @@
 #Train stations
-
+import folium
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -54,6 +54,7 @@ def affichage_gares_pays(code_pays):
         plt.grid()
         plt.show()
         plt.show()
+        folium.Map(gares_pays_longitude,gares_pays_longitude)
     return()
 
 #Affichage des gares d'un pays particulier
