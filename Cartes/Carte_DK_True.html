@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d8ece1bd792d9aefb7f792c1778b0bb9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d8ece1bd792d9aefb7f792c1778b0bb9" ></div>
+        
+</body>
+<script>    
+    
+            var map_d8ece1bd792d9aefb7f792c1778b0bb9 = L.map(
+                "map_d8ece1bd792d9aefb7f792c1778b0bb9",
+                {
+                    center: [56.132394, 8.979234],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1bbabb3e5cc2e0f423ccffc64df80fe8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d8ece1bd792d9aefb7f792c1778b0bb9);
+        
+    
+            var marker_a5bb815b9f03929af5f526c38e77128e = L.marker(
+                [55.401777, 10.386001],
+                {}
+            ).addTo(map_d8ece1bd792d9aefb7f792c1778b0bb9);
+        
+    
+            var icon_024913b4a8589769af6835b5ee9b5763 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5bb815b9f03929af5f526c38e77128e.setIcon(icon_024913b4a8589769af6835b5ee9b5763);
+        
+    
+        var popup_593b600f7253c7713feb88ba9ce0af81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7f141395ec563cfba22e52a76a3fbd2 = $(`<div id="html_d7f141395ec563cfba22e52a76a3fbd2" style="width: 100.0%; height: 100.0%;">Odense St.</div>`)[0];
+                popup_593b600f7253c7713feb88ba9ce0af81.setContent(html_d7f141395ec563cfba22e52a76a3fbd2);
+            
+        
+
+        marker_a5bb815b9f03929af5f526c38e77128e.bindPopup(popup_593b600f7253c7713feb88ba9ce0af81)
+        ;
+
+        
+    
+    
+            var marker_bc8346b6522918ba3fe5d97b9bb08692 = L.marker(
+                [56.132394, 8.979234],
+                {}
+            ).addTo(map_d8ece1bd792d9aefb7f792c1778b0bb9);
+        
+    
+            var icon_f4c1c59139c388b09ae141336e4ddf32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc8346b6522918ba3fe5d97b9bb08692.setIcon(icon_f4c1c59139c388b09ae141336e4ddf32);
+        
+    
+        var popup_57cdd8df46478a492ae208d09d5d10d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03efe833ac82557ecb30e3fdc6a3fb8b = $(`<div id="html_03efe833ac82557ecb30e3fdc6a3fb8b" style="width: 100.0%; height: 100.0%;">Herning St.</div>`)[0];
+                popup_57cdd8df46478a492ae208d09d5d10d6.setContent(html_03efe833ac82557ecb30e3fdc6a3fb8b);
+            
+        
+
+        marker_bc8346b6522918ba3fe5d97b9bb08692.bindPopup(popup_57cdd8df46478a492ae208d09d5d10d6)
+        ;
+
+        
+    
+    
+            var marker_8ed0bb3e999aae8452d9fe33f5ceb777 = L.marker(
+                [54.766833, 11.87777],
+                {}
+            ).addTo(map_d8ece1bd792d9aefb7f792c1778b0bb9);
+        
+    
+            var icon_adca2ed8e262a3ffbeaba0842fede9ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ed0bb3e999aae8452d9fe33f5ceb777.setIcon(icon_adca2ed8e262a3ffbeaba0842fede9ec);
+        
+    
+        var popup_a059f5a1a9181fb889a3ef6846cdf8ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58b843021688fcaba020e0ae6da5d3ae = $(`<div id="html_58b843021688fcaba020e0ae6da5d3ae" style="width: 100.0%; height: 100.0%;">Nykøbing Falster St.</div>`)[0];
+                popup_a059f5a1a9181fb889a3ef6846cdf8ad.setContent(html_58b843021688fcaba020e0ae6da5d3ae);
+            
+        
+
+        marker_8ed0bb3e999aae8452d9fe33f5ceb777.bindPopup(popup_a059f5a1a9181fb889a3ef6846cdf8ad)
+        ;
+
+        
+    
+</script>

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_534a536e4ecc967b7f10080f64419ebe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_534a536e4ecc967b7f10080f64419ebe" ></div>
+        
+</body>
+<script>    
+    
+            var map_534a536e4ecc967b7f10080f64419ebe = L.map(
+                "map_534a536e4ecc967b7f10080f64419ebe",
+                {
+                    center: [46.152705, -1.145853],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7ce75b5928bd7736602b06c46c54e43a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var marker_287da62d0e613e194bd9b773ac78bfc0 = L.marker(
+                [46.152705, -1.145853],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_853d97aea07dac3daa71d70a0e8f59ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_287da62d0e613e194bd9b773ac78bfc0.setIcon(icon_853d97aea07dac3daa71d70a0e8f59ed);
+        
+    
+        var popup_ac12d89f7b92d34bd0f263f1e6dc9555 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a58c340f1e41d92746febe5a51d17240 = $(`<div id="html_a58c340f1e41d92746febe5a51d17240" style="width: 100.0%; height: 100.0%;">La Rochelle (La Rochelle)</div>`)[0];
+                popup_ac12d89f7b92d34bd0f263f1e6dc9555.setContent(html_a58c340f1e41d92746febe5a51d17240);
+            
+        
+
+        marker_287da62d0e613e194bd9b773ac78bfc0.bindPopup(popup_ac12d89f7b92d34bd0f263f1e6dc9555)
+        ;
+
+        
+    
+    
+            var marker_1ee33bbe6eefd76d0ea364b21b77e5eb = L.marker(
+                [46.152705, -1.145853],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_b7dea0dfdeb13a635cfb92ea3fea1cb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ee33bbe6eefd76d0ea364b21b77e5eb.setIcon(icon_b7dea0dfdeb13a635cfb92ea3fea1cb2);
+        
+    
+        var popup_4cfaa9e2cbf4a42f63d7661a10af8a76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99afedd27f00ae236736039bc90398ef = $(`<div id="html_99afedd27f00ae236736039bc90398ef" style="width: 100.0%; height: 100.0%;">La Rochelle (La Rochelle)</div>`)[0];
+                popup_4cfaa9e2cbf4a42f63d7661a10af8a76.setContent(html_99afedd27f00ae236736039bc90398ef);
+            
+        
+
+        marker_1ee33bbe6eefd76d0ea364b21b77e5eb.bindPopup(popup_4cfaa9e2cbf4a42f63d7661a10af8a76)
+        ;
+
+        
+    
+    
+            var marker_c62d26fdd690dfc2d66b3fb662ba5d79 = L.marker(
+                [47.389866, 0.692831],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_386183e89f13aca6494dac36348f9b89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c62d26fdd690dfc2d66b3fb662ba5d79.setIcon(icon_386183e89f13aca6494dac36348f9b89);
+        
+    
+        var popup_95b869c7da5318da2dc035da4b29cff5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d91b06fc1122d65a95e03c60d3650b7e = $(`<div id="html_d91b06fc1122d65a95e03c60d3650b7e" style="width: 100.0%; height: 100.0%;">Tours (Tours)</div>`)[0];
+                popup_95b869c7da5318da2dc035da4b29cff5.setContent(html_d91b06fc1122d65a95e03c60d3650b7e);
+            
+        
+
+        marker_c62d26fdd690dfc2d66b3fb662ba5d79.bindPopup(popup_95b869c7da5318da2dc035da4b29cff5)
+        ;
+
+        
+    
+    
+            var marker_b9809c245add03310432b0137322ab9d = L.marker(
+                [45.836207, 1.267419],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_cbd18a27610aaefaa9fd447720b221a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b9809c245add03310432b0137322ab9d.setIcon(icon_cbd18a27610aaefaa9fd447720b221a4);
+        
+    
+        var popup_f5929643a918fcf157dc86d0903cb0fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_205a578f581cd7638f73cbf3546562d3 = $(`<div id="html_205a578f581cd7638f73cbf3546562d3" style="width: 100.0%; height: 100.0%;">Limoges Bénédictins (Limoges)</div>`)[0];
+                popup_f5929643a918fcf157dc86d0903cb0fc.setContent(html_205a578f581cd7638f73cbf3546562d3);
+            
+        
+
+        marker_b9809c245add03310432b0137322ab9d.bindPopup(popup_f5929643a918fcf157dc86d0903cb0fc)
+        ;
+
+        
+    
+    
+            var marker_ed5a9eeb515e6456fe30800d2a55d0fc = L.marker(
+                [50.836, 4.336],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_038debf53dae4eb83fce1f9fb5188d67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed5a9eeb515e6456fe30800d2a55d0fc.setIcon(icon_038debf53dae4eb83fce1f9fb5188d67);
+        
+    
+        var popup_edfd929ef6ce242b9d19b0a93e64363e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c448559db471f0c32105311abf5ca6a = $(`<div id="html_7c448559db471f0c32105311abf5ca6a" style="width: 100.0%; height: 100.0%;">Bruxelles Midi (Saint-Gilles - Sint-Gillis)</div>`)[0];
+                popup_edfd929ef6ce242b9d19b0a93e64363e.setContent(html_7c448559db471f0c32105311abf5ca6a);
+            
+        
+
+        marker_ed5a9eeb515e6456fe30800d2a55d0fc.bindPopup(popup_edfd929ef6ce242b9d19b0a93e64363e)
+        ;
+
+        
+    
+    
+            var marker_c25a6814c77fb663553a63b6c731d5a7 = L.marker(
+                [47.389866, 0.692831],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_74c13912bc83623791c2a588fa29b340 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c25a6814c77fb663553a63b6c731d5a7.setIcon(icon_74c13912bc83623791c2a588fa29b340);
+        
+    
+        var popup_cd3ac82e2675e729430e95017ac1dbd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95fe699db0f3e233aad124dfec412470 = $(`<div id="html_95fe699db0f3e233aad124dfec412470" style="width: 100.0%; height: 100.0%;">Tours (Tours)</div>`)[0];
+                popup_cd3ac82e2675e729430e95017ac1dbd0.setContent(html_95fe699db0f3e233aad124dfec412470);
+            
+        
+
+        marker_c25a6814c77fb663553a63b6c731d5a7.bindPopup(popup_cd3ac82e2675e729430e95017ac1dbd0)
+        ;
+
+        
+    
+    
+            var marker_8a650f86558417b9753cbbf94ef8e005 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_9a971db547436bf494f44c5b68e5f42f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a650f86558417b9753cbbf94ef8e005.setIcon(icon_9a971db547436bf494f44c5b68e5f42f);
+        
+    
+        var popup_50086740b09755b398afd2fb09503748 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f71f88e1a39580436fcbda2fd2eb945 = $(`<div id="html_6f71f88e1a39580436fcbda2fd2eb945" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux)</div>`)[0];
+                popup_50086740b09755b398afd2fb09503748.setContent(html_6f71f88e1a39580436fcbda2fd2eb945);
+            
+        
+
+        marker_8a650f86558417b9753cbbf94ef8e005.bindPopup(popup_50086740b09755b398afd2fb09503748)
+        ;
+
+        
+    
+    
+            var marker_e58c0ee555efd41d1ce2391c6ff8819d = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_57375e5e537d5725a342dbc2710e1c06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e58c0ee555efd41d1ce2391c6ff8819d.setIcon(icon_57375e5e537d5725a342dbc2710e1c06);
+        
+    
+        var popup_306f1ebb490ca39f18dd31da83e5cfbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7afed3531d06de82af3bb8fb203d776c = $(`<div id="html_7afed3531d06de82af3bb8fb203d776c" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris)</div>`)[0];
+                popup_306f1ebb490ca39f18dd31da83e5cfbd.setContent(html_7afed3531d06de82af3bb8fb203d776c);
+            
+        
+
+        marker_e58c0ee555efd41d1ce2391c6ff8819d.bindPopup(popup_306f1ebb490ca39f18dd31da83e5cfbd)
+        ;
+
+        
+    
+    
+            var marker_863c4e4c9c9a0e9340c25ce760da41f0 = L.marker(
+                [46.152705, -1.145853],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_a5179ef62239f39e503351aada0d8a1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_863c4e4c9c9a0e9340c25ce760da41f0.setIcon(icon_a5179ef62239f39e503351aada0d8a1f);
+        
+    
+        var popup_a699118e3723c90e001f60d3ecb0c3b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_690b30d6e9b748cc7fa8eb37120db8cc = $(`<div id="html_690b30d6e9b748cc7fa8eb37120db8cc" style="width: 100.0%; height: 100.0%;">La Rochelle (La Rochelle)</div>`)[0];
+                popup_a699118e3723c90e001f60d3ecb0c3b4.setContent(html_690b30d6e9b748cc7fa8eb37120db8cc);
+            
+        
+
+        marker_863c4e4c9c9a0e9340c25ce760da41f0.bindPopup(popup_a699118e3723c90e001f60d3ecb0c3b4)
+        ;
+
+        
+    
+    
+            var marker_e11bc842d3118550e6f33b0775cc2435 = L.marker(
+                [46.818594, 0.549279],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_503a1536b0ad623ebbbfcf2a61a710a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e11bc842d3118550e6f33b0775cc2435.setIcon(icon_503a1536b0ad623ebbbfcf2a61a710a4);
+        
+    
+        var popup_0721fdc3efaaf7a243aa3373e79c2c37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b8212c1e44a5bc07038594be580e8c0 = $(`<div id="html_2b8212c1e44a5bc07038594be580e8c0" style="width: 100.0%; height: 100.0%;">Châtellerault (Châtellerault)</div>`)[0];
+                popup_0721fdc3efaaf7a243aa3373e79c2c37.setContent(html_2b8212c1e44a5bc07038594be580e8c0);
+            
+        
+
+        marker_e11bc842d3118550e6f33b0775cc2435.bindPopup(popup_0721fdc3efaaf7a243aa3373e79c2c37)
+        ;
+
+        
+    
+    
+            var marker_3f13b059e968a78fa20f640e1280d217 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_5060e82ca3d4d8cbcaee243bf3aafebb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f13b059e968a78fa20f640e1280d217.setIcon(icon_5060e82ca3d4d8cbcaee243bf3aafebb);
+        
+    
+        var popup_6dd7e268e171c5fff89c382101b02a00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e13b3bef966cb78b61183850bda99d0 = $(`<div id="html_2e13b3bef966cb78b61183850bda99d0" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux)</div>`)[0];
+                popup_6dd7e268e171c5fff89c382101b02a00.setContent(html_2e13b3bef966cb78b61183850bda99d0);
+            
+        
+
+        marker_3f13b059e968a78fa20f640e1280d217.bindPopup(popup_6dd7e268e171c5fff89c382101b02a00)
+        ;
+
+        
+    
+    
+            var marker_b2ae9da67382c80c0545382b0616e679 = L.marker(
+                [46.152705, -1.145853],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_c4d8ef60f01664dd12d847f79ae92049 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b2ae9da67382c80c0545382b0616e679.setIcon(icon_c4d8ef60f01664dd12d847f79ae92049);
+        
+    
+        var popup_54b85571e49b90a13edbf80320d24d8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a54e020757adb378bb528b606ac28b7 = $(`<div id="html_7a54e020757adb378bb528b606ac28b7" style="width: 100.0%; height: 100.0%;">La Rochelle (La Rochelle)</div>`)[0];
+                popup_54b85571e49b90a13edbf80320d24d8a.setContent(html_7a54e020757adb378bb528b606ac28b7);
+            
+        
+
+        marker_b2ae9da67382c80c0545382b0616e679.bindPopup(popup_54b85571e49b90a13edbf80320d24d8a)
+        ;
+
+        
+    
+    
+            var marker_c90e3d48c87a28050d8067951907e44c = L.marker(
+                [47.389866, 0.692831],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_2b913127a2b247e5b03e465f9ca4b6fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c90e3d48c87a28050d8067951907e44c.setIcon(icon_2b913127a2b247e5b03e465f9ca4b6fa);
+        
+    
+        var popup_c2bb1c2e38712279b447c200caf07069 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_642230a3bb832757c3e588160bed6016 = $(`<div id="html_642230a3bb832757c3e588160bed6016" style="width: 100.0%; height: 100.0%;">Tours (Tours)</div>`)[0];
+                popup_c2bb1c2e38712279b447c200caf07069.setContent(html_642230a3bb832757c3e588160bed6016);
+            
+        
+
+        marker_c90e3d48c87a28050d8067951907e44c.bindPopup(popup_c2bb1c2e38712279b447c200caf07069)
+        ;
+
+        
+    
+    
+            var marker_ee3bddc8953fbdcfed52f82c5dcb01a0 = L.marker(
+                [45.836207, 1.267419],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_058c355c9133ae24e5b39bf5e783a233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee3bddc8953fbdcfed52f82c5dcb01a0.setIcon(icon_058c355c9133ae24e5b39bf5e783a233);
+        
+    
+        var popup_17ff4953d3fd76e506ff5c58d0d46876 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_feca70bc750185cfcfaff08bfafa7fc6 = $(`<div id="html_feca70bc750185cfcfaff08bfafa7fc6" style="width: 100.0%; height: 100.0%;">Limoges Bénédictins (Limoges)</div>`)[0];
+                popup_17ff4953d3fd76e506ff5c58d0d46876.setContent(html_feca70bc750185cfcfaff08bfafa7fc6);
+            
+        
+
+        marker_ee3bddc8953fbdcfed52f82c5dcb01a0.bindPopup(popup_17ff4953d3fd76e506ff5c58d0d46876)
+        ;
+
+        
+    
+    
+            var marker_3e5157590ff0fd3252318de8306114ee = L.marker(
+                [50.836, 4.336],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_787e02d71a938f827baa0252f67c60c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e5157590ff0fd3252318de8306114ee.setIcon(icon_787e02d71a938f827baa0252f67c60c7);
+        
+    
+        var popup_3b97a58a2867f9976c187dae515185ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2111a2d00187014a5232aec9b436aab = $(`<div id="html_f2111a2d00187014a5232aec9b436aab" style="width: 100.0%; height: 100.0%;">Bruxelles Midi (Saint-Gilles - Sint-Gillis)</div>`)[0];
+                popup_3b97a58a2867f9976c187dae515185ee.setContent(html_f2111a2d00187014a5232aec9b436aab);
+            
+        
+
+        marker_3e5157590ff0fd3252318de8306114ee.bindPopup(popup_3b97a58a2867f9976c187dae515185ee)
+        ;
+
+        
+    
+    
+            var marker_920d31c8ddde25b0b32c54b59eb828dc = L.marker(
+                [47.389866, 0.692831],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_084ddde25162097c476b37756993d91b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_920d31c8ddde25b0b32c54b59eb828dc.setIcon(icon_084ddde25162097c476b37756993d91b);
+        
+    
+        var popup_0e5c28e4519265206ecbe77264ae7053 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ca2e8f3f0b4bd52e7a49441d6c63600 = $(`<div id="html_9ca2e8f3f0b4bd52e7a49441d6c63600" style="width: 100.0%; height: 100.0%;">Tours (Tours)</div>`)[0];
+                popup_0e5c28e4519265206ecbe77264ae7053.setContent(html_9ca2e8f3f0b4bd52e7a49441d6c63600);
+            
+        
+
+        marker_920d31c8ddde25b0b32c54b59eb828dc.bindPopup(popup_0e5c28e4519265206ecbe77264ae7053)
+        ;
+
+        
+    
+    
+            var marker_187664bbd48bbac3041a103564c58620 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_d34de6d992752f7856bb8d356d3e5bc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_187664bbd48bbac3041a103564c58620.setIcon(icon_d34de6d992752f7856bb8d356d3e5bc7);
+        
+    
+        var popup_ad1f7f121717b91fe65177b5383b4486 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d653e51dbe3c5f40a7d0d42fafb0e9e = $(`<div id="html_4d653e51dbe3c5f40a7d0d42fafb0e9e" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux)</div>`)[0];
+                popup_ad1f7f121717b91fe65177b5383b4486.setContent(html_4d653e51dbe3c5f40a7d0d42fafb0e9e);
+            
+        
+
+        marker_187664bbd48bbac3041a103564c58620.bindPopup(popup_ad1f7f121717b91fe65177b5383b4486)
+        ;
+
+        
+    
+    
+            var marker_4aa2ac19d1f0a49180055d9ba96005f2 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_384e1668036eaf88790bd1529294e773 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4aa2ac19d1f0a49180055d9ba96005f2.setIcon(icon_384e1668036eaf88790bd1529294e773);
+        
+    
+        var popup_6262df458f26bbd34ca3a75a08c4569b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed0f458319438bb25e247f023d1881b3 = $(`<div id="html_ed0f458319438bb25e247f023d1881b3" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris)</div>`)[0];
+                popup_6262df458f26bbd34ca3a75a08c4569b.setContent(html_ed0f458319438bb25e247f023d1881b3);
+            
+        
+
+        marker_4aa2ac19d1f0a49180055d9ba96005f2.bindPopup(popup_6262df458f26bbd34ca3a75a08c4569b)
+        ;
+
+        
+    
+    
+            var marker_c04088f62e75ebee0b293b23a03c4acf = L.marker(
+                [46.152705, -1.145853],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_4b810523755669229fe7ff3e77fc9831 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c04088f62e75ebee0b293b23a03c4acf.setIcon(icon_4b810523755669229fe7ff3e77fc9831);
+        
+    
+        var popup_bd01dbe59bdcfdf9c14cee7d6fa7113d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a81b1ba83d8174b283f635b43eeb1749 = $(`<div id="html_a81b1ba83d8174b283f635b43eeb1749" style="width: 100.0%; height: 100.0%;">La Rochelle (La Rochelle)</div>`)[0];
+                popup_bd01dbe59bdcfdf9c14cee7d6fa7113d.setContent(html_a81b1ba83d8174b283f635b43eeb1749);
+            
+        
+
+        marker_c04088f62e75ebee0b293b23a03c4acf.bindPopup(popup_bd01dbe59bdcfdf9c14cee7d6fa7113d)
+        ;
+
+        
+    
+    
+            var marker_83d0e024d34665faf36f4cf230653ddb = L.marker(
+                [46.818594, 0.549279],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_d66c0754c0f7026d077b9d1a0d2b647e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_83d0e024d34665faf36f4cf230653ddb.setIcon(icon_d66c0754c0f7026d077b9d1a0d2b647e);
+        
+    
+        var popup_eb37f447195a293a27abc833a3096f0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b667a2631b50bfa4ec8440193bf967e = $(`<div id="html_9b667a2631b50bfa4ec8440193bf967e" style="width: 100.0%; height: 100.0%;">Châtellerault (Châtellerault)</div>`)[0];
+                popup_eb37f447195a293a27abc833a3096f0b.setContent(html_9b667a2631b50bfa4ec8440193bf967e);
+            
+        
+
+        marker_83d0e024d34665faf36f4cf230653ddb.bindPopup(popup_eb37f447195a293a27abc833a3096f0b)
+        ;
+
+        
+    
+    
+            var marker_1afe551ddf0c87020747831657ef64cc = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_534a536e4ecc967b7f10080f64419ebe);
+        
+    
+            var icon_ac3bfc21ff74790d5414f00e92d6d7af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1afe551ddf0c87020747831657ef64cc.setIcon(icon_ac3bfc21ff74790d5414f00e92d6d7af);
+        
+    
+        var popup_2c5eef1265f2345a04bc3f55977d4c91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ada0fc9aa445e35e81c3acc73cad9b26 = $(`<div id="html_ada0fc9aa445e35e81c3acc73cad9b26" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux)</div>`)[0];
+                popup_2c5eef1265f2345a04bc3f55977d4c91.setContent(html_ada0fc9aa445e35e81c3acc73cad9b26);
+            
+        
+
+        marker_1afe551ddf0c87020747831657ef64cc.bindPopup(popup_2c5eef1265f2345a04bc3f55977d4c91)
+        ;
+
+        
+    
+</script>

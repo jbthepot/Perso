@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_740cc6dd801cc0937a95014676837ac9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_740cc6dd801cc0937a95014676837ac9" ></div>
+        
+</body>
+<script>    
+    
+            var map_740cc6dd801cc0937a95014676837ac9 = L.map(
+                "map_740cc6dd801cc0937a95014676837ac9",
+                {
+                    center: [46.039383, 4.063207],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_32eaee5c261a0f3dc61f4e5458c0f74d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var marker_afff41fe43fb93e6f05c5fbf0bb7109e = L.marker(
+                [43.302666, 5.380407],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_81bc6e0734aca2ec22d827d2295f7499 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_afff41fe43fb93e6f05c5fbf0bb7109e.setIcon(icon_81bc6e0734aca2ec22d827d2295f7499);
+        
+    
+        var popup_fe9cf18ed650c1597aac56b1e6295a10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae0b345abde8ce1f1e5d03eba36d6cee = $(`<div id="html_ae0b345abde8ce1f1e5d03eba36d6cee" style="width: 100.0%; height: 100.0%;">Marseille Saint-Charles (Marseille)</div>`)[0];
+                popup_fe9cf18ed650c1597aac56b1e6295a10.setContent(html_ae0b345abde8ce1f1e5d03eba36d6cee);
+            
+        
+
+        marker_afff41fe43fb93e6f05c5fbf0bb7109e.bindPopup(popup_fe9cf18ed650c1597aac56b1e6295a10)
+        ;
+
+        
+    
+    
+            var marker_0eab608d83a593bfcdac807425326870 = L.marker(
+                [46.039383, 4.063207],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_4fe713a002dec566c888ed8291f856f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0eab608d83a593bfcdac807425326870.setIcon(icon_4fe713a002dec566c888ed8291f856f3);
+        
+    
+        var popup_9b73d8188bba1873e4b6e8b8021b787d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3a922bb2edf4bd60c0c3aaa2af0f66b = $(`<div id="html_b3a922bb2edf4bd60c0c3aaa2af0f66b" style="width: 100.0%; height: 100.0%;">Roanne (Roanne)</div>`)[0];
+                popup_9b73d8188bba1873e4b6e8b8021b787d.setContent(html_b3a922bb2edf4bd60c0c3aaa2af0f66b);
+            
+        
+
+        marker_0eab608d83a593bfcdac807425326870.bindPopup(popup_9b73d8188bba1873e4b6e8b8021b787d)
+        ;
+
+        
+    
+    
+            var marker_4be05b331485a0c94a2e934f9bca6e4b = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_279d1a5f9008e8a3693737efb8bb9551 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4be05b331485a0c94a2e934f9bca6e4b.setIcon(icon_279d1a5f9008e8a3693737efb8bb9551);
+        
+    
+        var popup_ef1180e1229b6b2c66869e08c1c3df98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdb3dc92fa9f78c077848df12a08d18f = $(`<div id="html_cdb3dc92fa9f78c077848df12a08d18f" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey)</div>`)[0];
+                popup_ef1180e1229b6b2c66869e08c1c3df98.setContent(html_cdb3dc92fa9f78c077848df12a08d18f);
+            
+        
+
+        marker_4be05b331485a0c94a2e934f9bca6e4b.bindPopup(popup_ef1180e1229b6b2c66869e08c1c3df98)
+        ;
+
+        
+    
+    
+            var marker_0dc6d576fb89e2247639e6714bc0abcd = L.marker(
+                [46.200111, 5.215011],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_e66ab4e346771ed349a47968ebd0c868 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0dc6d576fb89e2247639e6714bc0abcd.setIcon(icon_e66ab4e346771ed349a47968ebd0c868);
+        
+    
+        var popup_192136bdce93a7652ff94b39be676a89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f314763c2bb721c1f19b3af7e69f244a = $(`<div id="html_f314763c2bb721c1f19b3af7e69f244a" style="width: 100.0%; height: 100.0%;">Bourg-en-Bresse (Bourg-en-Bresse)</div>`)[0];
+                popup_192136bdce93a7652ff94b39be676a89.setContent(html_f314763c2bb721c1f19b3af7e69f244a);
+            
+        
+
+        marker_0dc6d576fb89e2247639e6714bc0abcd.bindPopup(popup_192136bdce93a7652ff94b39be676a89)
+        ;
+
+        
+    
+    
+            var marker_85b0cd8d064485237724cc9f26c12a01 = L.marker(
+                [49.109466, 6.177052],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_cd9bcdb82018d17041c365ffef3e5d99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_85b0cd8d064485237724cc9f26c12a01.setIcon(icon_cd9bcdb82018d17041c365ffef3e5d99);
+        
+    
+        var popup_9cd181942af36cd070b5307561f6a2e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07f707754d6e4adca3b79d1be7b935bb = $(`<div id="html_07f707754d6e4adca3b79d1be7b935bb" style="width: 100.0%; height: 100.0%;">Metz (Metz)</div>`)[0];
+                popup_9cd181942af36cd070b5307561f6a2e3.setContent(html_07f707754d6e4adca3b79d1be7b935bb);
+            
+        
+
+        marker_85b0cd8d064485237724cc9f26c12a01.bindPopup(popup_9cd181942af36cd070b5307561f6a2e3)
+        ;
+
+        
+    
+    
+            var marker_b7fd66f43cbcde502f08043988a18d8f = L.marker(
+                [45.192693, 5.714366],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_d3b261c149d72e140b6021a785d2ea4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7fd66f43cbcde502f08043988a18d8f.setIcon(icon_d3b261c149d72e140b6021a785d2ea4a);
+        
+    
+        var popup_6b211ad692f8ff719a0954205c55836e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0ca0e319b63fc3ceb8145efffdd0109 = $(`<div id="html_c0ca0e319b63fc3ceb8145efffdd0109" style="width: 100.0%; height: 100.0%;">Grenoble (Grenoble)</div>`)[0];
+                popup_6b211ad692f8ff719a0954205c55836e.setContent(html_c0ca0e319b63fc3ceb8145efffdd0109);
+            
+        
+
+        marker_b7fd66f43cbcde502f08043988a18d8f.bindPopup(popup_6b211ad692f8ff719a0954205c55836e)
+        ;
+
+        
+    
+    
+            var marker_cb4f89f4cb6d3acf24b261c24aad665c = L.marker(
+                [45.191491, 5.714548],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_510c00bfad88b8d3b0ff43277055295f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cb4f89f4cb6d3acf24b261c24aad665c.setIcon(icon_510c00bfad88b8d3b0ff43277055295f);
+        
+    
+        var popup_317188c6c9cd81f5df09081e920eb162 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fba2af6cd314c25443c0758bfb7a7f5f = $(`<div id="html_fba2af6cd314c25443c0758bfb7a7f5f" style="width: 100.0%; height: 100.0%;">Grenoble (Grenoble)</div>`)[0];
+                popup_317188c6c9cd81f5df09081e920eb162.setContent(html_fba2af6cd314c25443c0758bfb7a7f5f);
+            
+        
+
+        marker_cb4f89f4cb6d3acf24b261c24aad665c.bindPopup(popup_317188c6c9cd81f5df09081e920eb162)
+        ;
+
+        
+    
+    
+            var marker_eca51873a3306e3aeb218f1cb8ce4710 = L.marker(
+                [47.323411, 5.027256],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_74165836167e5e4cb7d32ef4cb818ed0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eca51873a3306e3aeb218f1cb8ce4710.setIcon(icon_74165836167e5e4cb7d32ef4cb818ed0);
+        
+    
+        var popup_2b10cc2b12a8cc37c43da84a768f6303 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ede4723ca272eb214656dd4066af4a7 = $(`<div id="html_9ede4723ca272eb214656dd4066af4a7" style="width: 100.0%; height: 100.0%;">Dijon (Dijon)</div>`)[0];
+                popup_2b10cc2b12a8cc37c43da84a768f6303.setContent(html_9ede4723ca272eb214656dd4066af4a7);
+            
+        
+
+        marker_eca51873a3306e3aeb218f1cb8ce4710.bindPopup(popup_2b10cc2b12a8cc37c43da84a768f6303)
+        ;
+
+        
+    
+    
+            var marker_8efd5bc9dfc6caaf24cebcab44c356cb = L.marker(
+                [43.941923, 4.805269],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_f64d49dceb2d9c085f370155ea8709d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8efd5bc9dfc6caaf24cebcab44c356cb.setIcon(icon_f64d49dceb2d9c085f370155ea8709d7);
+        
+    
+        var popup_d77e8767e4fd7288965c60fbb91430d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49258d925cce70037abd70ca8ba17ee7 = $(`<div id="html_49258d925cce70037abd70ca8ba17ee7" style="width: 100.0%; height: 100.0%;">Avignon Centre (Avignon)</div>`)[0];
+                popup_d77e8767e4fd7288965c60fbb91430d1.setContent(html_49258d925cce70037abd70ca8ba17ee7);
+            
+        
+
+        marker_8efd5bc9dfc6caaf24cebcab44c356cb.bindPopup(popup_d77e8767e4fd7288965c60fbb91430d1)
+        ;
+
+        
+    
+    
+            var marker_80ef2d5a6b56a513e1a71fc2a962b726 = L.marker(
+                [45.443366, 4.399722],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_856a8434531dd69ead26f261db45c931 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_80ef2d5a6b56a513e1a71fc2a962b726.setIcon(icon_856a8434531dd69ead26f261db45c931);
+        
+    
+        var popup_e89cd7602465a7f67aa17ec8ae5d04c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4171725e6fe71599bddb25c43c11f169 = $(`<div id="html_4171725e6fe71599bddb25c43c11f169" style="width: 100.0%; height: 100.0%;">Saint-Étienne Châteaucreux (Saint-Étienne)</div>`)[0];
+                popup_e89cd7602465a7f67aa17ec8ae5d04c4.setContent(html_4171725e6fe71599bddb25c43c11f169);
+            
+        
+
+        marker_80ef2d5a6b56a513e1a71fc2a962b726.bindPopup(popup_e89cd7602465a7f67aa17ec8ae5d04c4)
+        ;
+
+        
+    
+    
+            var marker_141d7e69c2b4c63fcbfd15ceac887e7e = L.marker(
+                [45.748508, 4.825777],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_0712bbc283111905852799ffb7a4cef9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_141d7e69c2b4c63fcbfd15ceac887e7e.setIcon(icon_0712bbc283111905852799ffb7a4cef9);
+        
+    
+        var popup_47a94a1f9b1a46dbdf3051ed24fe2c70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_023bb850483b02b7d0811b1c3d28c00c = $(`<div id="html_023bb850483b02b7d0811b1c3d28c00c" style="width: 100.0%; height: 100.0%;">Lyon Perrache (Lyon)</div>`)[0];
+                popup_47a94a1f9b1a46dbdf3051ed24fe2c70.setContent(html_023bb850483b02b7d0811b1c3d28c00c);
+            
+        
+
+        marker_141d7e69c2b4c63fcbfd15ceac887e7e.bindPopup(popup_47a94a1f9b1a46dbdf3051ed24fe2c70)
+        ;
+
+        
+    
+    
+            var marker_2aa84bf4e2ebdb21066872aeb0413bf9 = L.marker(
+                [43.302666, 5.380407],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_c3eeb2760bf89fc4bad46f803c431bb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2aa84bf4e2ebdb21066872aeb0413bf9.setIcon(icon_c3eeb2760bf89fc4bad46f803c431bb1);
+        
+    
+        var popup_04e13bc9722bb63dc91af708ca9e128d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91dbc54945088a7c20e5fd6cd89cf60a = $(`<div id="html_91dbc54945088a7c20e5fd6cd89cf60a" style="width: 100.0%; height: 100.0%;">Marseille Saint-Charles (Marseille)</div>`)[0];
+                popup_04e13bc9722bb63dc91af708ca9e128d.setContent(html_91dbc54945088a7c20e5fd6cd89cf60a);
+            
+        
+
+        marker_2aa84bf4e2ebdb21066872aeb0413bf9.bindPopup(popup_04e13bc9722bb63dc91af708ca9e128d)
+        ;
+
+        
+    
+    
+            var marker_86aae6e9921cb33c5bb12544abf5ab4e = L.marker(
+                [46.039383, 4.063207],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_b960bd202da79f181692380be02cea34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_86aae6e9921cb33c5bb12544abf5ab4e.setIcon(icon_b960bd202da79f181692380be02cea34);
+        
+    
+        var popup_893859bbe4e327fbff608b794930e53d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cad0ee8a9e9be0a9f56014d25d95818 = $(`<div id="html_5cad0ee8a9e9be0a9f56014d25d95818" style="width: 100.0%; height: 100.0%;">Roanne (Roanne)</div>`)[0];
+                popup_893859bbe4e327fbff608b794930e53d.setContent(html_5cad0ee8a9e9be0a9f56014d25d95818);
+            
+        
+
+        marker_86aae6e9921cb33c5bb12544abf5ab4e.bindPopup(popup_893859bbe4e327fbff608b794930e53d)
+        ;
+
+        
+    
+    
+            var marker_aa43035870a33338c2af0a84dc729b44 = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_4f65dcf47c8caa17077dc41efa8597e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa43035870a33338c2af0a84dc729b44.setIcon(icon_4f65dcf47c8caa17077dc41efa8597e1);
+        
+    
+        var popup_9a0c38aa9e28afc9cea2386165513470 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd8310f9d9be442404c0639e9dadf986 = $(`<div id="html_cd8310f9d9be442404c0639e9dadf986" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey)</div>`)[0];
+                popup_9a0c38aa9e28afc9cea2386165513470.setContent(html_cd8310f9d9be442404c0639e9dadf986);
+            
+        
+
+        marker_aa43035870a33338c2af0a84dc729b44.bindPopup(popup_9a0c38aa9e28afc9cea2386165513470)
+        ;
+
+        
+    
+    
+            var marker_e48c2174644051d82ad04beacb8ca5f4 = L.marker(
+                [46.200111, 5.215011],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_17faff1fc62ade9f58c576a4a2790fc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e48c2174644051d82ad04beacb8ca5f4.setIcon(icon_17faff1fc62ade9f58c576a4a2790fc9);
+        
+    
+        var popup_3b2109dd307512eea1f8b43ae250a06a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ef466c704f4cbff0cab58a73c39b76e = $(`<div id="html_6ef466c704f4cbff0cab58a73c39b76e" style="width: 100.0%; height: 100.0%;">Bourg-en-Bresse (Bourg-en-Bresse)</div>`)[0];
+                popup_3b2109dd307512eea1f8b43ae250a06a.setContent(html_6ef466c704f4cbff0cab58a73c39b76e);
+            
+        
+
+        marker_e48c2174644051d82ad04beacb8ca5f4.bindPopup(popup_3b2109dd307512eea1f8b43ae250a06a)
+        ;
+
+        
+    
+    
+            var marker_d4c5e444a9dbfc7117622d2b48c00ef9 = L.marker(
+                [49.109466, 6.177052],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_29f5cbb2ce20c9800dc6df30896f96f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d4c5e444a9dbfc7117622d2b48c00ef9.setIcon(icon_29f5cbb2ce20c9800dc6df30896f96f5);
+        
+    
+        var popup_8cb294fa5684407fb0b85f72296c9b52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc1d2095345e81c0c40be1a7a064523c = $(`<div id="html_bc1d2095345e81c0c40be1a7a064523c" style="width: 100.0%; height: 100.0%;">Metz (Metz)</div>`)[0];
+                popup_8cb294fa5684407fb0b85f72296c9b52.setContent(html_bc1d2095345e81c0c40be1a7a064523c);
+            
+        
+
+        marker_d4c5e444a9dbfc7117622d2b48c00ef9.bindPopup(popup_8cb294fa5684407fb0b85f72296c9b52)
+        ;
+
+        
+    
+    
+            var marker_13244cdad4725147704173262b0812b2 = L.marker(
+                [45.192693, 5.714366],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_9b8af552c3a62bac940549300b1daedb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13244cdad4725147704173262b0812b2.setIcon(icon_9b8af552c3a62bac940549300b1daedb);
+        
+    
+        var popup_7ca17f08b6d5003296604e359271f89e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56c5e637b33aeb95166db2e9fa221789 = $(`<div id="html_56c5e637b33aeb95166db2e9fa221789" style="width: 100.0%; height: 100.0%;">Grenoble (Grenoble)</div>`)[0];
+                popup_7ca17f08b6d5003296604e359271f89e.setContent(html_56c5e637b33aeb95166db2e9fa221789);
+            
+        
+
+        marker_13244cdad4725147704173262b0812b2.bindPopup(popup_7ca17f08b6d5003296604e359271f89e)
+        ;
+
+        
+    
+    
+            var marker_d5b26cd5904927142c7df1ba5ed7decb = L.marker(
+                [45.191491, 5.714548],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_937156d44978a134990997f0c6539906 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d5b26cd5904927142c7df1ba5ed7decb.setIcon(icon_937156d44978a134990997f0c6539906);
+        
+    
+        var popup_41a7480807e8282203f31c57318d807f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50a0e3976b46875f94aa8555691ca49e = $(`<div id="html_50a0e3976b46875f94aa8555691ca49e" style="width: 100.0%; height: 100.0%;">Grenoble (Grenoble)</div>`)[0];
+                popup_41a7480807e8282203f31c57318d807f.setContent(html_50a0e3976b46875f94aa8555691ca49e);
+            
+        
+
+        marker_d5b26cd5904927142c7df1ba5ed7decb.bindPopup(popup_41a7480807e8282203f31c57318d807f)
+        ;
+
+        
+    
+    
+            var marker_652d0f621cc7243cecab3cecc5d92605 = L.marker(
+                [47.323411, 5.027256],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_7b35e3f99d12549ab8f287aca3fb0a45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_652d0f621cc7243cecab3cecc5d92605.setIcon(icon_7b35e3f99d12549ab8f287aca3fb0a45);
+        
+    
+        var popup_c2dd411a2609327aa8c524a74feefd24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c1a0bc6afcbabeb7ef61072e727ddbb = $(`<div id="html_7c1a0bc6afcbabeb7ef61072e727ddbb" style="width: 100.0%; height: 100.0%;">Dijon (Dijon)</div>`)[0];
+                popup_c2dd411a2609327aa8c524a74feefd24.setContent(html_7c1a0bc6afcbabeb7ef61072e727ddbb);
+            
+        
+
+        marker_652d0f621cc7243cecab3cecc5d92605.bindPopup(popup_c2dd411a2609327aa8c524a74feefd24)
+        ;
+
+        
+    
+    
+            var marker_fd102b7d2ffc06e17e28e901c4c34c8c = L.marker(
+                [43.941923, 4.805269],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_cacce271da31dc661d876b3f43ea4955 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fd102b7d2ffc06e17e28e901c4c34c8c.setIcon(icon_cacce271da31dc661d876b3f43ea4955);
+        
+    
+        var popup_3f9b6e05ad2694929a15299653f5c277 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f56ce45861dc8834ac5c92f731dc1ed = $(`<div id="html_5f56ce45861dc8834ac5c92f731dc1ed" style="width: 100.0%; height: 100.0%;">Avignon Centre (Avignon)</div>`)[0];
+                popup_3f9b6e05ad2694929a15299653f5c277.setContent(html_5f56ce45861dc8834ac5c92f731dc1ed);
+            
+        
+
+        marker_fd102b7d2ffc06e17e28e901c4c34c8c.bindPopup(popup_3f9b6e05ad2694929a15299653f5c277)
+        ;
+
+        
+    
+    
+            var marker_15081ae71cc15ec4380696e6961db11d = L.marker(
+                [45.443366, 4.399722],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_e01386119e276127cc1a19c4c0b1751a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_15081ae71cc15ec4380696e6961db11d.setIcon(icon_e01386119e276127cc1a19c4c0b1751a);
+        
+    
+        var popup_13eaad0c772fa742acbf892a8356b65a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dc3e1a6e223d054e516021390b848d6 = $(`<div id="html_8dc3e1a6e223d054e516021390b848d6" style="width: 100.0%; height: 100.0%;">Saint-Étienne Châteaucreux (Saint-Étienne)</div>`)[0];
+                popup_13eaad0c772fa742acbf892a8356b65a.setContent(html_8dc3e1a6e223d054e516021390b848d6);
+            
+        
+
+        marker_15081ae71cc15ec4380696e6961db11d.bindPopup(popup_13eaad0c772fa742acbf892a8356b65a)
+        ;
+
+        
+    
+    
+            var marker_e5c07871c61566e5d77820f18208e226 = L.marker(
+                [45.748508, 4.825777],
+                {}
+            ).addTo(map_740cc6dd801cc0937a95014676837ac9);
+        
+    
+            var icon_45766e50e53fdd6b9273d77718eacf67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e5c07871c61566e5d77820f18208e226.setIcon(icon_45766e50e53fdd6b9273d77718eacf67);
+        
+    
+        var popup_1b23f6c39b929a9758722490184224da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09e356f8d5620eac8ca76f402562d23b = $(`<div id="html_09e356f8d5620eac8ca76f402562d23b" style="width: 100.0%; height: 100.0%;">Lyon Perrache (Lyon)</div>`)[0];
+                popup_1b23f6c39b929a9758722490184224da.setContent(html_09e356f8d5620eac8ca76f402562d23b);
+            
+        
+
+        marker_e5c07871c61566e5d77820f18208e226.bindPopup(popup_1b23f6c39b929a9758722490184224da)
+        ;
+
+        
+    
+</script>

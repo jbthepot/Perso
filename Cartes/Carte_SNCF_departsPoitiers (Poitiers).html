@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f6c29249cc31b27e8746d6a2f1e05ab0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f6c29249cc31b27e8746d6a2f1e05ab0" ></div>
+        
+</body>
+<script>    
+    
+            var map_f6c29249cc31b27e8746d6a2f1e05ab0 = L.map(
+                "map_f6c29249cc31b27e8746d6a2f1e05ab0",
+                {
+                    center: [46.152705, -1.145853],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2272e634d8b18f575eecfea3333f254a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var marker_84c8404916e84e4843d00595d14502a2 = L.marker(
+                [46.582232, 0.333136],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_b5e0375da2514d5374151ee0c695a345 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_84c8404916e84e4843d00595d14502a2.setIcon(icon_b5e0375da2514d5374151ee0c695a345);
+        
+    
+        var popup_85a83db8340dfcc12405ed38339402cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c4004e8fc5c7ffc8b2b262f724c8c56 = $(`<div id="html_7c4004e8fc5c7ffc8b2b262f724c8c56" style="width: 100.0%; height: 100.0%;">La Rochelle (La Rochelle)</div>`)[0];
+                popup_85a83db8340dfcc12405ed38339402cf.setContent(html_7c4004e8fc5c7ffc8b2b262f724c8c56);
+            
+        
+
+        marker_84c8404916e84e4843d00595d14502a2.bindPopup(popup_85a83db8340dfcc12405ed38339402cf)
+        ;
+
+        
+    
+    
+            var marker_43c469d6f8fd54e8b401db33c1a63a26 = L.marker(
+                [46.152705, -1.145853],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_9aa99271a993da57b654dce8ca5c4f98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_43c469d6f8fd54e8b401db33c1a63a26.setIcon(icon_9aa99271a993da57b654dce8ca5c4f98);
+        
+    
+        var popup_12ae2db0c556eecf21d4ddbc1417b190 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ee754429ee857b47c04572b4aed3d0c = $(`<div id="html_3ee754429ee857b47c04572b4aed3d0c" style="width: 100.0%; height: 100.0%;">La Rochelle (La Rochelle)</div>`)[0];
+                popup_12ae2db0c556eecf21d4ddbc1417b190.setContent(html_3ee754429ee857b47c04572b4aed3d0c);
+            
+        
+
+        marker_43c469d6f8fd54e8b401db33c1a63a26.bindPopup(popup_12ae2db0c556eecf21d4ddbc1417b190)
+        ;
+
+        
+    
+    
+            var marker_d9932ed3d37c6afc787173b6aaf33b90 = L.marker(
+                [45.653572, 0.164608],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_8a383293c289a37cea3886e5128cd2bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d9932ed3d37c6afc787173b6aaf33b90.setIcon(icon_8a383293c289a37cea3886e5128cd2bb);
+        
+    
+        var popup_03ad4d5bdc0e2e8b5aaea7ad36779241 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fe1622168f944104ed72cd2010feb1b = $(`<div id="html_4fe1622168f944104ed72cd2010feb1b" style="width: 100.0%; height: 100.0%;">Angoulême (Angoulême)</div>`)[0];
+                popup_03ad4d5bdc0e2e8b5aaea7ad36779241.setContent(html_4fe1622168f944104ed72cd2010feb1b);
+            
+        
+
+        marker_d9932ed3d37c6afc787173b6aaf33b90.bindPopup(popup_03ad4d5bdc0e2e8b5aaea7ad36779241)
+        ;
+
+        
+    
+    
+            var marker_e28d7d40641cf9f0ff85fba163b5bcf6 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_f50905b155c807ca9895aa49783cfb86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e28d7d40641cf9f0ff85fba163b5bcf6.setIcon(icon_f50905b155c807ca9895aa49783cfb86);
+        
+    
+        var popup_d8d8c3623517effce2eefb425dd4e134 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_077f552af2afa6e58d4e4eddecc80709 = $(`<div id="html_077f552af2afa6e58d4e4eddecc80709" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris)</div>`)[0];
+                popup_d8d8c3623517effce2eefb425dd4e134.setContent(html_077f552af2afa6e58d4e4eddecc80709);
+            
+        
+
+        marker_e28d7d40641cf9f0ff85fba163b5bcf6.bindPopup(popup_d8d8c3623517effce2eefb425dd4e134)
+        ;
+
+        
+    
+    
+            var marker_4d673db242b7e5b48775c3a51d9a7e10 = L.marker(
+                [46.818594, 0.549279],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_1e67bd89faf59179dc77db014698ad69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4d673db242b7e5b48775c3a51d9a7e10.setIcon(icon_1e67bd89faf59179dc77db014698ad69);
+        
+    
+        var popup_daffd45ccc3502496800a5edfd110daa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7f60a9ef163b25f6b7715d280d35853 = $(`<div id="html_c7f60a9ef163b25f6b7715d280d35853" style="width: 100.0%; height: 100.0%;">Châtellerault (Châtellerault)</div>`)[0];
+                popup_daffd45ccc3502496800a5edfd110daa.setContent(html_c7f60a9ef163b25f6b7715d280d35853);
+            
+        
+
+        marker_4d673db242b7e5b48775c3a51d9a7e10.bindPopup(popup_daffd45ccc3502496800a5edfd110daa)
+        ;
+
+        
+    
+    
+            var marker_839bdbab8a55537d3e8d7a2a43ed028d = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_1b55b94c6ae263b66c976b2254f051db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_839bdbab8a55537d3e8d7a2a43ed028d.setIcon(icon_1b55b94c6ae263b66c976b2254f051db);
+        
+    
+        var popup_74eb6edc4bc4b84f07742874333addf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b2a31907558311c2ba9dbfbef8edfbb = $(`<div id="html_8b2a31907558311c2ba9dbfbef8edfbb" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris)</div>`)[0];
+                popup_74eb6edc4bc4b84f07742874333addf6.setContent(html_8b2a31907558311c2ba9dbfbef8edfbb);
+            
+        
+
+        marker_839bdbab8a55537d3e8d7a2a43ed028d.bindPopup(popup_74eb6edc4bc4b84f07742874333addf6)
+        ;
+
+        
+    
+    
+            var marker_f497282fa09e88c81c5e96b0d79b3716 = L.marker(
+                [45.653572, 0.164608],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_6df9a428ae3501062d3f609785ef762a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f497282fa09e88c81c5e96b0d79b3716.setIcon(icon_6df9a428ae3501062d3f609785ef762a);
+        
+    
+        var popup_dc6619b17626cd0d045b88932853f42f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1ae2b6d6e259d1c6d4c055e4b640845 = $(`<div id="html_c1ae2b6d6e259d1c6d4c055e4b640845" style="width: 100.0%; height: 100.0%;">Angoulême (Angoulême)</div>`)[0];
+                popup_dc6619b17626cd0d045b88932853f42f.setContent(html_c1ae2b6d6e259d1c6d4c055e4b640845);
+            
+        
+
+        marker_f497282fa09e88c81c5e96b0d79b3716.bindPopup(popup_dc6619b17626cd0d045b88932853f42f)
+        ;
+
+        
+    
+    
+            var marker_69164cf162827b7e3aa358a68607d860 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_b328cd9eebcd131e3a41b5d18512a1b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_69164cf162827b7e3aa358a68607d860.setIcon(icon_b328cd9eebcd131e3a41b5d18512a1b1);
+        
+    
+        var popup_fef639d15c9361db4a4b8d4ebbf84b6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98240def626816b60ba8f4d8b0c8d5fb = $(`<div id="html_98240def626816b60ba8f4d8b0c8d5fb" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux)</div>`)[0];
+                popup_fef639d15c9361db4a4b8d4ebbf84b6c.setContent(html_98240def626816b60ba8f4d8b0c8d5fb);
+            
+        
+
+        marker_69164cf162827b7e3aa358a68607d860.bindPopup(popup_fef639d15c9361db4a4b8d4ebbf84b6c)
+        ;
+
+        
+    
+    
+            var marker_cf4774795f79ae8da4e9c39969a2598f = L.marker(
+                [47.389866, 0.692831],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_5b2a24fa44ab6a6e6d19fd2ddf4679ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cf4774795f79ae8da4e9c39969a2598f.setIcon(icon_5b2a24fa44ab6a6e6d19fd2ddf4679ac);
+        
+    
+        var popup_d0b4d43a89d162fadaea545219470dae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13f79d992ccfd6a238c99cac8e30f937 = $(`<div id="html_13f79d992ccfd6a238c99cac8e30f937" style="width: 100.0%; height: 100.0%;">Tours (Tours)</div>`)[0];
+                popup_d0b4d43a89d162fadaea545219470dae.setContent(html_13f79d992ccfd6a238c99cac8e30f937);
+            
+        
+
+        marker_cf4774795f79ae8da4e9c39969a2598f.bindPopup(popup_d0b4d43a89d162fadaea545219470dae)
+        ;
+
+        
+    
+    
+            var marker_da4b5e034e639be0ef3d16a312fe87c1 = L.marker(
+                [46.818594, 0.549279],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_10cd23f511f99829cc5dc0225c97729a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da4b5e034e639be0ef3d16a312fe87c1.setIcon(icon_10cd23f511f99829cc5dc0225c97729a);
+        
+    
+        var popup_5abed397bd60f471f470885fadf7a067 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aed4cba7717c7cd0a84f311d74c2d39b = $(`<div id="html_aed4cba7717c7cd0a84f311d74c2d39b" style="width: 100.0%; height: 100.0%;">Châtellerault (Châtellerault)</div>`)[0];
+                popup_5abed397bd60f471f470885fadf7a067.setContent(html_aed4cba7717c7cd0a84f311d74c2d39b);
+            
+        
+
+        marker_da4b5e034e639be0ef3d16a312fe87c1.bindPopup(popup_5abed397bd60f471f470885fadf7a067)
+        ;
+
+        
+    
+    
+            var marker_9d2552bab8317701f498cfb5c884e74c = L.marker(
+                [46.152705, -1.145853],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_ede80fa6f06774ecf482938da1154922 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d2552bab8317701f498cfb5c884e74c.setIcon(icon_ede80fa6f06774ecf482938da1154922);
+        
+    
+        var popup_06ce8300affee7e5a91d48c795200045 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8364f60cad33b07e800fb45bbba129c = $(`<div id="html_a8364f60cad33b07e800fb45bbba129c" style="width: 100.0%; height: 100.0%;">La Rochelle (La Rochelle)</div>`)[0];
+                popup_06ce8300affee7e5a91d48c795200045.setContent(html_a8364f60cad33b07e800fb45bbba129c);
+            
+        
+
+        marker_9d2552bab8317701f498cfb5c884e74c.bindPopup(popup_06ce8300affee7e5a91d48c795200045)
+        ;
+
+        
+    
+    
+            var marker_9a585d9aef348c30f8643587c2008cb4 = L.marker(
+                [46.152705, -1.145853],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_0dad87157a0b8904934ec75809283c02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a585d9aef348c30f8643587c2008cb4.setIcon(icon_0dad87157a0b8904934ec75809283c02);
+        
+    
+        var popup_9359a0f6949ad5cb39e35c75f3ed7742 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c9876c0fea1ae906b6fa2b839e5b7d8 = $(`<div id="html_8c9876c0fea1ae906b6fa2b839e5b7d8" style="width: 100.0%; height: 100.0%;">La Rochelle (La Rochelle)</div>`)[0];
+                popup_9359a0f6949ad5cb39e35c75f3ed7742.setContent(html_8c9876c0fea1ae906b6fa2b839e5b7d8);
+            
+        
+
+        marker_9a585d9aef348c30f8643587c2008cb4.bindPopup(popup_9359a0f6949ad5cb39e35c75f3ed7742)
+        ;
+
+        
+    
+    
+            var marker_bd6f54c5513d42f4285100883dc188c5 = L.marker(
+                [45.653572, 0.164608],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_0756f110386a690d6f747b4f826afa5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd6f54c5513d42f4285100883dc188c5.setIcon(icon_0756f110386a690d6f747b4f826afa5e);
+        
+    
+        var popup_469c8291a950badb63db11ecd4fdcd5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a54ded7c9aec73a9341f8f82bb561256 = $(`<div id="html_a54ded7c9aec73a9341f8f82bb561256" style="width: 100.0%; height: 100.0%;">Angoulême (Angoulême)</div>`)[0];
+                popup_469c8291a950badb63db11ecd4fdcd5d.setContent(html_a54ded7c9aec73a9341f8f82bb561256);
+            
+        
+
+        marker_bd6f54c5513d42f4285100883dc188c5.bindPopup(popup_469c8291a950badb63db11ecd4fdcd5d)
+        ;
+
+        
+    
+    
+            var marker_d6430279f271e914d2ea7d31165c8807 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_69af38a442e4680560b0828616be6679 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6430279f271e914d2ea7d31165c8807.setIcon(icon_69af38a442e4680560b0828616be6679);
+        
+    
+        var popup_4cdecd1a4f1a7e7c1c1127979e38997e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b831c9c71a1e22ebf20e6ed766f48c22 = $(`<div id="html_b831c9c71a1e22ebf20e6ed766f48c22" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris)</div>`)[0];
+                popup_4cdecd1a4f1a7e7c1c1127979e38997e.setContent(html_b831c9c71a1e22ebf20e6ed766f48c22);
+            
+        
+
+        marker_d6430279f271e914d2ea7d31165c8807.bindPopup(popup_4cdecd1a4f1a7e7c1c1127979e38997e)
+        ;
+
+        
+    
+    
+            var marker_9f4aea78038057993108e6b444d4eb14 = L.marker(
+                [46.818594, 0.549279],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_65578a9c67f2bf351cc082dacbd9638d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9f4aea78038057993108e6b444d4eb14.setIcon(icon_65578a9c67f2bf351cc082dacbd9638d);
+        
+    
+        var popup_166c8a86707c027bcea2f7d24fc40ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3665e1e783a413ce2ab6fae33307b6f = $(`<div id="html_c3665e1e783a413ce2ab6fae33307b6f" style="width: 100.0%; height: 100.0%;">Châtellerault (Châtellerault)</div>`)[0];
+                popup_166c8a86707c027bcea2f7d24fc40ef1.setContent(html_c3665e1e783a413ce2ab6fae33307b6f);
+            
+        
+
+        marker_9f4aea78038057993108e6b444d4eb14.bindPopup(popup_166c8a86707c027bcea2f7d24fc40ef1)
+        ;
+
+        
+    
+    
+            var marker_d6dfb7fdf860eb8c1f6d8f135b857e99 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_3ef2fad39ecc5b3a583b589deaf77a1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6dfb7fdf860eb8c1f6d8f135b857e99.setIcon(icon_3ef2fad39ecc5b3a583b589deaf77a1b);
+        
+    
+        var popup_95e1be63b08a2b401443bb4cc22d8960 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30ab6127b2505d2e6eb5170037d95a6d = $(`<div id="html_30ab6127b2505d2e6eb5170037d95a6d" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris)</div>`)[0];
+                popup_95e1be63b08a2b401443bb4cc22d8960.setContent(html_30ab6127b2505d2e6eb5170037d95a6d);
+            
+        
+
+        marker_d6dfb7fdf860eb8c1f6d8f135b857e99.bindPopup(popup_95e1be63b08a2b401443bb4cc22d8960)
+        ;
+
+        
+    
+    
+            var marker_d977c554c6c32fa4e099b8a840bc3933 = L.marker(
+                [45.653572, 0.164608],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_6fdd2224378f9b737b717281c8831040 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d977c554c6c32fa4e099b8a840bc3933.setIcon(icon_6fdd2224378f9b737b717281c8831040);
+        
+    
+        var popup_b3b93ca580cf9990c66f14a6e7f20579 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8e007217e0fbb4b7abf9ebe0f7e9485 = $(`<div id="html_d8e007217e0fbb4b7abf9ebe0f7e9485" style="width: 100.0%; height: 100.0%;">Angoulême (Angoulême)</div>`)[0];
+                popup_b3b93ca580cf9990c66f14a6e7f20579.setContent(html_d8e007217e0fbb4b7abf9ebe0f7e9485);
+            
+        
+
+        marker_d977c554c6c32fa4e099b8a840bc3933.bindPopup(popup_b3b93ca580cf9990c66f14a6e7f20579)
+        ;
+
+        
+    
+    
+            var marker_40c331fb7bf8df302df169e11c157b51 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_8b2d4316b3e2f0c8849b7c0f50facfdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_40c331fb7bf8df302df169e11c157b51.setIcon(icon_8b2d4316b3e2f0c8849b7c0f50facfdd);
+        
+    
+        var popup_2d254e7b70f8d0d244425401cf3d12e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_081de9d8ede2b94b0d140ddfcdf824d8 = $(`<div id="html_081de9d8ede2b94b0d140ddfcdf824d8" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux)</div>`)[0];
+                popup_2d254e7b70f8d0d244425401cf3d12e2.setContent(html_081de9d8ede2b94b0d140ddfcdf824d8);
+            
+        
+
+        marker_40c331fb7bf8df302df169e11c157b51.bindPopup(popup_2d254e7b70f8d0d244425401cf3d12e2)
+        ;
+
+        
+    
+    
+            var marker_9c6a75a9da96c94108ce9d2bf93c63c9 = L.marker(
+                [47.389866, 0.692831],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_fbc51170888259c6f93c95b561cc1068 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c6a75a9da96c94108ce9d2bf93c63c9.setIcon(icon_fbc51170888259c6f93c95b561cc1068);
+        
+    
+        var popup_435710ad5a216ecadb8c4a207a358003 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe86c7b42c905e49956abb544f3fd502 = $(`<div id="html_fe86c7b42c905e49956abb544f3fd502" style="width: 100.0%; height: 100.0%;">Tours (Tours)</div>`)[0];
+                popup_435710ad5a216ecadb8c4a207a358003.setContent(html_fe86c7b42c905e49956abb544f3fd502);
+            
+        
+
+        marker_9c6a75a9da96c94108ce9d2bf93c63c9.bindPopup(popup_435710ad5a216ecadb8c4a207a358003)
+        ;
+
+        
+    
+    
+            var marker_b68de3731f3f3be1b82014c06f361464 = L.marker(
+                [46.818594, 0.549279],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_ea09853cf08851e9bd399c02dc8da70e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b68de3731f3f3be1b82014c06f361464.setIcon(icon_ea09853cf08851e9bd399c02dc8da70e);
+        
+    
+        var popup_ce3187302421abdec56957bfd4d8cde8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53fc4de265691e57788e103c4211769b = $(`<div id="html_53fc4de265691e57788e103c4211769b" style="width: 100.0%; height: 100.0%;">Châtellerault (Châtellerault)</div>`)[0];
+                popup_ce3187302421abdec56957bfd4d8cde8.setContent(html_53fc4de265691e57788e103c4211769b);
+            
+        
+
+        marker_b68de3731f3f3be1b82014c06f361464.bindPopup(popup_ce3187302421abdec56957bfd4d8cde8)
+        ;
+
+        
+    
+    
+            var marker_35c833fd292357023a25f0e7972c7cc5 = L.marker(
+                [46.152705, -1.145853],
+                {}
+            ).addTo(map_f6c29249cc31b27e8746d6a2f1e05ab0);
+        
+    
+            var icon_a272ae2843fa8c83ebe470c277fb61cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35c833fd292357023a25f0e7972c7cc5.setIcon(icon_a272ae2843fa8c83ebe470c277fb61cb);
+        
+    
+        var popup_ce6964072a47862b94c128a1d0b8ad7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32ce940981d350d3914f5b0c7f83284c = $(`<div id="html_32ce940981d350d3914f5b0c7f83284c" style="width: 100.0%; height: 100.0%;">La Rochelle (La Rochelle)</div>`)[0];
+                popup_ce6964072a47862b94c128a1d0b8ad7e.setContent(html_32ce940981d350d3914f5b0c7f83284c);
+            
+        
+
+        marker_35c833fd292357023a25f0e7972c7cc5.bindPopup(popup_ce6964072a47862b94c128a1d0b8ad7e)
+        ;
+
+        
+    
+</script>

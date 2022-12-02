@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_48a8562730b8199aa5a9c1935f943907 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_48a8562730b8199aa5a9c1935f943907" ></div>
+        
+</body>
+<script>    
+    
+            var map_48a8562730b8199aa5a9c1935f943907 = L.map(
+                "map_48a8562730b8199aa5a9c1935f943907",
+                {
+                    center: [49.599722, 6.134722],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_71314d9a4880395c7145e87a75d4a9d3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var marker_93d4c8006aca61dac3f2decf17dec50a = L.marker(
+                [48.876742, 2.358424],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_e4d25a3c172dd880cfcf8ec8ef130c7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_93d4c8006aca61dac3f2decf17dec50a.setIcon(icon_e4d25a3c172dd880cfcf8ec8ef130c7a);
+        
+    
+        var popup_ff08c8683ea9127486bf23817baec414 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71516f9a839c21d16d66c8dc4c701da6 = $(`<div id="html_71516f9a839c21d16d66c8dc4c701da6" style="width: 100.0%; height: 100.0%;">Paris Est (Paris)</div>`)[0];
+                popup_ff08c8683ea9127486bf23817baec414.setContent(html_71516f9a839c21d16d66c8dc4c701da6);
+            
+        
+
+        marker_93d4c8006aca61dac3f2decf17dec50a.bindPopup(popup_ff08c8683ea9127486bf23817baec414)
+        ;
+
+        
+    
+    
+            var marker_c542062e1e5ebf5ec734894d5f7dfb60 = L.marker(
+                [49.599722, 6.134722],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_f5daa04bbd9322b54f3eeaf0bd433d51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c542062e1e5ebf5ec734894d5f7dfb60.setIcon(icon_f5daa04bbd9322b54f3eeaf0bd433d51);
+        
+    
+        var popup_1a77655cdd89acef99c0bf76e0fdf94f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a15129bd1846224f5c2854e196e4ae6 = $(`<div id="html_7a15129bd1846224f5c2854e196e4ae6" style="width: 100.0%; height: 100.0%;">Luxembourg (Luxembourg)</div>`)[0];
+                popup_1a77655cdd89acef99c0bf76e0fdf94f.setContent(html_7a15129bd1846224f5c2854e196e4ae6);
+            
+        
+
+        marker_c542062e1e5ebf5ec734894d5f7dfb60.bindPopup(popup_1a77655cdd89acef99c0bf76e0fdf94f)
+        ;
+
+        
+    
+    
+            var marker_8a1f33898bf08c83eb1d637c78778f44 = L.marker(
+                [48.555737, 3.302837],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_b22a49ed313f062d20f3f236bef79249 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a1f33898bf08c83eb1d637c78778f44.setIcon(icon_b22a49ed313f062d20f3f236bef79249);
+        
+    
+        var popup_20300b8d54ccf0b477479b9d57fadd0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e2ea1c4c515d848a3614d0f56e58111 = $(`<div id="html_3e2ea1c4c515d848a3614d0f56e58111" style="width: 100.0%; height: 100.0%;">Provins (Provins)</div>`)[0];
+                popup_20300b8d54ccf0b477479b9d57fadd0a.setContent(html_3e2ea1c4c515d848a3614d0f56e58111);
+            
+        
+
+        marker_8a1f33898bf08c83eb1d637c78778f44.bindPopup(popup_20300b8d54ccf0b477479b9d57fadd0a)
+        ;
+
+        
+    
+    
+            var marker_d522cefeaad94353223731f58624ca60 = L.marker(
+                [49.03814, 3.409302],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_b0a984bca1f831353bbe73cdc8b7d663 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d522cefeaad94353223731f58624ca60.setIcon(icon_b0a984bca1f831353bbe73cdc8b7d663);
+        
+    
+        var popup_c927d877f5d989b844cb0aba57b99a23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c48a7da3d1d4fd783673d895ab5a9352 = $(`<div id="html_c48a7da3d1d4fd783673d895ab5a9352" style="width: 100.0%; height: 100.0%;">Château-Thierry (Château-Thierry)</div>`)[0];
+                popup_c927d877f5d989b844cb0aba57b99a23.setContent(html_c48a7da3d1d4fd783673d895ab5a9352);
+            
+        
+
+        marker_d522cefeaad94353223731f58624ca60.bindPopup(popup_c927d877f5d989b844cb0aba57b99a23)
+        ;
+
+        
+    
+    
+            var marker_3c18b086c67e9937ebe9e452c546e824 = L.marker(
+                [48.9935, 8.4019],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_13dd8c8ac373db1ba7e0116a646b4ac0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c18b086c67e9937ebe9e452c546e824.setIcon(icon_13dd8c8ac373db1ba7e0116a646b4ac0);
+        
+    
+        var popup_a1350f46f56595076ab3dbf2674265be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c54470fbd0128b9203e50c6911cc7e3 = $(`<div id="html_9c54470fbd0128b9203e50c6911cc7e3" style="width: 100.0%; height: 100.0%;">Karlsruhe Hbf (Karlsruhe)</div>`)[0];
+                popup_a1350f46f56595076ab3dbf2674265be.setContent(html_9c54470fbd0128b9203e50c6911cc7e3);
+            
+        
+
+        marker_3c18b086c67e9937ebe9e452c546e824.bindPopup(popup_a1350f46f56595076ab3dbf2674265be)
+        ;
+
+        
+    
+    
+            var marker_c5b9f241a6c4a1516d32297a9ffea78d = L.marker(
+                [48.957301, 2.873823],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_24c372afae59232594254305516ab66d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c5b9f241a6c4a1516d32297a9ffea78d.setIcon(icon_24c372afae59232594254305516ab66d);
+        
+    
+        var popup_a96fafc41884fce3ddc1f5dedb9471d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b125b68957cad439b6b5056f409e9a50 = $(`<div id="html_b125b68957cad439b6b5056f409e9a50" style="width: 100.0%; height: 100.0%;">Meaux (Meaux)</div>`)[0];
+                popup_a96fafc41884fce3ddc1f5dedb9471d6.setContent(html_b125b68957cad439b6b5056f409e9a50);
+            
+        
+
+        marker_c5b9f241a6c4a1516d32297a9ffea78d.bindPopup(popup_a96fafc41884fce3ddc1f5dedb9471d6)
+        ;
+
+        
+    
+    
+            var marker_4a9f5a380ce37bd38cdd924b255778c3 = L.marker(
+                [48.807783, 3.082122],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_c94a90c854570aa3d4f3a0985ee0fb31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a9f5a380ce37bd38cdd924b255778c3.setIcon(icon_c94a90c854570aa3d4f3a0985ee0fb31);
+        
+    
+        var popup_6977510fbc0c474bb94cf38e1d777267 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1272bcf855de0fd81f5064b72264913 = $(`<div id="html_c1272bcf855de0fd81f5064b72264913" style="width: 100.0%; height: 100.0%;">Coulommiers (Coulommiers)</div>`)[0];
+                popup_6977510fbc0c474bb94cf38e1d777267.setContent(html_c1272bcf855de0fd81f5064b72264913);
+            
+        
+
+        marker_4a9f5a380ce37bd38cdd924b255778c3.bindPopup(popup_6977510fbc0c474bb94cf38e1d777267)
+        ;
+
+        
+    
+    
+            var marker_f6e6cb157e4284855479f0d7c9b3fab0 = L.marker(
+                [48.957301, 2.873823],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_97fe5cc28cbc33883e58bc53447f7c29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6e6cb157e4284855479f0d7c9b3fab0.setIcon(icon_97fe5cc28cbc33883e58bc53447f7c29);
+        
+    
+        var popup_1406b1a7ad24919c34d546e45c886b6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8ff4077267e7085dc0497fb8a2b3b66 = $(`<div id="html_e8ff4077267e7085dc0497fb8a2b3b66" style="width: 100.0%; height: 100.0%;">Meaux (Meaux)</div>`)[0];
+                popup_1406b1a7ad24919c34d546e45c886b6b.setContent(html_e8ff4077267e7085dc0497fb8a2b3b66);
+            
+        
+
+        marker_f6e6cb157e4284855479f0d7c9b3fab0.bindPopup(popup_1406b1a7ad24919c34d546e45c886b6b)
+        ;
+
+        
+    
+    
+            var marker_92791bcac8c32d1e25ba87c7f0752605 = L.marker(
+                [47.323411, 5.027256],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_b86ab96f84af738a6b2056ceb802f390 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92791bcac8c32d1e25ba87c7f0752605.setIcon(icon_b86ab96f84af738a6b2056ceb802f390);
+        
+    
+        var popup_7cb8dbb574a898b5c5964b2fd72171c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ebfd70731bd0a8b8853443debe77b60 = $(`<div id="html_2ebfd70731bd0a8b8853443debe77b60" style="width: 100.0%; height: 100.0%;">Dijon (Dijon)</div>`)[0];
+                popup_7cb8dbb574a898b5c5964b2fd72171c4.setContent(html_2ebfd70731bd0a8b8853443debe77b60);
+            
+        
+
+        marker_92791bcac8c32d1e25ba87c7f0752605.bindPopup(popup_7cb8dbb574a898b5c5964b2fd72171c4)
+        ;
+
+        
+    
+    
+            var marker_554423c07dfd4629df387e848476f12e = L.marker(
+                [48.555737, 3.302837],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_8573eb0c438d870e0e20ba711f9e2ebd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_554423c07dfd4629df387e848476f12e.setIcon(icon_8573eb0c438d870e0e20ba711f9e2ebd);
+        
+    
+        var popup_18dce63c2d7b7cc5ae1abb8b5a7e6860 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e36eb9f38a4bff1a87fa9f0b9351a4e7 = $(`<div id="html_e36eb9f38a4bff1a87fa9f0b9351a4e7" style="width: 100.0%; height: 100.0%;">Provins (Provins)</div>`)[0];
+                popup_18dce63c2d7b7cc5ae1abb8b5a7e6860.setContent(html_e36eb9f38a4bff1a87fa9f0b9351a4e7);
+            
+        
+
+        marker_554423c07dfd4629df387e848476f12e.bindPopup(popup_18dce63c2d7b7cc5ae1abb8b5a7e6860)
+        ;
+
+        
+    
+    
+            var marker_7d02fa606cec59e76341476655e38c5f = L.marker(
+                [49.03814, 3.409302],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_9e810c360e24c0aab129ee4f419a4121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7d02fa606cec59e76341476655e38c5f.setIcon(icon_9e810c360e24c0aab129ee4f419a4121);
+        
+    
+        var popup_595a7e4ab6477a45d3aad1c0e8cd8cbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8ca00f440de6fa636e8539f99ec7993 = $(`<div id="html_e8ca00f440de6fa636e8539f99ec7993" style="width: 100.0%; height: 100.0%;">Château-Thierry (Château-Thierry)</div>`)[0];
+                popup_595a7e4ab6477a45d3aad1c0e8cd8cbc.setContent(html_e8ca00f440de6fa636e8539f99ec7993);
+            
+        
+
+        marker_7d02fa606cec59e76341476655e38c5f.bindPopup(popup_595a7e4ab6477a45d3aad1c0e8cd8cbc)
+        ;
+
+        
+    
+    
+            var marker_d428317e9c6758158f5de0afc4dd246a = L.marker(
+                [49.599722, 6.134722],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_317b330f8e489f4a451c746d17f804f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d428317e9c6758158f5de0afc4dd246a.setIcon(icon_317b330f8e489f4a451c746d17f804f9);
+        
+    
+        var popup_4b67fe3f55a0c2cd0f0746e55bc8d7dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df4fe4dc7c74a65ff8908114375fc865 = $(`<div id="html_df4fe4dc7c74a65ff8908114375fc865" style="width: 100.0%; height: 100.0%;">Luxembourg (Luxembourg)</div>`)[0];
+                popup_4b67fe3f55a0c2cd0f0746e55bc8d7dc.setContent(html_df4fe4dc7c74a65ff8908114375fc865);
+            
+        
+
+        marker_d428317e9c6758158f5de0afc4dd246a.bindPopup(popup_4b67fe3f55a0c2cd0f0746e55bc8d7dc)
+        ;
+
+        
+    
+    
+            var marker_354ec6378bf6ff9b0609cdc9eb0d49c3 = L.marker(
+                [48.555737, 3.302837],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_dd483329421bc08c44dddcdf29f61fda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_354ec6378bf6ff9b0609cdc9eb0d49c3.setIcon(icon_dd483329421bc08c44dddcdf29f61fda);
+        
+    
+        var popup_db9436dc034cfaea03f903e54654f380 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8766e2bf1f8b71b8b906836bfe263041 = $(`<div id="html_8766e2bf1f8b71b8b906836bfe263041" style="width: 100.0%; height: 100.0%;">Provins (Provins)</div>`)[0];
+                popup_db9436dc034cfaea03f903e54654f380.setContent(html_8766e2bf1f8b71b8b906836bfe263041);
+            
+        
+
+        marker_354ec6378bf6ff9b0609cdc9eb0d49c3.bindPopup(popup_db9436dc034cfaea03f903e54654f380)
+        ;
+
+        
+    
+    
+            var marker_fb0a8669a95807574bea91e3984d8e71 = L.marker(
+                [49.03814, 3.409302],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_1abdccfe9e247fd4193ad7c2fb75ad31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fb0a8669a95807574bea91e3984d8e71.setIcon(icon_1abdccfe9e247fd4193ad7c2fb75ad31);
+        
+    
+        var popup_cecaf5c465785bdb5e9c393b54d3ed64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17af6c0231783f57527821c0779148b4 = $(`<div id="html_17af6c0231783f57527821c0779148b4" style="width: 100.0%; height: 100.0%;">Château-Thierry (Château-Thierry)</div>`)[0];
+                popup_cecaf5c465785bdb5e9c393b54d3ed64.setContent(html_17af6c0231783f57527821c0779148b4);
+            
+        
+
+        marker_fb0a8669a95807574bea91e3984d8e71.bindPopup(popup_cecaf5c465785bdb5e9c393b54d3ed64)
+        ;
+
+        
+    
+    
+            var marker_903e5c1d1cc630da1d9c0c12e71251de = L.marker(
+                [48.9935, 8.4019],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_d4fb185bcd7782c9abd907c02cbebe74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_903e5c1d1cc630da1d9c0c12e71251de.setIcon(icon_d4fb185bcd7782c9abd907c02cbebe74);
+        
+    
+        var popup_1e486a569e51ea0528f747f95e42cff7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a1d620ce61be7545d06ac29dd2a5fdd = $(`<div id="html_2a1d620ce61be7545d06ac29dd2a5fdd" style="width: 100.0%; height: 100.0%;">Karlsruhe Hbf (Karlsruhe)</div>`)[0];
+                popup_1e486a569e51ea0528f747f95e42cff7.setContent(html_2a1d620ce61be7545d06ac29dd2a5fdd);
+            
+        
+
+        marker_903e5c1d1cc630da1d9c0c12e71251de.bindPopup(popup_1e486a569e51ea0528f747f95e42cff7)
+        ;
+
+        
+    
+    
+            var marker_a2baf6068e49c89f2fc8d6fcbd37120f = L.marker(
+                [48.957301, 2.873823],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_eb5dd49b6d1ec9c32b7db7beaae497d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a2baf6068e49c89f2fc8d6fcbd37120f.setIcon(icon_eb5dd49b6d1ec9c32b7db7beaae497d6);
+        
+    
+        var popup_79e6d437d6473521099fe3170761e2c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7bd42421f549c82404a51923e766ca4 = $(`<div id="html_c7bd42421f549c82404a51923e766ca4" style="width: 100.0%; height: 100.0%;">Meaux (Meaux)</div>`)[0];
+                popup_79e6d437d6473521099fe3170761e2c5.setContent(html_c7bd42421f549c82404a51923e766ca4);
+            
+        
+
+        marker_a2baf6068e49c89f2fc8d6fcbd37120f.bindPopup(popup_79e6d437d6473521099fe3170761e2c5)
+        ;
+
+        
+    
+    
+            var marker_8a50a04cc67aa16bb6037dfcc807bd84 = L.marker(
+                [48.807783, 3.082122],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_5e328daa78770ac24b0b1972f4427816 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a50a04cc67aa16bb6037dfcc807bd84.setIcon(icon_5e328daa78770ac24b0b1972f4427816);
+        
+    
+        var popup_44ef4675c93ebbdf1969a73a76157ff5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2914cb1968c77ac128207563ebbb667d = $(`<div id="html_2914cb1968c77ac128207563ebbb667d" style="width: 100.0%; height: 100.0%;">Coulommiers (Coulommiers)</div>`)[0];
+                popup_44ef4675c93ebbdf1969a73a76157ff5.setContent(html_2914cb1968c77ac128207563ebbb667d);
+            
+        
+
+        marker_8a50a04cc67aa16bb6037dfcc807bd84.bindPopup(popup_44ef4675c93ebbdf1969a73a76157ff5)
+        ;
+
+        
+    
+    
+            var marker_056a18379a86b5be7e130058781002bf = L.marker(
+                [48.957301, 2.873823],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_7a36f5042802c75ceb77ec0fb9713d62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_056a18379a86b5be7e130058781002bf.setIcon(icon_7a36f5042802c75ceb77ec0fb9713d62);
+        
+    
+        var popup_ccc41182077329a6c1f11be3434feb6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a3b9547a25a8526f4c3c0550ae0a70a = $(`<div id="html_9a3b9547a25a8526f4c3c0550ae0a70a" style="width: 100.0%; height: 100.0%;">Meaux (Meaux)</div>`)[0];
+                popup_ccc41182077329a6c1f11be3434feb6e.setContent(html_9a3b9547a25a8526f4c3c0550ae0a70a);
+            
+        
+
+        marker_056a18379a86b5be7e130058781002bf.bindPopup(popup_ccc41182077329a6c1f11be3434feb6e)
+        ;
+
+        
+    
+    
+            var marker_db552d5affdb87a73b1d980326bef80d = L.marker(
+                [47.323411, 5.027256],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_d4ac0e718f7638e2a3c7f490bd48151a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_db552d5affdb87a73b1d980326bef80d.setIcon(icon_d4ac0e718f7638e2a3c7f490bd48151a);
+        
+    
+        var popup_ed8e200f7a36b9babb153061c0c42f44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed8de0768f47ae486ae078d295d51116 = $(`<div id="html_ed8de0768f47ae486ae078d295d51116" style="width: 100.0%; height: 100.0%;">Dijon (Dijon)</div>`)[0];
+                popup_ed8e200f7a36b9babb153061c0c42f44.setContent(html_ed8de0768f47ae486ae078d295d51116);
+            
+        
+
+        marker_db552d5affdb87a73b1d980326bef80d.bindPopup(popup_ed8e200f7a36b9babb153061c0c42f44)
+        ;
+
+        
+    
+    
+            var marker_ce974daff82c5ed6540a260427cbba5b = L.marker(
+                [48.555737, 3.302837],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_608acf290ed982e2fe6ee522d9751dc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ce974daff82c5ed6540a260427cbba5b.setIcon(icon_608acf290ed982e2fe6ee522d9751dc3);
+        
+    
+        var popup_8af96dca2ec0e839f633bd5b51504fc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0b7c898e760387c1665cf22386d963c = $(`<div id="html_d0b7c898e760387c1665cf22386d963c" style="width: 100.0%; height: 100.0%;">Provins (Provins)</div>`)[0];
+                popup_8af96dca2ec0e839f633bd5b51504fc0.setContent(html_d0b7c898e760387c1665cf22386d963c);
+            
+        
+
+        marker_ce974daff82c5ed6540a260427cbba5b.bindPopup(popup_8af96dca2ec0e839f633bd5b51504fc0)
+        ;
+
+        
+    
+    
+            var marker_7036b8c79edaaecf3d3ac2877b404e06 = L.marker(
+                [49.03814, 3.409302],
+                {}
+            ).addTo(map_48a8562730b8199aa5a9c1935f943907);
+        
+    
+            var icon_c0e6f811c504a8c9889137f9037a6d28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7036b8c79edaaecf3d3ac2877b404e06.setIcon(icon_c0e6f811c504a8c9889137f9037a6d28);
+        
+    
+        var popup_af4deb0aa10259570ac346819c671044 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b518737099764049e6433192bf8a6ad = $(`<div id="html_2b518737099764049e6433192bf8a6ad" style="width: 100.0%; height: 100.0%;">Château-Thierry (Château-Thierry)</div>`)[0];
+                popup_af4deb0aa10259570ac346819c671044.setContent(html_2b518737099764049e6433192bf8a6ad);
+            
+        
+
+        marker_7036b8c79edaaecf3d3ac2877b404e06.bindPopup(popup_af4deb0aa10259570ac346819c671044)
+        ;
+
+        
+    
+</script>

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_25660f687d256e9450e93407a9288606 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_25660f687d256e9450e93407a9288606" ></div>
+        
+</body>
+<script>    
+    
+            var map_25660f687d256e9450e93407a9288606 = L.map(
+                "map_25660f687d256e9450e93407a9288606",
+                {
+                    center: [45.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f1cd9dfbd9fed12a6507941e4d079b7a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_ba66ebdac2705aa79ba27d48d99c379b = L.marker(
+                [45.653572, 0.164608],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_3ac90607431490aa4531ade784bc8bc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ba66ebdac2705aa79ba27d48d99c379b.setIcon(icon_3ac90607431490aa4531ade784bc8bc6);
+        
+    
+        var popup_31f559705b8d911e3171d066fe876954 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6bc0f989b9c846bb77087945efdd8bf = $(`<div id="html_a6bc0f989b9c846bb77087945efdd8bf" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux)</div>`)[0];
+                popup_31f559705b8d911e3171d066fe876954.setContent(html_a6bc0f989b9c846bb77087945efdd8bf);
+            
+        
+
+        marker_ba66ebdac2705aa79ba27d48d99c379b.bindPopup(popup_31f559705b8d911e3171d066fe876954)
+        ;
+
+        
+    
+    
+            var marker_38b12b5082cac39240f8f470597b1d98 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_ba9164342a83d493eed47493596b965e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38b12b5082cac39240f8f470597b1d98.setIcon(icon_ba9164342a83d493eed47493596b965e);
+        
+    
+        var popup_4c883cdb5f924262d3397f252d3db686 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b83d2e6977cc7ceb771683296725ea88 = $(`<div id="html_b83d2e6977cc7ceb771683296725ea88" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux) - 108.0 km</div>`)[0];
+                popup_4c883cdb5f924262d3397f252d3db686.setContent(html_b83d2e6977cc7ceb771683296725ea88);
+            
+        
+
+        marker_38b12b5082cac39240f8f470597b1d98.bindPopup(popup_4c883cdb5f924262d3397f252d3db686)
+        ;
+
+        
+    
+    
+            var poly_line_d8fe997890168255f4c2076492cc60ad = L.polyline(
+                [[45.653572, 0.164608], [44.825873, -0.556697]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_83a21a63521dbb40f03d155e7ac86826 = L.marker(
+                [45.625886, -1.016703],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_52cef9cd5a5dad125867a279dbea8f3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83a21a63521dbb40f03d155e7ac86826.setIcon(icon_52cef9cd5a5dad125867a279dbea8f3f);
+        
+    
+        var popup_a2ad2aaeb9d00cad548da008191b71a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4e3a9c02acdf7372dfbc9ae272bed67 = $(`<div id="html_a4e3a9c02acdf7372dfbc9ae272bed67" style="width: 100.0%; height: 100.0%;">Royan (Royan) - 91.9 km</div>`)[0];
+                popup_a2ad2aaeb9d00cad548da008191b71a6.setContent(html_a4e3a9c02acdf7372dfbc9ae272bed67);
+            
+        
+
+        marker_83a21a63521dbb40f03d155e7ac86826.bindPopup(popup_a2ad2aaeb9d00cad548da008191b71a6)
+        ;
+
+        
+    
+    
+            var poly_line_35ae6a8c4b3ceac25ae7cd261fe29318 = L.polyline(
+                [[45.653572, 0.164608], [45.625886, -1.016703]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_a539fdca54bb9148628ba3c2d0f28683 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_f6e8cfc8cb6bc37a2b84d80f8cf7f2d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a539fdca54bb9148628ba3c2d0f28683.setIcon(icon_f6e8cfc8cb6bc37a2b84d80f8cf7f2d5);
+        
+    
+        var popup_76282c010ae2393b874b193ada021431 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee5ce618953855531a5f0719cb6e8430 = $(`<div id="html_ee5ce618953855531a5f0719cb6e8430" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 390.0 km</div>`)[0];
+                popup_76282c010ae2393b874b193ada021431.setContent(html_ee5ce618953855531a5f0719cb6e8430);
+            
+        
+
+        marker_a539fdca54bb9148628ba3c2d0f28683.bindPopup(popup_76282c010ae2393b874b193ada021431)
+        ;
+
+        
+    
+    
+            var poly_line_c14d5847b0372b57bc9db36df39aa551 = L.polyline(
+                [[45.653572, 0.164608], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_3fa507f6f49502cd1f89bdbfa79066bc = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_c201b821df71b76caac4a7cffa8ffa57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3fa507f6f49502cd1f89bdbfa79066bc.setIcon(icon_c201b821df71b76caac4a7cffa8ffa57);
+        
+    
+        var popup_022ab6563bce29e87968a9a9f155e5bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94ae5be83717a014640a834acad4b817 = $(`<div id="html_94ae5be83717a014640a834acad4b817" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux) - 108.0 km</div>`)[0];
+                popup_022ab6563bce29e87968a9a9f155e5bf.setContent(html_94ae5be83717a014640a834acad4b817);
+            
+        
+
+        marker_3fa507f6f49502cd1f89bdbfa79066bc.bindPopup(popup_022ab6563bce29e87968a9a9f155e5bf)
+        ;
+
+        
+    
+    
+            var poly_line_ea6e245ab421c3ed1d283fccc9adb2bf = L.polyline(
+                [[45.653572, 0.164608], [44.825873, -0.556697]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_b7e69b45290b02d270ff79420496e9c8 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_c8f3cf793aedccf0294bcb4023cb817c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b7e69b45290b02d270ff79420496e9c8.setIcon(icon_c8f3cf793aedccf0294bcb4023cb817c);
+        
+    
+        var popup_3c27770b32e224d6f8c1e921b852af16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6080643295aabe2fd87837c31a0f7e5e = $(`<div id="html_6080643295aabe2fd87837c31a0f7e5e" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux) - 108.0 km</div>`)[0];
+                popup_3c27770b32e224d6f8c1e921b852af16.setContent(html_6080643295aabe2fd87837c31a0f7e5e);
+            
+        
+
+        marker_b7e69b45290b02d270ff79420496e9c8.bindPopup(popup_3c27770b32e224d6f8c1e921b852af16)
+        ;
+
+        
+    
+    
+            var poly_line_e760c12e4b27deb7f7422420aa78c83d = L.polyline(
+                [[45.653572, 0.164608], [44.825873, -0.556697]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_acd95d85872d959078878fcca4803b15 = L.marker(
+                [46.582232, 0.333136],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_374037bd23aee619f51f251c55c21190 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_acd95d85872d959078878fcca4803b15.setIcon(icon_374037bd23aee619f51f251c55c21190);
+        
+    
+        var popup_e7f660574d32a09d0a82c1e3a7134d43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f0f5afa1d2f97595b8792a709a69828 = $(`<div id="html_2f0f5afa1d2f97595b8792a709a69828" style="width: 100.0%; height: 100.0%;">Poitiers (Poitiers) - 104.1 km</div>`)[0];
+                popup_e7f660574d32a09d0a82c1e3a7134d43.setContent(html_2f0f5afa1d2f97595b8792a709a69828);
+            
+        
+
+        marker_acd95d85872d959078878fcca4803b15.bindPopup(popup_e7f660574d32a09d0a82c1e3a7134d43)
+        ;
+
+        
+    
+    
+            var poly_line_87a0c1842587d57011ad08c0c170360a = L.polyline(
+                [[45.653572, 0.164608], [46.582232, 0.333136]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_29c66b80852f49d7da34370bb42b5851 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_85f67f9199289f51258dad94d4ff89fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29c66b80852f49d7da34370bb42b5851.setIcon(icon_85f67f9199289f51258dad94d4ff89fc);
+        
+    
+        var popup_5e1bb7517ad700dd17e6c1413227c8e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7955efd2ed4224e2c35a84045072beca = $(`<div id="html_7955efd2ed4224e2c35a84045072beca" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux) - 108.0 km</div>`)[0];
+                popup_5e1bb7517ad700dd17e6c1413227c8e4.setContent(html_7955efd2ed4224e2c35a84045072beca);
+            
+        
+
+        marker_29c66b80852f49d7da34370bb42b5851.bindPopup(popup_5e1bb7517ad700dd17e6c1413227c8e4)
+        ;
+
+        
+    
+    
+            var poly_line_92bf8e2cd7877f2486b83d6b5ca4a39b = L.polyline(
+                [[45.653572, 0.164608], [44.825873, -0.556697]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_bbea2d0743437e6027ebd97ffae9d6e0 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_2eedaf4fb6a76edecfd77d97acb0c917 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bbea2d0743437e6027ebd97ffae9d6e0.setIcon(icon_2eedaf4fb6a76edecfd77d97acb0c917);
+        
+    
+        var popup_89f560069199d839fee3558580e1722a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a2e6b3986cd1e0e3681a772765b4409 = $(`<div id="html_6a2e6b3986cd1e0e3681a772765b4409" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 390.0 km</div>`)[0];
+                popup_89f560069199d839fee3558580e1722a.setContent(html_6a2e6b3986cd1e0e3681a772765b4409);
+            
+        
+
+        marker_bbea2d0743437e6027ebd97ffae9d6e0.bindPopup(popup_89f560069199d839fee3558580e1722a)
+        ;
+
+        
+    
+    
+            var poly_line_65b3f4d5c5f974d3ddd08e7505ec5943 = L.polyline(
+                [[45.653572, 0.164608], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_a5ce9b701e931a320baee70b9988fd5b = L.marker(
+                [45.74874, -0.6179],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_0afa3e6e1c2afa243dcafaa51836c77d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a5ce9b701e931a320baee70b9988fd5b.setIcon(icon_0afa3e6e1c2afa243dcafaa51836c77d);
+        
+    
+        var popup_c71b8203523c223dd5e02a0cc690533f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13c63b8719ac3f85bb1d6d8b0a7dbd8c = $(`<div id="html_13c63b8719ac3f85bb1d6d8b0a7dbd8c" style="width: 100.0%; height: 100.0%;">Saintes (Saintes) - 61.7 km</div>`)[0];
+                popup_c71b8203523c223dd5e02a0cc690533f.setContent(html_13c63b8719ac3f85bb1d6d8b0a7dbd8c);
+            
+        
+
+        marker_a5ce9b701e931a320baee70b9988fd5b.bindPopup(popup_c71b8203523c223dd5e02a0cc690533f)
+        ;
+
+        
+    
+    
+            var poly_line_d3242443cbffbccc2358f3b740a47501 = L.polyline(
+                [[45.653572, 0.164608], [45.74874, -0.6179]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_f3e156115689711eb01866a00d3b0f6a = L.marker(
+                [50.836, 4.336],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_4b7640746d5be5da9f3985aa21526113 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3e156115689711eb01866a00d3b0f6a.setIcon(icon_4b7640746d5be5da9f3985aa21526113);
+        
+    
+        var popup_f89f00b1312b91d66a15dfd59c7a4ccb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_019e4dfb46c470cd66f4ce4d1b9e542d = $(`<div id="html_019e4dfb46c470cd66f4ce4d1b9e542d" style="width: 100.0%; height: 100.0%;">Bruxelles Midi (Saint-Gilles - Sint-Gillis) - 653.6 km</div>`)[0];
+                popup_f89f00b1312b91d66a15dfd59c7a4ccb.setContent(html_019e4dfb46c470cd66f4ce4d1b9e542d);
+            
+        
+
+        marker_f3e156115689711eb01866a00d3b0f6a.bindPopup(popup_f89f00b1312b91d66a15dfd59c7a4ccb)
+        ;
+
+        
+    
+    
+            var poly_line_fd42f699fd4e296f768cc12a2a3377d7 = L.polyline(
+                [[45.653572, 0.164608], [50.836, 4.336]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_500dd3fdc82f9d8e0e9a2d016378e45d = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_7b297b0a36cb64fababcb09063029bb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_500dd3fdc82f9d8e0e9a2d016378e45d.setIcon(icon_7b297b0a36cb64fababcb09063029bb8);
+        
+    
+        var popup_b5f4edeb8ce8c31c212cdd977d8daf25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6d243d5243be016aba88d3190230559 = $(`<div id="html_d6d243d5243be016aba88d3190230559" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux) - 108.0 km</div>`)[0];
+                popup_b5f4edeb8ce8c31c212cdd977d8daf25.setContent(html_d6d243d5243be016aba88d3190230559);
+            
+        
+
+        marker_500dd3fdc82f9d8e0e9a2d016378e45d.bindPopup(popup_b5f4edeb8ce8c31c212cdd977d8daf25)
+        ;
+
+        
+    
+    
+            var poly_line_57d530f57256977bfe462d60368dc46b = L.polyline(
+                [[45.653572, 0.164608], [44.825873, -0.556697]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_e7fe9987acb1c427e4c01a39a9993858 = L.marker(
+                [45.625886, -1.016703],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_40356a9dc3dc2d8159569db509b87f4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e7fe9987acb1c427e4c01a39a9993858.setIcon(icon_40356a9dc3dc2d8159569db509b87f4a);
+        
+    
+        var popup_3c5419501d964f66a93e1e2841e6b6bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8d9c199b28d3c789f3a9ab672e15776 = $(`<div id="html_e8d9c199b28d3c789f3a9ab672e15776" style="width: 100.0%; height: 100.0%;">Royan (Royan) - 91.9 km</div>`)[0];
+                popup_3c5419501d964f66a93e1e2841e6b6bd.setContent(html_e8d9c199b28d3c789f3a9ab672e15776);
+            
+        
+
+        marker_e7fe9987acb1c427e4c01a39a9993858.bindPopup(popup_3c5419501d964f66a93e1e2841e6b6bd)
+        ;
+
+        
+    
+    
+            var poly_line_f335d6f98de3d123be8e0b0396f589b5 = L.polyline(
+                [[45.653572, 0.164608], [45.625886, -1.016703]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_4aa3722d604ed03482294595843f22af = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_dad8cc983c45fe441694336fdcadf472 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4aa3722d604ed03482294595843f22af.setIcon(icon_dad8cc983c45fe441694336fdcadf472);
+        
+    
+        var popup_b4f6d3ab2e0abf0c21b1fc20ed46c6cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ae2722b8c59cfdf6f4d91f74fb4a903 = $(`<div id="html_0ae2722b8c59cfdf6f4d91f74fb4a903" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 390.0 km</div>`)[0];
+                popup_b4f6d3ab2e0abf0c21b1fc20ed46c6cb.setContent(html_0ae2722b8c59cfdf6f4d91f74fb4a903);
+            
+        
+
+        marker_4aa3722d604ed03482294595843f22af.bindPopup(popup_b4f6d3ab2e0abf0c21b1fc20ed46c6cb)
+        ;
+
+        
+    
+    
+            var poly_line_025f2988d4831cba5878cf8aa4b6397c = L.polyline(
+                [[45.653572, 0.164608], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_5c1c82c7f605c6ecf6942928959de260 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_2293e48af59b3db14275d028d768d55e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c1c82c7f605c6ecf6942928959de260.setIcon(icon_2293e48af59b3db14275d028d768d55e);
+        
+    
+        var popup_c4483e0c74a48613e404fbc534996481 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee7be20c2681eab6c217d89dccef8b7a = $(`<div id="html_ee7be20c2681eab6c217d89dccef8b7a" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux) - 108.0 km</div>`)[0];
+                popup_c4483e0c74a48613e404fbc534996481.setContent(html_ee7be20c2681eab6c217d89dccef8b7a);
+            
+        
+
+        marker_5c1c82c7f605c6ecf6942928959de260.bindPopup(popup_c4483e0c74a48613e404fbc534996481)
+        ;
+
+        
+    
+    
+            var poly_line_3a94f50f0a1a695c3f66d902f9dd5199 = L.polyline(
+                [[45.653572, 0.164608], [44.825873, -0.556697]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_3cff473409db2c1019c3406415a0a243 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_90845d75f7068efc226258f5a4a96602 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3cff473409db2c1019c3406415a0a243.setIcon(icon_90845d75f7068efc226258f5a4a96602);
+        
+    
+        var popup_60e3d956ca55b2e8be75668e177c9b04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdfb22d09021f1e93b9d92bd5f38e57d = $(`<div id="html_cdfb22d09021f1e93b9d92bd5f38e57d" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux) - 108.0 km</div>`)[0];
+                popup_60e3d956ca55b2e8be75668e177c9b04.setContent(html_cdfb22d09021f1e93b9d92bd5f38e57d);
+            
+        
+
+        marker_3cff473409db2c1019c3406415a0a243.bindPopup(popup_60e3d956ca55b2e8be75668e177c9b04)
+        ;
+
+        
+    
+    
+            var poly_line_254d20a7f72b65146e7595e77a7b71dd = L.polyline(
+                [[45.653572, 0.164608], [44.825873, -0.556697]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_cff8db8b49db614d56d6d2f04f1670ed = L.marker(
+                [46.582232, 0.333136],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_67765f97b29fe948a656638e172f5bc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cff8db8b49db614d56d6d2f04f1670ed.setIcon(icon_67765f97b29fe948a656638e172f5bc6);
+        
+    
+        var popup_0cd28b13fb3b3046f9552e4205e75a33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7376ba5b6d798a967a4c0e8ef2bd5a82 = $(`<div id="html_7376ba5b6d798a967a4c0e8ef2bd5a82" style="width: 100.0%; height: 100.0%;">Poitiers (Poitiers) - 104.1 km</div>`)[0];
+                popup_0cd28b13fb3b3046f9552e4205e75a33.setContent(html_7376ba5b6d798a967a4c0e8ef2bd5a82);
+            
+        
+
+        marker_cff8db8b49db614d56d6d2f04f1670ed.bindPopup(popup_0cd28b13fb3b3046f9552e4205e75a33)
+        ;
+
+        
+    
+    
+            var poly_line_cba52e29b29fcbe5e082a6db3e93f27a = L.polyline(
+                [[45.653572, 0.164608], [46.582232, 0.333136]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_87e473adfd3ff3ef6c1bf3703e15e600 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_f5d459d071d3ca1f51daa118ebe6ced9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87e473adfd3ff3ef6c1bf3703e15e600.setIcon(icon_f5d459d071d3ca1f51daa118ebe6ced9);
+        
+    
+        var popup_d8ddbe6fc09f5ba11351915e17777b3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4802ca53da53065a2fef2b54ef8d51c = $(`<div id="html_c4802ca53da53065a2fef2b54ef8d51c" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux) - 108.0 km</div>`)[0];
+                popup_d8ddbe6fc09f5ba11351915e17777b3b.setContent(html_c4802ca53da53065a2fef2b54ef8d51c);
+            
+        
+
+        marker_87e473adfd3ff3ef6c1bf3703e15e600.bindPopup(popup_d8ddbe6fc09f5ba11351915e17777b3b)
+        ;
+
+        
+    
+    
+            var poly_line_77632b525b116b1424a84a342bc877f4 = L.polyline(
+                [[45.653572, 0.164608], [44.825873, -0.556697]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_276ebb3ed98b2c2edb724e3996801d50 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_d3db6b1ecc1a8fcfcc171426dc3a446c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_276ebb3ed98b2c2edb724e3996801d50.setIcon(icon_d3db6b1ecc1a8fcfcc171426dc3a446c);
+        
+    
+        var popup_8542a47969dd3a2d5cb581dbddc0c6ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_deb3b94235f72faf1ef6854518368fb0 = $(`<div id="html_deb3b94235f72faf1ef6854518368fb0" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 390.0 km</div>`)[0];
+                popup_8542a47969dd3a2d5cb581dbddc0c6ba.setContent(html_deb3b94235f72faf1ef6854518368fb0);
+            
+        
+
+        marker_276ebb3ed98b2c2edb724e3996801d50.bindPopup(popup_8542a47969dd3a2d5cb581dbddc0c6ba)
+        ;
+
+        
+    
+    
+            var poly_line_83975a1c55a4df3c4afc83b2ef473402 = L.polyline(
+                [[45.653572, 0.164608], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_774a91b94c8aee2640108fef102187fe = L.marker(
+                [45.74874, -0.6179],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_0f4370105a333f10f70eaeafec6cc387 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_774a91b94c8aee2640108fef102187fe.setIcon(icon_0f4370105a333f10f70eaeafec6cc387);
+        
+    
+        var popup_7bd40b1f5dfdf1fa0078050dfb2f89f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd93360aa900e18ba798318f4bc96715 = $(`<div id="html_dd93360aa900e18ba798318f4bc96715" style="width: 100.0%; height: 100.0%;">Saintes (Saintes) - 61.7 km</div>`)[0];
+                popup_7bd40b1f5dfdf1fa0078050dfb2f89f8.setContent(html_dd93360aa900e18ba798318f4bc96715);
+            
+        
+
+        marker_774a91b94c8aee2640108fef102187fe.bindPopup(popup_7bd40b1f5dfdf1fa0078050dfb2f89f8)
+        ;
+
+        
+    
+    
+            var poly_line_f480f551daa981346491f73f0c2c85f6 = L.polyline(
+                [[45.653572, 0.164608], [45.74874, -0.6179]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var marker_b3475a2fe57c815660f1609f5913cbd6 = L.marker(
+                [50.836, 4.336],
+                {}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+    
+            var icon_41cf68ee850f30f9c1bce9acf69fc612 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b3475a2fe57c815660f1609f5913cbd6.setIcon(icon_41cf68ee850f30f9c1bce9acf69fc612);
+        
+    
+        var popup_a229510462e1e8f2cf07372e64778868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d445a0bece33e5a1f8703617cf744389 = $(`<div id="html_d445a0bece33e5a1f8703617cf744389" style="width: 100.0%; height: 100.0%;">Bruxelles Midi (Saint-Gilles - Sint-Gillis) - 653.6 km</div>`)[0];
+                popup_a229510462e1e8f2cf07372e64778868.setContent(html_d445a0bece33e5a1f8703617cf744389);
+            
+        
+
+        marker_b3475a2fe57c815660f1609f5913cbd6.bindPopup(popup_a229510462e1e8f2cf07372e64778868)
+        ;
+
+        
+    
+    
+            var poly_line_b302313c8a8a24e7e64b2d6096d7198e = L.polyline(
+                [[45.653572, 0.164608], [50.836, 4.336]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_25660f687d256e9450e93407a9288606);
+        
+</script>

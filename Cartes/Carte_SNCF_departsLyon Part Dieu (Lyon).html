@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4b505986e8aba799a5b1cd2ad49835e8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4b505986e8aba799a5b1cd2ad49835e8" ></div>
+        
+</body>
+<script>    
+    
+            var map_4b505986e8aba799a5b1cd2ad49835e8 = L.map(
+                "map_4b505986e8aba799a5b1cd2ad49835e8",
+                {
+                    center: [45.954014, 5.342402],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9bdb323d6c892254251e58f97456455c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_0502182c791177df3b9321382472582a = L.marker(
+                [45.760596, 4.859409],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_e161935952c89f3e924761db6b91a094 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0502182c791177df3b9321382472582a.setIcon(icon_e161935952c89f3e924761db6b91a094);
+        
+    
+        var popup_1e2cc57b0e0e5bad870fc6d45f682c95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_170cf8b45beb83703d3044bafb48915d = $(`<div id="html_170cf8b45beb83703d3044bafb48915d" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey)</div>`)[0];
+                popup_1e2cc57b0e0e5bad870fc6d45f682c95.setContent(html_170cf8b45beb83703d3044bafb48915d);
+            
+        
+
+        marker_0502182c791177df3b9321382472582a.bindPopup(popup_1e2cc57b0e0e5bad870fc6d45f682c95)
+        ;
+
+        
+    
+    
+            var marker_b287d7c1d24bebf44da18948b761a5e7 = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_41157cdaf85ef7199f451b57328580d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b287d7c1d24bebf44da18948b761a5e7.setIcon(icon_41157cdaf85ef7199f451b57328580d6);
+        
+    
+        var popup_0168fbae2ade01cf9120291174ea9d22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ade4666b8f194d83139b7180a0195d82 = $(`<div id="html_ade4666b8f194d83139b7180a0195d82" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 26.8 km</div>`)[0];
+                popup_0168fbae2ade01cf9120291174ea9d22.setContent(html_ade4666b8f194d83139b7180a0195d82);
+            
+        
+
+        marker_b287d7c1d24bebf44da18948b761a5e7.bindPopup(popup_0168fbae2ade01cf9120291174ea9d22)
+        ;
+
+        
+    
+    
+            var poly_line_91a62d548ef5797f7e9c1e205e73dec3 = L.polyline(
+                [[45.760596, 4.859409], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_54046b842e51e33a505e81c777d9a4b0 = L.marker(
+                [46.200111, 5.215011],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_896775d9c77b0aeb0a225725d8493921 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_54046b842e51e33a505e81c777d9a4b0.setIcon(icon_896775d9c77b0aeb0a225725d8493921);
+        
+    
+        var popup_01b681cdca0d9ca892b48a402fa773ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2895f36b2624e922eb50c611c6ce93a2 = $(`<div id="html_2895f36b2624e922eb50c611c6ce93a2" style="width: 100.0%; height: 100.0%;">Bourg-en-Bresse (Bourg-en-Bresse) - 51.5 km</div>`)[0];
+                popup_01b681cdca0d9ca892b48a402fa773ac.setContent(html_2895f36b2624e922eb50c611c6ce93a2);
+            
+        
+
+        marker_54046b842e51e33a505e81c777d9a4b0.bindPopup(popup_01b681cdca0d9ca892b48a402fa773ac)
+        ;
+
+        
+    
+    
+            var poly_line_1c039d0f5874960aaed0c8e4120b21f4 = L.polyline(
+                [[45.760596, 4.859409], [46.200111, 5.215011]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_0b4297004b9b11da97b780adbcda1ead = L.marker(
+                [45.688161, 5.909371],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_d3a38ac62bb2d73890c16e1cbcac3c67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0b4297004b9b11da97b780adbcda1ead.setIcon(icon_d3a38ac62bb2d73890c16e1cbcac3c67);
+        
+    
+        var popup_2ecba5d0cc162d355cd689339bacc302 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65b9900fec748021e0d2991fd3a04f2b = $(`<div id="html_65b9900fec748021e0d2991fd3a04f2b" style="width: 100.0%; height: 100.0%;">Aix-les-Bains le Revard (Aix-les-Bains) - 21.5 km</div>`)[0];
+                popup_2ecba5d0cc162d355cd689339bacc302.setContent(html_65b9900fec748021e0d2991fd3a04f2b);
+            
+        
+
+        marker_0b4297004b9b11da97b780adbcda1ead.bindPopup(popup_2ecba5d0cc162d355cd689339bacc302)
+        ;
+
+        
+    
+    
+            var poly_line_95385055ac76241e46999eba0f6a1eb8 = L.polyline(
+                [[45.760596, 4.859409], [45.688161, 5.909371]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_5d3ffed1d4ab01d338072e4268dabc9c = L.marker(
+                [46.039383, 4.063207],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_88b65191da30106e2e4929cf423baa8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d3ffed1d4ab01d338072e4268dabc9c.setIcon(icon_88b65191da30106e2e4929cf423baa8a);
+        
+    
+        var popup_4ba639f82c70c1c829bfcb30e45c9fe6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1979d28f7228bc3e69fc7da019441fcb = $(`<div id="html_1979d28f7228bc3e69fc7da019441fcb" style="width: 100.0%; height: 100.0%;">Roanne (Roanne) - 43.2 km</div>`)[0];
+                popup_4ba639f82c70c1c829bfcb30e45c9fe6.setContent(html_1979d28f7228bc3e69fc7da019441fcb);
+            
+        
+
+        marker_5d3ffed1d4ab01d338072e4268dabc9c.bindPopup(popup_4ba639f82c70c1c829bfcb30e45c9fe6)
+        ;
+
+        
+    
+    
+            var poly_line_5ae0d49089595c18e7467f94a9dc4fa8 = L.polyline(
+                [[45.760596, 4.859409], [46.039383, 4.063207]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_1fffed320b8e9c513c0cd84d278a64d0 = L.marker(
+                [45.192693, 5.714366],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_390792665b8b8e6e017f533eb04d9907 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1fffed320b8e9c513c0cd84d278a64d0.setIcon(icon_390792665b8b8e6e017f533eb04d9907);
+        
+    
+        var popup_2d8f83c7378e6a4d7b3d57803f53bf39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e0badcb91546e0106e76989933ff08c = $(`<div id="html_6e0badcb91546e0106e76989933ff08c" style="width: 100.0%; height: 100.0%;">Grenoble (Grenoble) - 63.5 km</div>`)[0];
+                popup_2d8f83c7378e6a4d7b3d57803f53bf39.setContent(html_6e0badcb91546e0106e76989933ff08c);
+            
+        
+
+        marker_1fffed320b8e9c513c0cd84d278a64d0.bindPopup(popup_2d8f83c7378e6a4d7b3d57803f53bf39)
+        ;
+
+        
+    
+    
+            var poly_line_5dfe2099ac77766175131b0d06092ad6 = L.polyline(
+                [[45.760596, 4.859409], [45.192693, 5.714366]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_97b5ecdbaf75164000fa24d52b424350 = L.marker(
+                [45.191491, 5.714548],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_881657aee36ca05697fe5854fa5af5bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_97b5ecdbaf75164000fa24d52b424350.setIcon(icon_881657aee36ca05697fe5854fa5af5bf);
+        
+    
+        var popup_876281f833e7366160a954c74fa7b159 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10b4121894502f29fbacb6c9e69ac56c = $(`<div id="html_10b4121894502f29fbacb6c9e69ac56c" style="width: 100.0%; height: 100.0%;">Grenoble (Grenoble) - 63.7 km</div>`)[0];
+                popup_876281f833e7366160a954c74fa7b159.setContent(html_10b4121894502f29fbacb6c9e69ac56c);
+            
+        
+
+        marker_97b5ecdbaf75164000fa24d52b424350.bindPopup(popup_876281f833e7366160a954c74fa7b159)
+        ;
+
+        
+    
+    
+            var poly_line_e8ffbfc3a8d6e6970f432b741c6818db = L.polyline(
+                [[45.760596, 4.859409], [45.191491, 5.714548]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_45972c664211dc090711dcaf22391686 = L.marker(
+                [43.941923, 4.805269],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_779aeb3f8722b6d519d26eb4a6d45ddb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45972c664211dc090711dcaf22391686.setIcon(icon_779aeb3f8722b6d519d26eb4a6d45ddb);
+        
+    
+        var popup_32b131452958410707137f51a61221aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ff19882176a52766162a318496691fb = $(`<div id="html_3ff19882176a52766162a318496691fb" style="width: 100.0%; height: 100.0%;">Avignon Centre (Avignon) - 202.1 km</div>`)[0];
+                popup_32b131452958410707137f51a61221aa.setContent(html_3ff19882176a52766162a318496691fb);
+            
+        
+
+        marker_45972c664211dc090711dcaf22391686.bindPopup(popup_32b131452958410707137f51a61221aa)
+        ;
+
+        
+    
+    
+            var poly_line_f7a772eb3411b0697fbd6669192a24c1 = L.polyline(
+                [[45.760596, 4.859409], [43.941923, 4.805269]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_f63667ba9876caa354193b66fc1ee18a = L.marker(
+                [47.247049, 6.021943],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_0e9d589ed6a3cacb2152026adfe2e8ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f63667ba9876caa354193b66fc1ee18a.setIcon(icon_0e9d589ed6a3cacb2152026adfe2e8ed);
+        
+    
+        var popup_30cad09191ab4e50b4b775b866899f3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_434a2b794cf62714770d9bf75d2ed883 = $(`<div id="html_434a2b794cf62714770d9bf75d2ed883" style="width: 100.0%; height: 100.0%;">Besançon Viotte (Besançon) - 195.8 km</div>`)[0];
+                popup_30cad09191ab4e50b4b775b866899f3b.setContent(html_434a2b794cf62714770d9bf75d2ed883);
+            
+        
+
+        marker_f63667ba9876caa354193b66fc1ee18a.bindPopup(popup_30cad09191ab4e50b4b775b866899f3b)
+        ;
+
+        
+    
+    
+            var poly_line_526e34909b29af20fcb62c43843332db = L.polyline(
+                [[45.760596, 4.859409], [47.247049, 6.021943]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_665e74f611a74a31d761ca395400db32 = L.marker(
+                [45.748508, 4.825777],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_af8707acffbf7f05446fec37cf641140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_665e74f611a74a31d761ca395400db32.setIcon(icon_af8707acffbf7f05446fec37cf641140);
+        
+    
+        var popup_297e2b1b8316e6eae67850b7422c5588 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69044eea87bedd051bda8ccc9f834393 = $(`<div id="html_69044eea87bedd051bda8ccc9f834393" style="width: 100.0%; height: 100.0%;">Lyon Perrache (Lyon) - 1.5 km</div>`)[0];
+                popup_297e2b1b8316e6eae67850b7422c5588.setContent(html_69044eea87bedd051bda8ccc9f834393);
+            
+        
+
+        marker_665e74f611a74a31d761ca395400db32.bindPopup(popup_297e2b1b8316e6eae67850b7422c5588)
+        ;
+
+        
+    
+    
+            var poly_line_80b91eb8eb30c4b092b57932946ce291 = L.polyline(
+                [[45.760596, 4.859409], [45.748508, 4.825777]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_2e5319d81432ff57ea2d45633831e294 = L.marker(
+                [45.778945, 3.100543],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_9d6b3102f5e7fa4e3f0e2db77bc3efa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2e5319d81432ff57ea2d45633831e294.setIcon(icon_9d6b3102f5e7fa4e3f0e2db77bc3efa0);
+        
+    
+        var popup_3ea1d130b78e89f59780cc1edbf92f99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0060ad5ab4bfdeca59ad443eff62148e = $(`<div id="html_0060ad5ab4bfdeca59ad443eff62148e" style="width: 100.0%; height: 100.0%;">Clermont-Ferrand (Clermont-Ferrand) - 42.1 km</div>`)[0];
+                popup_3ea1d130b78e89f59780cc1edbf92f99.setContent(html_0060ad5ab4bfdeca59ad443eff62148e);
+            
+        
+
+        marker_2e5319d81432ff57ea2d45633831e294.bindPopup(popup_3ea1d130b78e89f59780cc1edbf92f99)
+        ;
+
+        
+    
+    
+            var poly_line_8fdf43790de448b0b9e9cc47a61a9efa = L.polyline(
+                [[45.760596, 4.859409], [45.778945, 3.100543]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_b63432f137aee74440cd8c08d681f03b = L.marker(
+                [46.21022, 6.14244],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_dd36d1610742641b21626464f23aa82d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b63432f137aee74440cd8c08d681f03b.setIcon(icon_dd36d1610742641b21626464f23aa82d);
+        
+    
+        var popup_c677a015fd36255f59c0ece3b8eb09d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f204dc0c415b3bea127d8421276c111 = $(`<div id="html_8f204dc0c415b3bea127d8421276c111" style="width: 100.0%; height: 100.0%;">Genève (Genève) - 77.9 km</div>`)[0];
+                popup_c677a015fd36255f59c0ece3b8eb09d5.setContent(html_8f204dc0c415b3bea127d8421276c111);
+            
+        
+
+        marker_b63432f137aee74440cd8c08d681f03b.bindPopup(popup_c677a015fd36255f59c0ece3b8eb09d5)
+        ;
+
+        
+    
+    
+            var poly_line_c3019ce9e3c59cedf9c5df331602bf74 = L.polyline(
+                [[45.760596, 4.859409], [46.21022, 6.14244]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_68314bb1ebf237c6422dd6ef10fcd192 = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_5db4c0956d16ed29476c6d1cd7c95231 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_68314bb1ebf237c6422dd6ef10fcd192.setIcon(icon_5db4c0956d16ed29476c6d1cd7c95231);
+        
+    
+        var popup_ee544d06448d0f19b0e96f337a1f96a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69a174260c908f710c622302dda352e5 = $(`<div id="html_69a174260c908f710c622302dda352e5" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 26.8 km</div>`)[0];
+                popup_ee544d06448d0f19b0e96f337a1f96a1.setContent(html_69a174260c908f710c622302dda352e5);
+            
+        
+
+        marker_68314bb1ebf237c6422dd6ef10fcd192.bindPopup(popup_ee544d06448d0f19b0e96f337a1f96a1)
+        ;
+
+        
+    
+    
+            var poly_line_821d152d5196431c5a18e1fa56f4908c = L.polyline(
+                [[45.760596, 4.859409], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_a3254421344c02d59825890a987ddd47 = L.marker(
+                [46.200111, 5.215011],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_df15719725e1a759b08790b0bc02215d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3254421344c02d59825890a987ddd47.setIcon(icon_df15719725e1a759b08790b0bc02215d);
+        
+    
+        var popup_b3e79b0946feabefbe708d3219acebe7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db4fa7adf14e22a1bb7df0d0c461e46a = $(`<div id="html_db4fa7adf14e22a1bb7df0d0c461e46a" style="width: 100.0%; height: 100.0%;">Bourg-en-Bresse (Bourg-en-Bresse) - 51.5 km</div>`)[0];
+                popup_b3e79b0946feabefbe708d3219acebe7.setContent(html_db4fa7adf14e22a1bb7df0d0c461e46a);
+            
+        
+
+        marker_a3254421344c02d59825890a987ddd47.bindPopup(popup_b3e79b0946feabefbe708d3219acebe7)
+        ;
+
+        
+    
+    
+            var poly_line_54b5e7a3603564bee6821a81780f307c = L.polyline(
+                [[45.760596, 4.859409], [46.200111, 5.215011]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_0172662203a79630cb4d4a02bd41293c = L.marker(
+                [45.688161, 5.909371],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_d9e63500715211199c5ffb1a69ca2ccc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0172662203a79630cb4d4a02bd41293c.setIcon(icon_d9e63500715211199c5ffb1a69ca2ccc);
+        
+    
+        var popup_5b2b35a2369c90b587210ff011721a6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d2cdfd135f67b7abd726a4b58b75d47 = $(`<div id="html_7d2cdfd135f67b7abd726a4b58b75d47" style="width: 100.0%; height: 100.0%;">Aix-les-Bains le Revard (Aix-les-Bains) - 21.5 km</div>`)[0];
+                popup_5b2b35a2369c90b587210ff011721a6a.setContent(html_7d2cdfd135f67b7abd726a4b58b75d47);
+            
+        
+
+        marker_0172662203a79630cb4d4a02bd41293c.bindPopup(popup_5b2b35a2369c90b587210ff011721a6a)
+        ;
+
+        
+    
+    
+            var poly_line_2b73798dc86fddb2707064b9e5237529 = L.polyline(
+                [[45.760596, 4.859409], [45.688161, 5.909371]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_1b41a74d6f8393fada48a4eab8e22cf3 = L.marker(
+                [46.039383, 4.063207],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_ec9b62c0e25ae91b18dc2f86a8f5c17d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b41a74d6f8393fada48a4eab8e22cf3.setIcon(icon_ec9b62c0e25ae91b18dc2f86a8f5c17d);
+        
+    
+        var popup_5ceac59ad694f75e94576851c7872f32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e281c789619789b2cb1cf1e692f10812 = $(`<div id="html_e281c789619789b2cb1cf1e692f10812" style="width: 100.0%; height: 100.0%;">Roanne (Roanne) - 43.2 km</div>`)[0];
+                popup_5ceac59ad694f75e94576851c7872f32.setContent(html_e281c789619789b2cb1cf1e692f10812);
+            
+        
+
+        marker_1b41a74d6f8393fada48a4eab8e22cf3.bindPopup(popup_5ceac59ad694f75e94576851c7872f32)
+        ;
+
+        
+    
+    
+            var poly_line_132bd1f82e3d48955b2b9692ef58d928 = L.polyline(
+                [[45.760596, 4.859409], [46.039383, 4.063207]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_bb237ac25fe9589517027c1196eb1d03 = L.marker(
+                [45.192693, 5.714366],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_b0fc1cdc264ebcb9f3ae37ef4c76a97e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb237ac25fe9589517027c1196eb1d03.setIcon(icon_b0fc1cdc264ebcb9f3ae37ef4c76a97e);
+        
+    
+        var popup_d0089d64a659dee3674d3e325bde4f7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7fbd0698e24bfb3c5b5cb486d74a6d3 = $(`<div id="html_b7fbd0698e24bfb3c5b5cb486d74a6d3" style="width: 100.0%; height: 100.0%;">Grenoble (Grenoble) - 63.5 km</div>`)[0];
+                popup_d0089d64a659dee3674d3e325bde4f7c.setContent(html_b7fbd0698e24bfb3c5b5cb486d74a6d3);
+            
+        
+
+        marker_bb237ac25fe9589517027c1196eb1d03.bindPopup(popup_d0089d64a659dee3674d3e325bde4f7c)
+        ;
+
+        
+    
+    
+            var poly_line_47e9c960c76ac4437186a0fd88199a04 = L.polyline(
+                [[45.760596, 4.859409], [45.192693, 5.714366]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_082477df204ee0b632f429fb3036557a = L.marker(
+                [45.191491, 5.714548],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_9140e3444242f8e945e4af8b6a02230c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_082477df204ee0b632f429fb3036557a.setIcon(icon_9140e3444242f8e945e4af8b6a02230c);
+        
+    
+        var popup_1ea98c6578e91da3b695d5ec45deaf3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2082e3f29f77e2442bdf6787584e9c45 = $(`<div id="html_2082e3f29f77e2442bdf6787584e9c45" style="width: 100.0%; height: 100.0%;">Grenoble (Grenoble) - 63.7 km</div>`)[0];
+                popup_1ea98c6578e91da3b695d5ec45deaf3a.setContent(html_2082e3f29f77e2442bdf6787584e9c45);
+            
+        
+
+        marker_082477df204ee0b632f429fb3036557a.bindPopup(popup_1ea98c6578e91da3b695d5ec45deaf3a)
+        ;
+
+        
+    
+    
+            var poly_line_636f2dd247da8bbaf6e3f71bd7ebafc9 = L.polyline(
+                [[45.760596, 4.859409], [45.191491, 5.714548]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_5a5bfbc20926567c5ab74be01c514d98 = L.marker(
+                [43.941923, 4.805269],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_aa6722c760d41ae2c10a268d5f4f6b68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a5bfbc20926567c5ab74be01c514d98.setIcon(icon_aa6722c760d41ae2c10a268d5f4f6b68);
+        
+    
+        var popup_73b2db1a8eb60372d2af332734922b55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_388fdc21c25189e888c620fd6f894382 = $(`<div id="html_388fdc21c25189e888c620fd6f894382" style="width: 100.0%; height: 100.0%;">Avignon Centre (Avignon) - 202.1 km</div>`)[0];
+                popup_73b2db1a8eb60372d2af332734922b55.setContent(html_388fdc21c25189e888c620fd6f894382);
+            
+        
+
+        marker_5a5bfbc20926567c5ab74be01c514d98.bindPopup(popup_73b2db1a8eb60372d2af332734922b55)
+        ;
+
+        
+    
+    
+            var poly_line_b24354758790df2165748095275686db = L.polyline(
+                [[45.760596, 4.859409], [43.941923, 4.805269]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_efa96d3276e54aa938db857ef171f9c0 = L.marker(
+                [47.247049, 6.021943],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_0f0fed8171a4062129a59a87dff9250a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_efa96d3276e54aa938db857ef171f9c0.setIcon(icon_0f0fed8171a4062129a59a87dff9250a);
+        
+    
+        var popup_8601e27094ce2e5a6a8924edb99f040f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e941d5e75da0b58f920d3436552405b = $(`<div id="html_7e941d5e75da0b58f920d3436552405b" style="width: 100.0%; height: 100.0%;">Besançon Viotte (Besançon) - 195.8 km</div>`)[0];
+                popup_8601e27094ce2e5a6a8924edb99f040f.setContent(html_7e941d5e75da0b58f920d3436552405b);
+            
+        
+
+        marker_efa96d3276e54aa938db857ef171f9c0.bindPopup(popup_8601e27094ce2e5a6a8924edb99f040f)
+        ;
+
+        
+    
+    
+            var poly_line_f602bd5183a5b71250ee66b0de2f7e10 = L.polyline(
+                [[45.760596, 4.859409], [47.247049, 6.021943]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_08503f52d8c284fc357caa1ef4365660 = L.marker(
+                [45.748508, 4.825777],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_860c44684f2c1c3e3eea7ca3eced26d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_08503f52d8c284fc357caa1ef4365660.setIcon(icon_860c44684f2c1c3e3eea7ca3eced26d7);
+        
+    
+        var popup_fca697c02529ca9df0693727ef007254 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f54456b88f0fa72ac29c12808501cd4 = $(`<div id="html_4f54456b88f0fa72ac29c12808501cd4" style="width: 100.0%; height: 100.0%;">Lyon Perrache (Lyon) - 1.5 km</div>`)[0];
+                popup_fca697c02529ca9df0693727ef007254.setContent(html_4f54456b88f0fa72ac29c12808501cd4);
+            
+        
+
+        marker_08503f52d8c284fc357caa1ef4365660.bindPopup(popup_fca697c02529ca9df0693727ef007254)
+        ;
+
+        
+    
+    
+            var poly_line_dacd336279540b66b1fe323c6355aa92 = L.polyline(
+                [[45.760596, 4.859409], [45.748508, 4.825777]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_aa02884a4b7953e6a242e205a117a9fd = L.marker(
+                [45.778945, 3.100543],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_a23f83e40d9b348482d79a026e3f9a90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa02884a4b7953e6a242e205a117a9fd.setIcon(icon_a23f83e40d9b348482d79a026e3f9a90);
+        
+    
+        var popup_21c0503c3fd33720d200c099e7ef67db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b522b4dc532d1331a23f9e1016c2668 = $(`<div id="html_8b522b4dc532d1331a23f9e1016c2668" style="width: 100.0%; height: 100.0%;">Clermont-Ferrand (Clermont-Ferrand) - 42.1 km</div>`)[0];
+                popup_21c0503c3fd33720d200c099e7ef67db.setContent(html_8b522b4dc532d1331a23f9e1016c2668);
+            
+        
+
+        marker_aa02884a4b7953e6a242e205a117a9fd.bindPopup(popup_21c0503c3fd33720d200c099e7ef67db)
+        ;
+
+        
+    
+    
+            var poly_line_d85dbe0135787ba32df6f6b167ae468e = L.polyline(
+                [[45.760596, 4.859409], [45.778945, 3.100543]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var marker_29f38bd2cc887641c858c6a678df884b = L.marker(
+                [46.21022, 6.14244],
+                {}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+    
+            var icon_dc64454ee98acb13c260094858926d56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_29f38bd2cc887641c858c6a678df884b.setIcon(icon_dc64454ee98acb13c260094858926d56);
+        
+    
+        var popup_a43b1798247f0662fb13669e5f4b18d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_189db25b07467dd757fbcfdb04df18dd = $(`<div id="html_189db25b07467dd757fbcfdb04df18dd" style="width: 100.0%; height: 100.0%;">Genève (Genève) - 77.9 km</div>`)[0];
+                popup_a43b1798247f0662fb13669e5f4b18d3.setContent(html_189db25b07467dd757fbcfdb04df18dd);
+            
+        
+
+        marker_29f38bd2cc887641c858c6a678df884b.bindPopup(popup_a43b1798247f0662fb13669e5f4b18d3)
+        ;
+
+        
+    
+    
+            var poly_line_9edb867363a2c77ec7a322d51731ee98 = L.polyline(
+                [[45.760596, 4.859409], [46.21022, 6.14244]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4b505986e8aba799a5b1cd2ad49835e8);
+        
+</script>

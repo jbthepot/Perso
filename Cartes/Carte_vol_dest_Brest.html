@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_69d1dc6f7d62fb1149dcf063940f7468 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_69d1dc6f7d62fb1149dcf063940f7468" ></div>
+        
+</body>
+<script>    
+    
+            var map_69d1dc6f7d62fb1149dcf063940f7468 = L.map(
+                "map_69d1dc6f7d62fb1149dcf063940f7468",
+                {
+                    center: [45.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b4440dd85e637fe4ef21785e77b400df = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_e321f6968a7ec7e852aa1809dfca9978 = L.marker(
+                [48.447222, -4.421667],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_cfc6315fb1af2d520693df24e57fef05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e321f6968a7ec7e852aa1809dfca9978.setIcon(icon_cfc6315fb1af2d520693df24e57fef05);
+        
+    
+        var popup_1b8777d78f8a13cd1fb4f6eefa825548 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e794d1a74f50bedef27d6a6f2067e6d1 = $(`<div id="html_e794d1a74f50bedef27d6a6f2067e6d1" style="width: 100.0%; height: 100.0%;">Brest Bretagne</div>`)[0];
+                popup_1b8777d78f8a13cd1fb4f6eefa825548.setContent(html_e794d1a74f50bedef27d6a6f2067e6d1);
+            
+        
+
+        marker_e321f6968a7ec7e852aa1809dfca9978.bindPopup(popup_1b8777d78f8a13cd1fb4f6eefa825548)
+        ;
+
+        
+    
+    
+            var marker_15b1d0efad2ebe208d082a47bd7e6a12 = L.marker(
+                [43.436667, 5.215],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_f9ef8b4c298da50d8e3a5e415e0fce06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_15b1d0efad2ebe208d082a47bd7e6a12.setIcon(icon_f9ef8b4c298da50d8e3a5e415e0fce06);
+        
+    
+        var popup_8bfabcda844f061526864764aaf6cecb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc0a226b777bc2b116883e2a36618a53 = $(`<div id="html_cc0a226b777bc2b116883e2a36618a53" style="width: 100.0%; height: 100.0%;">Marseille</div>`)[0];
+                popup_8bfabcda844f061526864764aaf6cecb.setContent(html_cc0a226b777bc2b116883e2a36618a53);
+            
+        
+
+        marker_15b1d0efad2ebe208d082a47bd7e6a12.bindPopup(popup_8bfabcda844f061526864764aaf6cecb)
+        ;
+
+        
+    
+    
+            var poly_line_5d0a934623356d2b88b4a4337b544fc4 = L.polyline(
+                [[48.447222, -4.421667], [43.436667, 5.215]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_06d1a73910ede6d84990e42ad1ea3de1 = L.marker(
+                [41.235556, -8.678056],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_e2eee2a2edd88996429e466c83424429 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_06d1a73910ede6d84990e42ad1ea3de1.setIcon(icon_e2eee2a2edd88996429e466c83424429);
+        
+    
+        var popup_3b37ed8ea9e56ef7437fccfb408a13f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0b1ba6c6c4396d63bb5927340f2e63b = $(`<div id="html_d0b1ba6c6c4396d63bb5927340f2e63b" style="width: 100.0%; height: 100.0%;">Porto</div>`)[0];
+                popup_3b37ed8ea9e56ef7437fccfb408a13f6.setContent(html_d0b1ba6c6c4396d63bb5927340f2e63b);
+            
+        
+
+        marker_06d1a73910ede6d84990e42ad1ea3de1.bindPopup(popup_3b37ed8ea9e56ef7437fccfb408a13f6)
+        ;
+
+        
+    
+    
+            var poly_line_c1d1412a3b5669d587497cc6181bd3f5 = L.polyline(
+                [[48.447222, -4.421667], [41.235556, -8.678056]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_1eb02638dc7b2049454157788d3a3a30 = L.marker(
+                [35.8575, 14.4775],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_b7a16c40954a95dc081ec1637e320a94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1eb02638dc7b2049454157788d3a3a30.setIcon(icon_b7a16c40954a95dc081ec1637e320a94);
+        
+    
+        var popup_33149b121f2264c4b308dc553b5f7663 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0270bee785d18773ae5003e055719fa8 = $(`<div id="html_0270bee785d18773ae5003e055719fa8" style="width: 100.0%; height: 100.0%;">Malta</div>`)[0];
+                popup_33149b121f2264c4b308dc553b5f7663.setContent(html_0270bee785d18773ae5003e055719fa8);
+            
+        
+
+        marker_1eb02638dc7b2049454157788d3a3a30.bindPopup(popup_33149b121f2264c4b308dc553b5f7663)
+        ;
+
+        
+    
+    
+            var poly_line_20a833eaf766bfcd0e936821d4d6c7a3 = L.polyline(
+                [[48.447222, -4.421667], [35.8575, 14.4775]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_27c2f51aaf78ebf9dd28afe41525d8bf = L.marker(
+                [40.493611, -3.566667],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_3a1e73097b5e3aebcf20841259f472d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_27c2f51aaf78ebf9dd28afe41525d8bf.setIcon(icon_3a1e73097b5e3aebcf20841259f472d9);
+        
+    
+        var popup_78f73691a61e61c832e88968b3678078 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df343ab5dbc90348f777ca6dbf7047f7 = $(`<div id="html_df343ab5dbc90348f777ca6dbf7047f7" style="width: 100.0%; height: 100.0%;">Madrid</div>`)[0];
+                popup_78f73691a61e61c832e88968b3678078.setContent(html_df343ab5dbc90348f777ca6dbf7047f7);
+            
+        
+
+        marker_27c2f51aaf78ebf9dd28afe41525d8bf.bindPopup(popup_78f73691a61e61c832e88968b3678078)
+        ;
+
+        
+    
+    
+            var poly_line_7a9b794e0102da96d7fd0d57aaa6fe17 = L.polyline(
+                [[48.447222, -4.421667], [40.493611, -3.566667]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_1520ebc722841d912054744633caa449 = L.marker(
+                [41.800278, 12.238889],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_e9de306a76ab285077236c2d72e2f73a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1520ebc722841d912054744633caa449.setIcon(icon_e9de306a76ab285077236c2d72e2f73a);
+        
+    
+        var popup_891de43b08976c6a8b5e2c481ac5627d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bb200982a4dbfcab63bcec3745eb448 = $(`<div id="html_0bb200982a4dbfcab63bcec3745eb448" style="width: 100.0%; height: 100.0%;">Rome</div>`)[0];
+                popup_891de43b08976c6a8b5e2c481ac5627d.setContent(html_0bb200982a4dbfcab63bcec3745eb448);
+            
+        
+
+        marker_1520ebc722841d912054744633caa449.bindPopup(popup_891de43b08976c6a8b5e2c481ac5627d)
+        ;
+
+        
+    
+    
+            var poly_line_ce5cd9c181559b29e2c2e2a51e73d550 = L.polyline(
+                [[48.447222, -4.421667], [41.800278, 12.238889]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_a325451792bd0f08c19f8f429dd9d500 = L.marker(
+                [51.4775, -0.461389],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_b937df9f2d1b454a4ae34d7001128a67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a325451792bd0f08c19f8f429dd9d500.setIcon(icon_b937df9f2d1b454a4ae34d7001128a67);
+        
+    
+        var popup_8b56b5de19a853a3700ee8385de7fd53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c573ef5611d08ddb8c08188e1a929a67 = $(`<div id="html_c573ef5611d08ddb8c08188e1a929a67" style="width: 100.0%; height: 100.0%;">London</div>`)[0];
+                popup_8b56b5de19a853a3700ee8385de7fd53.setContent(html_c573ef5611d08ddb8c08188e1a929a67);
+            
+        
+
+        marker_a325451792bd0f08c19f8f429dd9d500.bindPopup(popup_8b56b5de19a853a3700ee8385de7fd53)
+        ;
+
+        
+    
+    
+            var poly_line_2b6dd1605dacd3025123bd525e87b7c5 = L.polyline(
+                [[48.447222, -4.421667], [51.4775, -0.461389]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_94fb8982691452b2fd77135361cd94fa = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_c24e7faf17c93bfb9acd776b5d7fd4a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94fb8982691452b2fd77135361cd94fa.setIcon(icon_c24e7faf17c93bfb9acd776b5d7fd4a8);
+        
+    
+        var popup_c3a8d8ad1ae1b12a022ca108d878a76c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53c2d44f1ca97a4f3c82f86d9fa0bd4f = $(`<div id="html_53c2d44f1ca97a4f3c82f86d9fa0bd4f" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_c3a8d8ad1ae1b12a022ca108d878a76c.setContent(html_53c2d44f1ca97a4f3c82f86d9fa0bd4f);
+            
+        
+
+        marker_94fb8982691452b2fd77135361cd94fa.bindPopup(popup_c3a8d8ad1ae1b12a022ca108d878a76c)
+        ;
+
+        
+    
+    
+            var poly_line_09442a1ef56afedbf53d097ad074bfb4 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_4b220e68787c7395cecf2550c3782a01 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_0a9451211a8aec0064d14b40012a4c69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b220e68787c7395cecf2550c3782a01.setIcon(icon_0a9451211a8aec0064d14b40012a4c69);
+        
+    
+        var popup_17f654936b491f38246c83dd8f883e9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_656ea868fbf9240b010c02b68c9ff25c = $(`<div id="html_656ea868fbf9240b010c02b68c9ff25c" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_17f654936b491f38246c83dd8f883e9f.setContent(html_656ea868fbf9240b010c02b68c9ff25c);
+            
+        
+
+        marker_4b220e68787c7395cecf2550c3782a01.bindPopup(popup_17f654936b491f38246c83dd8f883e9f)
+        ;
+
+        
+    
+    
+            var poly_line_35ea69ea8a39d6a2707ee31704cdca88 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_13e1e4b4f45cbda7c592da98fa0ac98e = L.marker(
+                [45.449444, 9.278333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_ef642e5b368a67c2537cd87974a8922d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13e1e4b4f45cbda7c592da98fa0ac98e.setIcon(icon_ef642e5b368a67c2537cd87974a8922d);
+        
+    
+        var popup_4981707d2633614203ef99aa6950737a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f5801735c0c70ef33345a623ab0ef14 = $(`<div id="html_1f5801735c0c70ef33345a623ab0ef14" style="width: 100.0%; height: 100.0%;">Milan</div>`)[0];
+                popup_4981707d2633614203ef99aa6950737a.setContent(html_1f5801735c0c70ef33345a623ab0ef14);
+            
+        
+
+        marker_13e1e4b4f45cbda7c592da98fa0ac98e.bindPopup(popup_4981707d2633614203ef99aa6950737a)
+        ;
+
+        
+    
+    
+            var poly_line_b3dda75b13ece43e33ac279df12aeb29 = L.polyline(
+                [[48.447222, -4.421667], [45.449444, 9.278333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_10f3d8ef15db4dbe103f43abf2a66c22 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_a850b19c121f21f177f0496433390065 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10f3d8ef15db4dbe103f43abf2a66c22.setIcon(icon_a850b19c121f21f177f0496433390065);
+        
+    
+        var popup_628a58e07a0da53a6cca0331d01ff1d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd191b2fb7d3e03f7d177a9f85f54edf = $(`<div id="html_bd191b2fb7d3e03f7d177a9f85f54edf" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_628a58e07a0da53a6cca0331d01ff1d7.setContent(html_bd191b2fb7d3e03f7d177a9f85f54edf);
+            
+        
+
+        marker_10f3d8ef15db4dbe103f43abf2a66c22.bindPopup(popup_628a58e07a0da53a6cca0331d01ff1d7)
+        ;
+
+        
+    
+    
+            var poly_line_dafda50e30cec179d83066755b921272 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_21259f9179d2edef92e55fdd92a7c82d = L.marker(
+                [41.235556, -8.678056],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_13b4c31877058d695ba51fae3c9ee121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21259f9179d2edef92e55fdd92a7c82d.setIcon(icon_13b4c31877058d695ba51fae3c9ee121);
+        
+    
+        var popup_4b74d3a4f4c721a7435c337de8396219 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa482f0f1386479cae2eb1ef6095cf9c = $(`<div id="html_aa482f0f1386479cae2eb1ef6095cf9c" style="width: 100.0%; height: 100.0%;">Porto</div>`)[0];
+                popup_4b74d3a4f4c721a7435c337de8396219.setContent(html_aa482f0f1386479cae2eb1ef6095cf9c);
+            
+        
+
+        marker_21259f9179d2edef92e55fdd92a7c82d.bindPopup(popup_4b74d3a4f4c721a7435c337de8396219)
+        ;
+
+        
+    
+    
+            var poly_line_be0c4c2fa478a97d8db41c9c8e8ae415 = L.polyline(
+                [[48.447222, -4.421667], [41.235556, -8.678056]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_9bbdb960bfe3b0e97c6e74bb83c7dbcf = L.marker(
+                [41.235556, -8.678056],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_7f31cc6a64ffd15c9b3939642567dec9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9bbdb960bfe3b0e97c6e74bb83c7dbcf.setIcon(icon_7f31cc6a64ffd15c9b3939642567dec9);
+        
+    
+        var popup_476b0410ac08a5497a85392c5880a3e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09e9e0dbed453cab1acbda6f1bd285f1 = $(`<div id="html_09e9e0dbed453cab1acbda6f1bd285f1" style="width: 100.0%; height: 100.0%;">Porto</div>`)[0];
+                popup_476b0410ac08a5497a85392c5880a3e8.setContent(html_09e9e0dbed453cab1acbda6f1bd285f1);
+            
+        
+
+        marker_9bbdb960bfe3b0e97c6e74bb83c7dbcf.bindPopup(popup_476b0410ac08a5497a85392c5880a3e8)
+        ;
+
+        
+    
+    
+            var poly_line_b3accec33f0bce3935715f1c16e921e7 = L.polyline(
+                [[48.447222, -4.421667], [41.235556, -8.678056]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_a9ecc9dc579399c264f9b358fffc758a = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_f73830016b22a2750e3f4b9051672b79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9ecc9dc579399c264f9b358fffc758a.setIcon(icon_f73830016b22a2750e3f4b9051672b79);
+        
+    
+        var popup_6881303b1e3664e0cef1d42e2ffb7cd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5331a085c10b7d5351c2a60b727f163c = $(`<div id="html_5331a085c10b7d5351c2a60b727f163c" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_6881303b1e3664e0cef1d42e2ffb7cd2.setContent(html_5331a085c10b7d5351c2a60b727f163c);
+            
+        
+
+        marker_a9ecc9dc579399c264f9b358fffc758a.bindPopup(popup_6881303b1e3664e0cef1d42e2ffb7cd2)
+        ;
+
+        
+    
+    
+            var poly_line_ad7dbd1578753b906bdec423948d35b6 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_278bdf430e8212b9e4686e00423a4bfd = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_391b857af14128605164aaa0d9bbaeed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_278bdf430e8212b9e4686e00423a4bfd.setIcon(icon_391b857af14128605164aaa0d9bbaeed);
+        
+    
+        var popup_90768f6d7dae21ec7a2b007705fe4266 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e048e5a935c0850a867e1e3c86690cc = $(`<div id="html_7e048e5a935c0850a867e1e3c86690cc" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_90768f6d7dae21ec7a2b007705fe4266.setContent(html_7e048e5a935c0850a867e1e3c86690cc);
+            
+        
+
+        marker_278bdf430e8212b9e4686e00423a4bfd.bindPopup(popup_90768f6d7dae21ec7a2b007705fe4266)
+        ;
+
+        
+    
+    
+            var poly_line_cd31c525e1aecd99ff9401c254bdc96c = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_753607dfd70ee67d33dc7f954b8dd677 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_504c04a960b4af9ffa6c164f96019c8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_753607dfd70ee67d33dc7f954b8dd677.setIcon(icon_504c04a960b4af9ffa6c164f96019c8d);
+        
+    
+        var popup_4ddcf2e08eb194684ee227729e84531f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ae604363229a6435d6258a4c7eccc1f = $(`<div id="html_6ae604363229a6435d6258a4c7eccc1f" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_4ddcf2e08eb194684ee227729e84531f.setContent(html_6ae604363229a6435d6258a4c7eccc1f);
+            
+        
+
+        marker_753607dfd70ee67d33dc7f954b8dd677.bindPopup(popup_4ddcf2e08eb194684ee227729e84531f)
+        ;
+
+        
+    
+    
+            var poly_line_f62f46d440cf868732814323d8a95889 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_2b3c7b590d19e6b01e1bc41f0a9230c6 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_4f2639644462fbe2f9e7e621cd7d129b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b3c7b590d19e6b01e1bc41f0a9230c6.setIcon(icon_4f2639644462fbe2f9e7e621cd7d129b);
+        
+    
+        var popup_b6a4d54ca4c51f2c1c7f2109ac03973c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9840341b0dd056e023c20028d4d9ccc = $(`<div id="html_f9840341b0dd056e023c20028d4d9ccc" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_b6a4d54ca4c51f2c1c7f2109ac03973c.setContent(html_f9840341b0dd056e023c20028d4d9ccc);
+            
+        
+
+        marker_2b3c7b590d19e6b01e1bc41f0a9230c6.bindPopup(popup_b6a4d54ca4c51f2c1c7f2109ac03973c)
+        ;
+
+        
+    
+    
+            var poly_line_2a9a19b4b4d19537e068e72c9d016cb0 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_34fc5dd3b1bd122e754e86232e7d4b4a = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_7d1f0d7ecdf7b511121b88c89c449fd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34fc5dd3b1bd122e754e86232e7d4b4a.setIcon(icon_7d1f0d7ecdf7b511121b88c89c449fd6);
+        
+    
+        var popup_9528b0e9d89be97c38aa9eaeeb534a14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f586ee7c800200f3fb1016a47713ea6 = $(`<div id="html_4f586ee7c800200f3fb1016a47713ea6" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_9528b0e9d89be97c38aa9eaeeb534a14.setContent(html_4f586ee7c800200f3fb1016a47713ea6);
+            
+        
+
+        marker_34fc5dd3b1bd122e754e86232e7d4b4a.bindPopup(popup_9528b0e9d89be97c38aa9eaeeb534a14)
+        ;
+
+        
+    
+    
+            var poly_line_0725849730e9ad186a097d265e654a33 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_2b706e403f0d60d7b2126dde4c85f3c5 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_05752f00ee6035146e32defede2987fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b706e403f0d60d7b2126dde4c85f3c5.setIcon(icon_05752f00ee6035146e32defede2987fc);
+        
+    
+        var popup_66e521f8daa76a4b5cf126d5e7cffe7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc9d916d0993fd8e61a7277d88435408 = $(`<div id="html_cc9d916d0993fd8e61a7277d88435408" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_66e521f8daa76a4b5cf126d5e7cffe7e.setContent(html_cc9d916d0993fd8e61a7277d88435408);
+            
+        
+
+        marker_2b706e403f0d60d7b2126dde4c85f3c5.bindPopup(popup_66e521f8daa76a4b5cf126d5e7cffe7e)
+        ;
+
+        
+    
+    
+            var poly_line_4aa7fd45a31f0796ba888b5bfd3042aa = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_b4d98403a7fa293f38a7aa0a099fc28f = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_f32f456a87c99a7aeccdafeabee7afcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4d98403a7fa293f38a7aa0a099fc28f.setIcon(icon_f32f456a87c99a7aeccdafeabee7afcd);
+        
+    
+        var popup_4cbd24975fbad8be933dcf177e114e69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51f8a9e4c85633c3273ead647a9c2aea = $(`<div id="html_51f8a9e4c85633c3273ead647a9c2aea" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_4cbd24975fbad8be933dcf177e114e69.setContent(html_51f8a9e4c85633c3273ead647a9c2aea);
+            
+        
+
+        marker_b4d98403a7fa293f38a7aa0a099fc28f.bindPopup(popup_4cbd24975fbad8be933dcf177e114e69)
+        ;
+
+        
+    
+    
+            var poly_line_90676060609e8cf9628a93167f479fd3 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_50d08e582866a80610f609905dfe195e = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_0a28275397c088f769a34e50ec249335 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_50d08e582866a80610f609905dfe195e.setIcon(icon_0a28275397c088f769a34e50ec249335);
+        
+    
+        var popup_8cbd35db483ba6eecc61f3b3bed22099 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d3893b8e58f4a31810f159112f449bc = $(`<div id="html_9d3893b8e58f4a31810f159112f449bc" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_8cbd35db483ba6eecc61f3b3bed22099.setContent(html_9d3893b8e58f4a31810f159112f449bc);
+            
+        
+
+        marker_50d08e582866a80610f609905dfe195e.bindPopup(popup_8cbd35db483ba6eecc61f3b3bed22099)
+        ;
+
+        
+    
+    
+            var poly_line_e3340efb601972dc1278414d0a40d86f = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_4e5789d61430108afb8a6a52feb3e8e1 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_3cd3952301f52ee75eebe3cd7c0f99aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e5789d61430108afb8a6a52feb3e8e1.setIcon(icon_3cd3952301f52ee75eebe3cd7c0f99aa);
+        
+    
+        var popup_0114f13f86a8041e5ebe72fb05ef534e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e5c6719dd8b693900075b6a03d254f3 = $(`<div id="html_1e5c6719dd8b693900075b6a03d254f3" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_0114f13f86a8041e5ebe72fb05ef534e.setContent(html_1e5c6719dd8b693900075b6a03d254f3);
+            
+        
+
+        marker_4e5789d61430108afb8a6a52feb3e8e1.bindPopup(popup_0114f13f86a8041e5ebe72fb05ef534e)
+        ;
+
+        
+    
+    
+            var poly_line_5d74b41afb97174bca4a32f35f2e4c61 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_f02ce49789e12fc0545326f3e1657824 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_c1a513cea12366001b537314b8356994 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f02ce49789e12fc0545326f3e1657824.setIcon(icon_c1a513cea12366001b537314b8356994);
+        
+    
+        var popup_ec414b75a504f708845145fdd2e01944 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31659a5d94b25d7b92a4e93bdf5300f4 = $(`<div id="html_31659a5d94b25d7b92a4e93bdf5300f4" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_ec414b75a504f708845145fdd2e01944.setContent(html_31659a5d94b25d7b92a4e93bdf5300f4);
+            
+        
+
+        marker_f02ce49789e12fc0545326f3e1657824.bindPopup(popup_ec414b75a504f708845145fdd2e01944)
+        ;
+
+        
+    
+    
+            var poly_line_89d942bec05f8b3aff282ddcf9430866 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_7a5999f6dfb1c18024841cbf684af901 = L.marker(
+                [43.665278, 7.215],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_b8aa6bf579e883daad9373dac13ff357 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a5999f6dfb1c18024841cbf684af901.setIcon(icon_b8aa6bf579e883daad9373dac13ff357);
+        
+    
+        var popup_e7bd9b74570557eec67efd73315b530f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1432a3aadf1922409e61dac652b1abf = $(`<div id="html_d1432a3aadf1922409e61dac652b1abf" style="width: 100.0%; height: 100.0%;">Nice</div>`)[0];
+                popup_e7bd9b74570557eec67efd73315b530f.setContent(html_d1432a3aadf1922409e61dac652b1abf);
+            
+        
+
+        marker_7a5999f6dfb1c18024841cbf684af901.bindPopup(popup_e7bd9b74570557eec67efd73315b530f)
+        ;
+
+        
+    
+    
+            var poly_line_04a1d4340ed182e3bd59b2cbb10a5900 = L.polyline(
+                [[48.447222, -4.421667], [43.665278, 7.215]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_4ac5bd7ef8b91aded75b37207150f99a = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_8396f4ab72e13eace17be0426f4a1b14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4ac5bd7ef8b91aded75b37207150f99a.setIcon(icon_8396f4ab72e13eace17be0426f4a1b14);
+        
+    
+        var popup_73ba78a82a0d29978fc36f7d4a3fd174 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58849aaad552b1657b6b821c3778d518 = $(`<div id="html_58849aaad552b1657b6b821c3778d518" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_73ba78a82a0d29978fc36f7d4a3fd174.setContent(html_58849aaad552b1657b6b821c3778d518);
+            
+        
+
+        marker_4ac5bd7ef8b91aded75b37207150f99a.bindPopup(popup_73ba78a82a0d29978fc36f7d4a3fd174)
+        ;
+
+        
+    
+    
+            var poly_line_831433af806050572e94a5ce772f7a77 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_70a5e3aaeae9d4d816e0ccc5aa7e2d49 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_61f2c881b11e846ca8cd43ab629333a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70a5e3aaeae9d4d816e0ccc5aa7e2d49.setIcon(icon_61f2c881b11e846ca8cd43ab629333a2);
+        
+    
+        var popup_09e1d616681d279cdeed6777bfb27ce8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fadcfbe496190f48100a7e2152d52ba9 = $(`<div id="html_fadcfbe496190f48100a7e2152d52ba9" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_09e1d616681d279cdeed6777bfb27ce8.setContent(html_fadcfbe496190f48100a7e2152d52ba9);
+            
+        
+
+        marker_70a5e3aaeae9d4d816e0ccc5aa7e2d49.bindPopup(popup_09e1d616681d279cdeed6777bfb27ce8)
+        ;
+
+        
+    
+    
+            var poly_line_ce1fb72c29e14bae05462da6dba073c0 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_d7ce552e66866613f6579f7ed4b11684 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_62050e8a93bda93485ed0e3e2ccae11e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7ce552e66866613f6579f7ed4b11684.setIcon(icon_62050e8a93bda93485ed0e3e2ccae11e);
+        
+    
+        var popup_9e851a9bc173b0ffbba4c61bddb06999 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ff1e6dab8c443d1bc5f946a7a02e007 = $(`<div id="html_6ff1e6dab8c443d1bc5f946a7a02e007" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_9e851a9bc173b0ffbba4c61bddb06999.setContent(html_6ff1e6dab8c443d1bc5f946a7a02e007);
+            
+        
+
+        marker_d7ce552e66866613f6579f7ed4b11684.bindPopup(popup_9e851a9bc173b0ffbba4c61bddb06999)
+        ;
+
+        
+    
+    
+            var poly_line_57fe822941236dd77f59c2ecf3a17482 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_794f9757e0b07f34e5217893d759da40 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_8b29bdc3b1c90387f40068ac36e8954f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_794f9757e0b07f34e5217893d759da40.setIcon(icon_8b29bdc3b1c90387f40068ac36e8954f);
+        
+    
+        var popup_c54f27ee6739265326ccb6643796c499 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68c8b637287d80b8e77a71dc432b9315 = $(`<div id="html_68c8b637287d80b8e77a71dc432b9315" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_c54f27ee6739265326ccb6643796c499.setContent(html_68c8b637287d80b8e77a71dc432b9315);
+            
+        
+
+        marker_794f9757e0b07f34e5217893d759da40.bindPopup(popup_c54f27ee6739265326ccb6643796c499)
+        ;
+
+        
+    
+    
+            var poly_line_97ee67098e2028cc874bc1d96b9fbf3e = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_2f6c08fc664b5ac51ec22f8782f371bb = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_10b4e7d22485816877b962a6f068c4d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f6c08fc664b5ac51ec22f8782f371bb.setIcon(icon_10b4e7d22485816877b962a6f068c4d4);
+        
+    
+        var popup_5b24b26b97164361194157e80f9e8668 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4bda64d44588bf003a6079b6cbc9b37 = $(`<div id="html_b4bda64d44588bf003a6079b6cbc9b37" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_5b24b26b97164361194157e80f9e8668.setContent(html_b4bda64d44588bf003a6079b6cbc9b37);
+            
+        
+
+        marker_2f6c08fc664b5ac51ec22f8782f371bb.bindPopup(popup_5b24b26b97164361194157e80f9e8668)
+        ;
+
+        
+    
+    
+            var poly_line_70b3caf85cb6f64d075b57955b5112d1 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_ba90f79545839bf64e9464a24c9dcdd5 = L.marker(
+                [43.808611, 11.202778],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_be976b97abedde20f3f95ee597c18b11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ba90f79545839bf64e9464a24c9dcdd5.setIcon(icon_be976b97abedde20f3f95ee597c18b11);
+        
+    
+        var popup_2094c819c4459f18086efd0e685a2eee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55423d904bd7a743a3e6b37b7b366291 = $(`<div id="html_55423d904bd7a743a3e6b37b7b366291" style="width: 100.0%; height: 100.0%;">Florence</div>`)[0];
+                popup_2094c819c4459f18086efd0e685a2eee.setContent(html_55423d904bd7a743a3e6b37b7b366291);
+            
+        
+
+        marker_ba90f79545839bf64e9464a24c9dcdd5.bindPopup(popup_2094c819c4459f18086efd0e685a2eee)
+        ;
+
+        
+    
+    
+            var poly_line_45f735680a217dc570adef91f7eec412 = L.polyline(
+                [[48.447222, -4.421667], [43.808611, 11.202778]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_fbbcae17f309682cab94789112c2c298 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_b26a021059384a5f97a5da713d528a7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fbbcae17f309682cab94789112c2c298.setIcon(icon_b26a021059384a5f97a5da713d528a7f);
+        
+    
+        var popup_477c689bbe7fc0f0e815abd808721951 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82e49eccf18088f06d13072862b8a1a1 = $(`<div id="html_82e49eccf18088f06d13072862b8a1a1" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_477c689bbe7fc0f0e815abd808721951.setContent(html_82e49eccf18088f06d13072862b8a1a1);
+            
+        
+
+        marker_fbbcae17f309682cab94789112c2c298.bindPopup(popup_477c689bbe7fc0f0e815abd808721951)
+        ;
+
+        
+    
+    
+            var poly_line_5f599162ef4f7e5c478c978ee7d8eb24 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_f2fb95e30d43dd2c19c3e475daf20c11 = L.marker(
+                [43.808611, 11.202778],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_3c47396ebcd6090ed4564c7b8eebd2e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f2fb95e30d43dd2c19c3e475daf20c11.setIcon(icon_3c47396ebcd6090ed4564c7b8eebd2e1);
+        
+    
+        var popup_5ff3e337f8e506beb59cf70704107cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdac0b30c2ac461cc51a59caa7f61ccb = $(`<div id="html_cdac0b30c2ac461cc51a59caa7f61ccb" style="width: 100.0%; height: 100.0%;">Florence</div>`)[0];
+                popup_5ff3e337f8e506beb59cf70704107cf9.setContent(html_cdac0b30c2ac461cc51a59caa7f61ccb);
+            
+        
+
+        marker_f2fb95e30d43dd2c19c3e475daf20c11.bindPopup(popup_5ff3e337f8e506beb59cf70704107cf9)
+        ;
+
+        
+    
+    
+            var poly_line_166626176546ddb8142b4717d383942a = L.polyline(
+                [[48.447222, -4.421667], [43.808611, 11.202778]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_8b42bc5b081f87739d2b9d6ce251e12d = L.marker(
+                [43.808611, 11.202778],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_3a059168d08fe6735b129df171bb1d9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8b42bc5b081f87739d2b9d6ce251e12d.setIcon(icon_3a059168d08fe6735b129df171bb1d9e);
+        
+    
+        var popup_d094a643b6bfc7c7f0a73f32108eea1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20e26cb3a5adcb0af13e0020a522227a = $(`<div id="html_20e26cb3a5adcb0af13e0020a522227a" style="width: 100.0%; height: 100.0%;">Florence</div>`)[0];
+                popup_d094a643b6bfc7c7f0a73f32108eea1c.setContent(html_20e26cb3a5adcb0af13e0020a522227a);
+            
+        
+
+        marker_8b42bc5b081f87739d2b9d6ce251e12d.bindPopup(popup_d094a643b6bfc7c7f0a73f32108eea1c)
+        ;
+
+        
+    
+    
+            var poly_line_72bf6ed5571b8f13d330d86021b2837e = L.polyline(
+                [[48.447222, -4.421667], [43.808611, 11.202778]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_7154da99fca1fd05dc875238cec2fb5c = L.marker(
+                [43.808611, 11.202778],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_397cd5d92bb7f6d29cf3ccb4e683b4e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7154da99fca1fd05dc875238cec2fb5c.setIcon(icon_397cd5d92bb7f6d29cf3ccb4e683b4e8);
+        
+    
+        var popup_b65d11701820b3de51edd850561ba102 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_715d38898af7a3511ac27219127d7aa4 = $(`<div id="html_715d38898af7a3511ac27219127d7aa4" style="width: 100.0%; height: 100.0%;">Florence</div>`)[0];
+                popup_b65d11701820b3de51edd850561ba102.setContent(html_715d38898af7a3511ac27219127d7aa4);
+            
+        
+
+        marker_7154da99fca1fd05dc875238cec2fb5c.bindPopup(popup_b65d11701820b3de51edd850561ba102)
+        ;
+
+        
+    
+    
+            var poly_line_bb0b5be80ae67ff9f926cfc4342b4771 = L.polyline(
+                [[48.447222, -4.421667], [43.808611, 11.202778]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_38d36a356ebe69dc9bf057b1696551fe = L.marker(
+                [45.449444, 9.278333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_710760f40bec63958b0a6880ad517f56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38d36a356ebe69dc9bf057b1696551fe.setIcon(icon_710760f40bec63958b0a6880ad517f56);
+        
+    
+        var popup_a01af028deda6cf951b16d8698dcd5d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_033c95b9103c2107df81b5d7e13d0d29 = $(`<div id="html_033c95b9103c2107df81b5d7e13d0d29" style="width: 100.0%; height: 100.0%;">Milan</div>`)[0];
+                popup_a01af028deda6cf951b16d8698dcd5d1.setContent(html_033c95b9103c2107df81b5d7e13d0d29);
+            
+        
+
+        marker_38d36a356ebe69dc9bf057b1696551fe.bindPopup(popup_a01af028deda6cf951b16d8698dcd5d1)
+        ;
+
+        
+    
+    
+            var poly_line_3dee8c04f915276e209f1b3c9b1f736b = L.polyline(
+                [[48.447222, -4.421667], [45.449444, 9.278333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_8386a47bb294e9a0edbb195cbc4aca8e = L.marker(
+                [43.808611, 11.202778],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_2057288d258f08ed6cda749797b0f317 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8386a47bb294e9a0edbb195cbc4aca8e.setIcon(icon_2057288d258f08ed6cda749797b0f317);
+        
+    
+        var popup_035c4723fba6ac8ed5b965151cdba37f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1141c50470d8b667eea85b19b1df1a7 = $(`<div id="html_f1141c50470d8b667eea85b19b1df1a7" style="width: 100.0%; height: 100.0%;">Florence</div>`)[0];
+                popup_035c4723fba6ac8ed5b965151cdba37f.setContent(html_f1141c50470d8b667eea85b19b1df1a7);
+            
+        
+
+        marker_8386a47bb294e9a0edbb195cbc4aca8e.bindPopup(popup_035c4723fba6ac8ed5b965151cdba37f)
+        ;
+
+        
+    
+    
+            var poly_line_41a2f1b09ee74dcfb9893dfc0c71a810 = L.polyline(
+                [[48.447222, -4.421667], [43.808611, 11.202778]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_f3753be02848cfedebf85101766defdd = L.marker(
+                [43.808611, 11.202778],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_27c26bd57e456ec092789e78b6e168ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f3753be02848cfedebf85101766defdd.setIcon(icon_27c26bd57e456ec092789e78b6e168ac);
+        
+    
+        var popup_64038f8074e0fb2183c01f52625cfd2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e14509321fda2812dbedda46df8a5afd = $(`<div id="html_e14509321fda2812dbedda46df8a5afd" style="width: 100.0%; height: 100.0%;">Florence</div>`)[0];
+                popup_64038f8074e0fb2183c01f52625cfd2b.setContent(html_e14509321fda2812dbedda46df8a5afd);
+            
+        
+
+        marker_f3753be02848cfedebf85101766defdd.bindPopup(popup_64038f8074e0fb2183c01f52625cfd2b)
+        ;
+
+        
+    
+    
+            var poly_line_801d825ee65313c0e2e9fcb3af74e9e7 = L.polyline(
+                [[48.447222, -4.421667], [43.808611, 11.202778]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_be96fd143dc8cba37b2bf723d04d3c74 = L.marker(
+                [41.235556, -8.678056],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_cacf5252d93cc8de5350ee854b0cf1e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be96fd143dc8cba37b2bf723d04d3c74.setIcon(icon_cacf5252d93cc8de5350ee854b0cf1e2);
+        
+    
+        var popup_31162f74c1ddf0b25b8a68109f0514b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_017aa3894f995bfda2f78aabe502d137 = $(`<div id="html_017aa3894f995bfda2f78aabe502d137" style="width: 100.0%; height: 100.0%;">Porto</div>`)[0];
+                popup_31162f74c1ddf0b25b8a68109f0514b4.setContent(html_017aa3894f995bfda2f78aabe502d137);
+            
+        
+
+        marker_be96fd143dc8cba37b2bf723d04d3c74.bindPopup(popup_31162f74c1ddf0b25b8a68109f0514b4)
+        ;
+
+        
+    
+    
+            var poly_line_93dbc963052f8e25726751ac59f069b2 = L.polyline(
+                [[48.447222, -4.421667], [41.235556, -8.678056]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_90701445066d12c8fea8db6ba87ac793 = L.marker(
+                [35.8575, 14.4775],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_cb3650807f78f4ef220518a7852936cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90701445066d12c8fea8db6ba87ac793.setIcon(icon_cb3650807f78f4ef220518a7852936cc);
+        
+    
+        var popup_ce2d024e303eceba785ca1466e698703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8cc79b84b81fe48c6371a0fe0fa3410 = $(`<div id="html_c8cc79b84b81fe48c6371a0fe0fa3410" style="width: 100.0%; height: 100.0%;">Malta</div>`)[0];
+                popup_ce2d024e303eceba785ca1466e698703.setContent(html_c8cc79b84b81fe48c6371a0fe0fa3410);
+            
+        
+
+        marker_90701445066d12c8fea8db6ba87ac793.bindPopup(popup_ce2d024e303eceba785ca1466e698703)
+        ;
+
+        
+    
+    
+            var poly_line_839a871a2d1564d7182060b489257ef4 = L.polyline(
+                [[48.447222, -4.421667], [35.8575, 14.4775]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_f602616cf058286352a7c82fbc019630 = L.marker(
+                [44.828611, -0.715278],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_120ed55ff00857da131e5d3d8bde49b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f602616cf058286352a7c82fbc019630.setIcon(icon_120ed55ff00857da131e5d3d8bde49b6);
+        
+    
+        var popup_a8e660e71b403e489f549efb9c3c24ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73ee9d76d05d81167ee465e74f113b4f = $(`<div id="html_73ee9d76d05d81167ee465e74f113b4f" style="width: 100.0%; height: 100.0%;">Bordeaux</div>`)[0];
+                popup_a8e660e71b403e489f549efb9c3c24ea.setContent(html_73ee9d76d05d81167ee465e74f113b4f);
+            
+        
+
+        marker_f602616cf058286352a7c82fbc019630.bindPopup(popup_a8e660e71b403e489f549efb9c3c24ea)
+        ;
+
+        
+    
+    
+            var poly_line_cbfbd3353b6dacfee68bb72357e7e506 = L.polyline(
+                [[48.447222, -4.421667], [44.828611, -0.715278]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_37587a5766fa57edb94c80eceb96f302 = L.marker(
+                [44.828611, -0.715278],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_ae39ee8685bfd1782071d4bdd5806c7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_37587a5766fa57edb94c80eceb96f302.setIcon(icon_ae39ee8685bfd1782071d4bdd5806c7b);
+        
+    
+        var popup_2b59cdfa3228d6eab3f62a42c98c39d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a8846ab65cc082c4cd4ffc8c8e10862 = $(`<div id="html_0a8846ab65cc082c4cd4ffc8c8e10862" style="width: 100.0%; height: 100.0%;">Bordeaux</div>`)[0];
+                popup_2b59cdfa3228d6eab3f62a42c98c39d6.setContent(html_0a8846ab65cc082c4cd4ffc8c8e10862);
+            
+        
+
+        marker_37587a5766fa57edb94c80eceb96f302.bindPopup(popup_2b59cdfa3228d6eab3f62a42c98c39d6)
+        ;
+
+        
+    
+    
+            var poly_line_085747ac60359bd8ecd1f111ecc91131 = L.polyline(
+                [[48.447222, -4.421667], [44.828611, -0.715278]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_9c6b7c17fc3d85165f1bd584325cd8e9 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_76f312635a942d35560d776d097233ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c6b7c17fc3d85165f1bd584325cd8e9.setIcon(icon_76f312635a942d35560d776d097233ed);
+        
+    
+        var popup_6f8731a62e12fec365934f56eb39447f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e084554b9120a537f2e890c767b9a4cd = $(`<div id="html_e084554b9120a537f2e890c767b9a4cd" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_6f8731a62e12fec365934f56eb39447f.setContent(html_e084554b9120a537f2e890c767b9a4cd);
+            
+        
+
+        marker_9c6b7c17fc3d85165f1bd584325cd8e9.bindPopup(popup_6f8731a62e12fec365934f56eb39447f)
+        ;
+
+        
+    
+    
+            var poly_line_2bd3f1327b6693010324bbf02fdd7a60 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_c3d4e8d49db117747639157030c70ce7 = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_7a9760a0496dbde969d78f771aae3ad3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3d4e8d49db117747639157030c70ce7.setIcon(icon_7a9760a0496dbde969d78f771aae3ad3);
+        
+    
+        var popup_ee39b6364dfb6ec25490248a7d7c917c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cfee2c3ff538aac25349b255087ec3d = $(`<div id="html_4cfee2c3ff538aac25349b255087ec3d" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_ee39b6364dfb6ec25490248a7d7c917c.setContent(html_4cfee2c3ff538aac25349b255087ec3d);
+            
+        
+
+        marker_c3d4e8d49db117747639157030c70ce7.bindPopup(popup_ee39b6364dfb6ec25490248a7d7c917c)
+        ;
+
+        
+    
+    
+            var poly_line_759f7574b3d201035d33ff16bbe97aa4 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_671364e0da7e19e0f9fc03e68864ea9e = L.marker(
+                [41.296944, 2.078333],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_bd97431806da117dc08a21833167c8de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_671364e0da7e19e0f9fc03e68864ea9e.setIcon(icon_bd97431806da117dc08a21833167c8de);
+        
+    
+        var popup_8ce4f9777e77da9c1ca569d87d2b16c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_120d033a682d63c71077ae3b64ffb25f = $(`<div id="html_120d033a682d63c71077ae3b64ffb25f" style="width: 100.0%; height: 100.0%;">Barcelona</div>`)[0];
+                popup_8ce4f9777e77da9c1ca569d87d2b16c8.setContent(html_120d033a682d63c71077ae3b64ffb25f);
+            
+        
+
+        marker_671364e0da7e19e0f9fc03e68864ea9e.bindPopup(popup_8ce4f9777e77da9c1ca569d87d2b16c8)
+        ;
+
+        
+    
+    
+            var poly_line_9c6ed7f7cef3442aae7120deada10e01 = L.polyline(
+                [[48.447222, -4.421667], [41.296944, 2.078333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_eea8f504d375ae335e5b54c5cb87d127 = L.marker(
+                [43.665278, 7.215],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_ee48433b3914bd462c110b86dee9de73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eea8f504d375ae335e5b54c5cb87d127.setIcon(icon_ee48433b3914bd462c110b86dee9de73);
+        
+    
+        var popup_f2cb4684b69fb6a3947dae7f9d4d793e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6de35aa5306e5d9b77d5ec64b212dc84 = $(`<div id="html_6de35aa5306e5d9b77d5ec64b212dc84" style="width: 100.0%; height: 100.0%;">Nice</div>`)[0];
+                popup_f2cb4684b69fb6a3947dae7f9d4d793e.setContent(html_6de35aa5306e5d9b77d5ec64b212dc84);
+            
+        
+
+        marker_eea8f504d375ae335e5b54c5cb87d127.bindPopup(popup_f2cb4684b69fb6a3947dae7f9d4d793e)
+        ;
+
+        
+    
+    
+            var poly_line_9b62c1cfcd7758bfd690e5088ab2ae54 = L.polyline(
+                [[48.447222, -4.421667], [43.665278, 7.215]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_c530f12ee97a213016b5876adb52f000 = L.marker(
+                [41.235556, -8.678056],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_e64b31dd714745416db1e96f4d8f813b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c530f12ee97a213016b5876adb52f000.setIcon(icon_e64b31dd714745416db1e96f4d8f813b);
+        
+    
+        var popup_729f4929be7b1d6045dac4d94934604f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39fad88b8e75ba26186640bc3c44a810 = $(`<div id="html_39fad88b8e75ba26186640bc3c44a810" style="width: 100.0%; height: 100.0%;">Porto</div>`)[0];
+                popup_729f4929be7b1d6045dac4d94934604f.setContent(html_39fad88b8e75ba26186640bc3c44a810);
+            
+        
+
+        marker_c530f12ee97a213016b5876adb52f000.bindPopup(popup_729f4929be7b1d6045dac4d94934604f)
+        ;
+
+        
+    
+    
+            var poly_line_b501a54f20a4eaf8961811a472265935 = L.polyline(
+                [[48.447222, -4.421667], [41.235556, -8.678056]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_0c8a104023c13dcceb28b1f888601ab5 = L.marker(
+                [41.800278, 12.238889],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_1fa76572c3e7af6795633ba5619e9900 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0c8a104023c13dcceb28b1f888601ab5.setIcon(icon_1fa76572c3e7af6795633ba5619e9900);
+        
+    
+        var popup_1c5990022d8eec5682c1177b57174529 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf695a394ab6ae7050734d46fe8f8466 = $(`<div id="html_bf695a394ab6ae7050734d46fe8f8466" style="width: 100.0%; height: 100.0%;">Rome</div>`)[0];
+                popup_1c5990022d8eec5682c1177b57174529.setContent(html_bf695a394ab6ae7050734d46fe8f8466);
+            
+        
+
+        marker_0c8a104023c13dcceb28b1f888601ab5.bindPopup(popup_1c5990022d8eec5682c1177b57174529)
+        ;
+
+        
+    
+    
+            var poly_line_bda7fd84eee0d1d68a31ac9e077f2a26 = L.polyline(
+                [[48.447222, -4.421667], [41.800278, 12.238889]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_8140ae8c746870592982f9c0fb42b18f = L.marker(
+                [43.665278, 7.215],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_c48b82be6a0c5a6093e6d0fc2f4fbab2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8140ae8c746870592982f9c0fb42b18f.setIcon(icon_c48b82be6a0c5a6093e6d0fc2f4fbab2);
+        
+    
+        var popup_a20ced7ae3cf0a54ad79c9a36ab75c6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c612eeccc8f772b08a1474f877cea06 = $(`<div id="html_4c612eeccc8f772b08a1474f877cea06" style="width: 100.0%; height: 100.0%;">Nice</div>`)[0];
+                popup_a20ced7ae3cf0a54ad79c9a36ab75c6b.setContent(html_4c612eeccc8f772b08a1474f877cea06);
+            
+        
+
+        marker_8140ae8c746870592982f9c0fb42b18f.bindPopup(popup_a20ced7ae3cf0a54ad79c9a36ab75c6b)
+        ;
+
+        
+    
+    
+            var poly_line_8ba77aa635f9fb59298d2f73534e84b9 = L.polyline(
+                [[48.447222, -4.421667], [43.665278, 7.215]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_2631f233748379561b2bb4e4420c4c9f = L.marker(
+                [44.828611, -0.715278],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_0db323ce5b944ab869afb945aadbce81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2631f233748379561b2bb4e4420c4c9f.setIcon(icon_0db323ce5b944ab869afb945aadbce81);
+        
+    
+        var popup_c348caecb5866b19e2d195f466405eb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5586c5836c98e777cb2ff5d4251d4bc = $(`<div id="html_b5586c5836c98e777cb2ff5d4251d4bc" style="width: 100.0%; height: 100.0%;">Bordeaux</div>`)[0];
+                popup_c348caecb5866b19e2d195f466405eb7.setContent(html_b5586c5836c98e777cb2ff5d4251d4bc);
+            
+        
+
+        marker_2631f233748379561b2bb4e4420c4c9f.bindPopup(popup_c348caecb5866b19e2d195f466405eb7)
+        ;
+
+        
+    
+    
+            var poly_line_cb991acc8d059d93dd2dd45a58aac729 = L.polyline(
+                [[48.447222, -4.421667], [44.828611, -0.715278]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_eac3d45710186e9d766ffefc36a5ad4b = L.marker(
+                [44.828611, -0.715278],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_79e422f072257040fc0fa5e37455f65a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eac3d45710186e9d766ffefc36a5ad4b.setIcon(icon_79e422f072257040fc0fa5e37455f65a);
+        
+    
+        var popup_b61ae5be94c90f32a1a0a0a785a345a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af0b618ebc370e452e09b7f1f0c0fe7c = $(`<div id="html_af0b618ebc370e452e09b7f1f0c0fe7c" style="width: 100.0%; height: 100.0%;">Bordeaux</div>`)[0];
+                popup_b61ae5be94c90f32a1a0a0a785a345a4.setContent(html_af0b618ebc370e452e09b7f1f0c0fe7c);
+            
+        
+
+        marker_eac3d45710186e9d766ffefc36a5ad4b.bindPopup(popup_b61ae5be94c90f32a1a0a0a785a345a4)
+        ;
+
+        
+    
+    
+            var poly_line_9dc180435807cd6bbde1fd538c375a47 = L.polyline(
+                [[48.447222, -4.421667], [44.828611, -0.715278]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_507d8bcff311163a7080d484e2854eaa = L.marker(
+                [41.800278, 12.238889],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_276522d0893bfacf0ff6f95547cfb144 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_507d8bcff311163a7080d484e2854eaa.setIcon(icon_276522d0893bfacf0ff6f95547cfb144);
+        
+    
+        var popup_6a8fb1ea1c46830c48496b313de77411 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_700e95ad0e4500213b9f80f2d0f993b3 = $(`<div id="html_700e95ad0e4500213b9f80f2d0f993b3" style="width: 100.0%; height: 100.0%;">Rome</div>`)[0];
+                popup_6a8fb1ea1c46830c48496b313de77411.setContent(html_700e95ad0e4500213b9f80f2d0f993b3);
+            
+        
+
+        marker_507d8bcff311163a7080d484e2854eaa.bindPopup(popup_6a8fb1ea1c46830c48496b313de77411)
+        ;
+
+        
+    
+    
+            var poly_line_48941977beab5ef7c8e6a751df7d5533 = L.polyline(
+                [[48.447222, -4.421667], [41.800278, 12.238889]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_6e77a1a4083cf70e56198aface0d5b93 = L.marker(
+                [48.38762, -4.480306],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_218745f05322c985f4b4c7d485ff1631 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6e77a1a4083cf70e56198aface0d5b93.setIcon(icon_218745f05322c985f4b4c7d485ff1631);
+        
+    
+        var popup_0010333ff996da274d2920462f99f75d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da9f4c69fc6329b51dd664de787fbcd2 = $(`<div id="html_da9f4c69fc6329b51dd664de787fbcd2" style="width: 100.0%; height: 100.0%;">Quimper (Quimper)</div>`)[0];
+                popup_0010333ff996da274d2920462f99f75d.setContent(html_da9f4c69fc6329b51dd664de787fbcd2);
+            
+        
+
+        marker_6e77a1a4083cf70e56198aface0d5b93.bindPopup(popup_0010333ff996da274d2920462f99f75d)
+        ;
+
+        
+    
+    
+            var marker_8499c8f51ec73df79e59af3e21f1915e = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_8785ec4d90052084769577dcb5ceeedb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8499c8f51ec73df79e59af3e21f1915e.setIcon(icon_8785ec4d90052084769577dcb5ceeedb);
+        
+    
+        var popup_f46f65dc4c4c8cde69366ebc974a4550 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d22e06fd31d9cd98d751d6493acc33d = $(`<div id="html_0d22e06fd31d9cd98d751d6493acc33d" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 52.3 km</div>`)[0];
+                popup_f46f65dc4c4c8cde69366ebc974a4550.setContent(html_0d22e06fd31d9cd98d751d6493acc33d);
+            
+        
+
+        marker_8499c8f51ec73df79e59af3e21f1915e.bindPopup(popup_f46f65dc4c4c8cde69366ebc974a4550)
+        ;
+
+        
+    
+    
+            var poly_line_408ea2ae35929665bcac710533c48683 = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_f35c30ef1a8eaf20a498749c29411b2d = L.marker(
+                [48.453572, -4.256528],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_beaebd738db8c2bdc061e7c47135c97a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f35c30ef1a8eaf20a498749c29411b2d.setIcon(icon_beaebd738db8c2bdc061e7c47135c97a);
+        
+    
+        var popup_00e5838a98f2e36f55404329106ecb8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5820a83ad3a3e0796754934b6517fef = $(`<div id="html_b5820a83ad3a3e0796754934b6517fef" style="width: 100.0%; height: 100.0%;">Landerneau (Landerneau) - 18.1 km</div>`)[0];
+                popup_00e5838a98f2e36f55404329106ecb8d.setContent(html_b5820a83ad3a3e0796754934b6517fef);
+            
+        
+
+        marker_f35c30ef1a8eaf20a498749c29411b2d.bindPopup(popup_00e5838a98f2e36f55404329106ecb8d)
+        ;
+
+        
+    
+    
+            var poly_line_e0da8ce470679c935d79a8e6f0bb3784 = L.polyline(
+                [[48.38762, -4.480306], [48.453572, -4.256528]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_e735aca5a0a14c81eb732ca029b65dec = L.marker(
+                [48.57797, -3.832514],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_feb6455882d4a813147ffddda3856b05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e735aca5a0a14c81eb732ca029b65dec.setIcon(icon_feb6455882d4a813147ffddda3856b05);
+        
+    
+        var popup_dc39faf416f8f5c4663468f311a749e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6293d35aa8bde92e2f7ea286ccd7560 = $(`<div id="html_a6293d35aa8bde92e2f7ea286ccd7560" style="width: 100.0%; height: 100.0%;">Morlaix (Morlaix) - 52.2 km</div>`)[0];
+                popup_dc39faf416f8f5c4663468f311a749e9.setContent(html_a6293d35aa8bde92e2f7ea286ccd7560);
+            
+        
+
+        marker_e735aca5a0a14c81eb732ca029b65dec.bindPopup(popup_dc39faf416f8f5c4663468f311a749e9)
+        ;
+
+        
+    
+    
+            var poly_line_d395bdfb0775b8b48948dc45f7594863 = L.polyline(
+                [[48.38762, -4.480306], [48.57797, -3.832514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_e67f62205fd7460e99e747e2391df00c = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_f35f8169cd0431d8f44b5b054b546701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e67f62205fd7460e99e747e2391df00c.setIcon(icon_f35f8169cd0431d8f44b5b054b546701);
+        
+    
+        var popup_e15fadc4da406a7eaccca3e5de128fd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7fdc873303927e3ad900d7ae71065e4 = $(`<div id="html_a7fdc873303927e3ad900d7ae71065e4" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 502.3 km</div>`)[0];
+                popup_e15fadc4da406a7eaccca3e5de128fd8.setContent(html_a7fdc873303927e3ad900d7ae71065e4);
+            
+        
+
+        marker_e67f62205fd7460e99e747e2391df00c.bindPopup(popup_e15fadc4da406a7eaccca3e5de128fd8)
+        ;
+
+        
+    
+    
+            var poly_line_a279340f5e9c0636b914993c434804c9 = L.polyline(
+                [[48.38762, -4.480306], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_4473615f47701f2d594ba6f8139add18 = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_8a61744e49a564c13160d08ba37d18e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4473615f47701f2d594ba6f8139add18.setIcon(icon_8a61744e49a564c13160d08ba37d18e7);
+        
+    
+        var popup_15b8fe7187688a9bf29656efcb767f78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e01e1affa15049877933aa12dde420b = $(`<div id="html_6e01e1affa15049877933aa12dde420b" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 52.3 km</div>`)[0];
+                popup_15b8fe7187688a9bf29656efcb767f78.setContent(html_6e01e1affa15049877933aa12dde420b);
+            
+        
+
+        marker_4473615f47701f2d594ba6f8139add18.bindPopup(popup_15b8fe7187688a9bf29656efcb767f78)
+        ;
+
+        
+    
+    
+            var poly_line_41d96ccf6f67f27279de56695767829c = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_d18ae28ce507b7d5b1c3690cde2b9783 = L.marker(
+                [48.727638, -3.460353],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_53be4f608a789029d41947ea7fc83d0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d18ae28ce507b7d5b1c3690cde2b9783.setIcon(icon_53be4f608a789029d41947ea7fc83d0c);
+        
+    
+        var popup_55bbf3628eedd7434b37cf7ade7891f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6983176c69e10a9a34d2651ed1d5bcd8 = $(`<div id="html_6983176c69e10a9a34d2651ed1d5bcd8" style="width: 100.0%; height: 100.0%;">Lannion (Lannion) - 84.0 km</div>`)[0];
+                popup_55bbf3628eedd7434b37cf7ade7891f7.setContent(html_6983176c69e10a9a34d2651ed1d5bcd8);
+            
+        
+
+        marker_d18ae28ce507b7d5b1c3690cde2b9783.bindPopup(popup_55bbf3628eedd7434b37cf7ade7891f7)
+        ;
+
+        
+    
+    
+            var poly_line_f0010dc940f39ed489c432c9e0aaaa7f = L.polyline(
+                [[48.38762, -4.480306], [48.727638, -3.460353]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_244da14053216cb2bc2f2d7f66ed3192 = L.marker(
+                [48.57797, -3.832514],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_323f061bd9be8552dc8f7d6db858dcec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_244da14053216cb2bc2f2d7f66ed3192.setIcon(icon_323f061bd9be8552dc8f7d6db858dcec);
+        
+    
+        var popup_1857756d1f608a102e317e87e5b7e500 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b1a3de4e2fca2ccfeb59a38cb101a7d = $(`<div id="html_4b1a3de4e2fca2ccfeb59a38cb101a7d" style="width: 100.0%; height: 100.0%;">Morlaix (Morlaix) - 52.2 km</div>`)[0];
+                popup_1857756d1f608a102e317e87e5b7e500.setContent(html_4b1a3de4e2fca2ccfeb59a38cb101a7d);
+            
+        
+
+        marker_244da14053216cb2bc2f2d7f66ed3192.bindPopup(popup_1857756d1f608a102e317e87e5b7e500)
+        ;
+
+        
+    
+    
+            var poly_line_67c2aa182d4265dddcffb81eb062f28b = L.polyline(
+                [[48.38762, -4.480306], [48.57797, -3.832514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_45b0218e0450e9c6cc691bcb985af028 = L.marker(
+                [48.103517, -1.672744],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_863dd50659faf2436d9552a3438da0da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_45b0218e0450e9c6cc691bcb985af028.setIcon(icon_863dd50659faf2436d9552a3438da0da);
+        
+    
+        var popup_5b4ec9f7d3d07c5b219e2fb4ca98442b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a48d25a82441a3b0a114dcf5e3c7cdac = $(`<div id="html_a48d25a82441a3b0a114dcf5e3c7cdac" style="width: 100.0%; height: 100.0%;">Rennes (Rennes) - 210.3 km</div>`)[0];
+                popup_5b4ec9f7d3d07c5b219e2fb4ca98442b.setContent(html_a48d25a82441a3b0a114dcf5e3c7cdac);
+            
+        
+
+        marker_45b0218e0450e9c6cc691bcb985af028.bindPopup(popup_5b4ec9f7d3d07c5b219e2fb4ca98442b)
+        ;
+
+        
+    
+    
+            var poly_line_08bd4dcb44b55dd54a6c302c644835b0 = L.polyline(
+                [[48.38762, -4.480306], [48.103517, -1.672744]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_cc00010e6167733778cb331c46a8840e = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_018f97f232d9899fc0e34dc38af23b31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc00010e6167733778cb331c46a8840e.setIcon(icon_018f97f232d9899fc0e34dc38af23b31);
+        
+    
+        var popup_b17e80703528fc7dcf40543fd9fd9c22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_158b4a2cec4c6304b50bb16edbb5f9d9 = $(`<div id="html_158b4a2cec4c6304b50bb16edbb5f9d9" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 52.3 km</div>`)[0];
+                popup_b17e80703528fc7dcf40543fd9fd9c22.setContent(html_158b4a2cec4c6304b50bb16edbb5f9d9);
+            
+        
+
+        marker_cc00010e6167733778cb331c46a8840e.bindPopup(popup_b17e80703528fc7dcf40543fd9fd9c22)
+        ;
+
+        
+    
+    
+            var poly_line_cd5bdf02ca8bb53bfbb71e4f071e846d = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_68876cfed15fd2028b4ffa309bbd5f0f = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_9e41cdb41a15919ead9f043a1839a986 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_68876cfed15fd2028b4ffa309bbd5f0f.setIcon(icon_9e41cdb41a15919ead9f043a1839a986);
+        
+    
+        var popup_bd24e35e55684c792adaa334c66aeccc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_183c83ece8fd37c9a7b0319b7a5b00cf = $(`<div id="html_183c83ece8fd37c9a7b0319b7a5b00cf" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 52.3 km</div>`)[0];
+                popup_bd24e35e55684c792adaa334c66aeccc.setContent(html_183c83ece8fd37c9a7b0319b7a5b00cf);
+            
+        
+
+        marker_68876cfed15fd2028b4ffa309bbd5f0f.bindPopup(popup_bd24e35e55684c792adaa334c66aeccc)
+        ;
+
+        
+    
+    
+            var poly_line_b23852564bc0124a9e30f6c5cef3de73 = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_ed8c37009931d95df75b7deced0dff45 = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_95049ef77f5ad2d71838e90368022feb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed8c37009931d95df75b7deced0dff45.setIcon(icon_95049ef77f5ad2d71838e90368022feb);
+        
+    
+        var popup_7435919883d3f09618f73d961670d897 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_114d2f9b08cae25c06b7a985e824ec05 = $(`<div id="html_114d2f9b08cae25c06b7a985e824ec05" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 52.3 km</div>`)[0];
+                popup_7435919883d3f09618f73d961670d897.setContent(html_114d2f9b08cae25c06b7a985e824ec05);
+            
+        
+
+        marker_ed8c37009931d95df75b7deced0dff45.bindPopup(popup_7435919883d3f09618f73d961670d897)
+        ;
+
+        
+    
+    
+            var poly_line_f152221e81e821dfdd828e81a2e9cab4 = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_2986b4f3fa0f892e7213454c85ea0ef8 = L.marker(
+                [48.453572, -4.256528],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_33af123f29d2fb4d69ba4946eae2924d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2986b4f3fa0f892e7213454c85ea0ef8.setIcon(icon_33af123f29d2fb4d69ba4946eae2924d);
+        
+    
+        var popup_1dba7c830c0ab3cc491a7b28c9430b8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c239a5a83a1ad24c754ccaa806381744 = $(`<div id="html_c239a5a83a1ad24c754ccaa806381744" style="width: 100.0%; height: 100.0%;">Landerneau (Landerneau) - 18.1 km</div>`)[0];
+                popup_1dba7c830c0ab3cc491a7b28c9430b8f.setContent(html_c239a5a83a1ad24c754ccaa806381744);
+            
+        
+
+        marker_2986b4f3fa0f892e7213454c85ea0ef8.bindPopup(popup_1dba7c830c0ab3cc491a7b28c9430b8f)
+        ;
+
+        
+    
+    
+            var poly_line_4545d79c93fcbaab4185f7c797f02fdf = L.polyline(
+                [[48.38762, -4.480306], [48.453572, -4.256528]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_edbf7f9729e55929a99006118dbfe0ba = L.marker(
+                [48.57797, -3.832514],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_f6fcf53bb5e4dd7ea7da8435183a7b55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_edbf7f9729e55929a99006118dbfe0ba.setIcon(icon_f6fcf53bb5e4dd7ea7da8435183a7b55);
+        
+    
+        var popup_c1b90ac35dbbf3ac879acc00fd852031 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b31368b0abc7b9aec2d030521cdc2b52 = $(`<div id="html_b31368b0abc7b9aec2d030521cdc2b52" style="width: 100.0%; height: 100.0%;">Morlaix (Morlaix) - 52.2 km</div>`)[0];
+                popup_c1b90ac35dbbf3ac879acc00fd852031.setContent(html_b31368b0abc7b9aec2d030521cdc2b52);
+            
+        
+
+        marker_edbf7f9729e55929a99006118dbfe0ba.bindPopup(popup_c1b90ac35dbbf3ac879acc00fd852031)
+        ;
+
+        
+    
+    
+            var poly_line_f5dde3bad5a985cec9d16042f2be25ba = L.polyline(
+                [[48.38762, -4.480306], [48.57797, -3.832514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_db87c9f949dc1c3c4b8ba3d65e4aa4f2 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_5e66c06f1b37889b9c3c9813b957cb43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db87c9f949dc1c3c4b8ba3d65e4aa4f2.setIcon(icon_5e66c06f1b37889b9c3c9813b957cb43);
+        
+    
+        var popup_698609c82eda933a277e10033e3922de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3751ae114398c33858ff44ba1d88baf = $(`<div id="html_f3751ae114398c33858ff44ba1d88baf" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 502.3 km</div>`)[0];
+                popup_698609c82eda933a277e10033e3922de.setContent(html_f3751ae114398c33858ff44ba1d88baf);
+            
+        
+
+        marker_db87c9f949dc1c3c4b8ba3d65e4aa4f2.bindPopup(popup_698609c82eda933a277e10033e3922de)
+        ;
+
+        
+    
+    
+            var poly_line_81db702ef93ed5b689a58322de4f52fd = L.polyline(
+                [[48.38762, -4.480306], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_0927a093cd2b02bfda6ea9f0ed5b7722 = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_583ee0edb258586a38aecb5c1a43710f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0927a093cd2b02bfda6ea9f0ed5b7722.setIcon(icon_583ee0edb258586a38aecb5c1a43710f);
+        
+    
+        var popup_6a523ac669c9b01ea79b4269f894bcc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30ac6c0ca463564a3230d075df4ea7c5 = $(`<div id="html_30ac6c0ca463564a3230d075df4ea7c5" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 52.3 km</div>`)[0];
+                popup_6a523ac669c9b01ea79b4269f894bcc7.setContent(html_30ac6c0ca463564a3230d075df4ea7c5);
+            
+        
+
+        marker_0927a093cd2b02bfda6ea9f0ed5b7722.bindPopup(popup_6a523ac669c9b01ea79b4269f894bcc7)
+        ;
+
+        
+    
+    
+            var poly_line_71dabcb4aafa5fdff5cf2a4859362b3d = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_65d24fc1b6797c0d065a9319e5707bd5 = L.marker(
+                [48.727638, -3.460353],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_1e67a6366394f957b89e6591d7402045 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_65d24fc1b6797c0d065a9319e5707bd5.setIcon(icon_1e67a6366394f957b89e6591d7402045);
+        
+    
+        var popup_f4f8a0f1c8d4ad710e487fbd41f83c4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78dd2bbee1ee29557eda7a598bc2f1bc = $(`<div id="html_78dd2bbee1ee29557eda7a598bc2f1bc" style="width: 100.0%; height: 100.0%;">Lannion (Lannion) - 84.0 km</div>`)[0];
+                popup_f4f8a0f1c8d4ad710e487fbd41f83c4c.setContent(html_78dd2bbee1ee29557eda7a598bc2f1bc);
+            
+        
+
+        marker_65d24fc1b6797c0d065a9319e5707bd5.bindPopup(popup_f4f8a0f1c8d4ad710e487fbd41f83c4c)
+        ;
+
+        
+    
+    
+            var poly_line_6814a8e96973526691d748a38dc7f061 = L.polyline(
+                [[48.38762, -4.480306], [48.727638, -3.460353]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_a0fb8cd592fc4594e34c8be5b98f4a2c = L.marker(
+                [48.57797, -3.832514],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_9e8402b0f04d2b3a91cbace1405fcf97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0fb8cd592fc4594e34c8be5b98f4a2c.setIcon(icon_9e8402b0f04d2b3a91cbace1405fcf97);
+        
+    
+        var popup_f377bc521f38c884c11d9496e208dac5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6361c10e80850a4c647ca5685c5374b5 = $(`<div id="html_6361c10e80850a4c647ca5685c5374b5" style="width: 100.0%; height: 100.0%;">Morlaix (Morlaix) - 52.2 km</div>`)[0];
+                popup_f377bc521f38c884c11d9496e208dac5.setContent(html_6361c10e80850a4c647ca5685c5374b5);
+            
+        
+
+        marker_a0fb8cd592fc4594e34c8be5b98f4a2c.bindPopup(popup_f377bc521f38c884c11d9496e208dac5)
+        ;
+
+        
+    
+    
+            var poly_line_9d0e1c0eea49b72462c3b1efc3ab929d = L.polyline(
+                [[48.38762, -4.480306], [48.57797, -3.832514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_807a675460491778b23bf97c5d6beac9 = L.marker(
+                [48.103517, -1.672744],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_24fd5cfeb3fbfed077f78bbbbf601803 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_807a675460491778b23bf97c5d6beac9.setIcon(icon_24fd5cfeb3fbfed077f78bbbbf601803);
+        
+    
+        var popup_1dc1374bba5794b467b37c9ce073ce28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8b217f16cb75435d18c08ccd6806446 = $(`<div id="html_f8b217f16cb75435d18c08ccd6806446" style="width: 100.0%; height: 100.0%;">Rennes (Rennes) - 210.3 km</div>`)[0];
+                popup_1dc1374bba5794b467b37c9ce073ce28.setContent(html_f8b217f16cb75435d18c08ccd6806446);
+            
+        
+
+        marker_807a675460491778b23bf97c5d6beac9.bindPopup(popup_1dc1374bba5794b467b37c9ce073ce28)
+        ;
+
+        
+    
+    
+            var poly_line_9c14354ef2df3b49a8ff0aced6154938 = L.polyline(
+                [[48.38762, -4.480306], [48.103517, -1.672744]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_da735a6ff9456714d9dab53a405bc0a7 = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_e3adec8fde61db4421aae4838337467b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_da735a6ff9456714d9dab53a405bc0a7.setIcon(icon_e3adec8fde61db4421aae4838337467b);
+        
+    
+        var popup_9ef1e33db3e2b5e35702557eda53a50d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8610f7b5342830fb227df8d82d3f3623 = $(`<div id="html_8610f7b5342830fb227df8d82d3f3623" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 52.3 km</div>`)[0];
+                popup_9ef1e33db3e2b5e35702557eda53a50d.setContent(html_8610f7b5342830fb227df8d82d3f3623);
+            
+        
+
+        marker_da735a6ff9456714d9dab53a405bc0a7.bindPopup(popup_9ef1e33db3e2b5e35702557eda53a50d)
+        ;
+
+        
+    
+    
+            var poly_line_0f53401e86536c4b06bda3de708841a4 = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var marker_9abf104c8f217f4b4ea63a2ae0a0e6ab = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+    
+            var icon_db003bd88c8a127613391511ea2f389c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9abf104c8f217f4b4ea63a2ae0a0e6ab.setIcon(icon_db003bd88c8a127613391511ea2f389c);
+        
+    
+        var popup_fedc2e88dc774569fab2482cdd35a0b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11dfdaa243e88e0bf45eeca7cddfa006 = $(`<div id="html_11dfdaa243e88e0bf45eeca7cddfa006" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 52.3 km</div>`)[0];
+                popup_fedc2e88dc774569fab2482cdd35a0b5.setContent(html_11dfdaa243e88e0bf45eeca7cddfa006);
+            
+        
+
+        marker_9abf104c8f217f4b4ea63a2ae0a0e6ab.bindPopup(popup_fedc2e88dc774569fab2482cdd35a0b5)
+        ;
+
+        
+    
+    
+            var poly_line_dc15c12861456ce3a8324d0adf5dbc06 = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_69d1dc6f7d62fb1149dcf063940f7468);
+        
+</script>

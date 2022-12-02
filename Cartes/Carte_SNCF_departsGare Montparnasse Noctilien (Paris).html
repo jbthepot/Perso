@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8a06d53d58b056c29592479993484abf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8a06d53d58b056c29592479993484abf" ></div>
+        
+</body>
+<script>    
+    
+            var map_8a06d53d58b056c29592479993484abf = L.map(
+                "map_8a06d53d58b056c29592479993484abf",
+                {
+                    center: [48.755566, 1.942579],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6e3d0a5d32c845b9cae69b7d01139f58 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8a06d53d58b056c29592479993484abf);
+        
+    
+            var marker_f8601035091b39ae7f3433a8b5bda3a0 = L.marker(
+                [48.838687, 2.316877],
+                {}
+            ).addTo(map_8a06d53d58b056c29592479993484abf);
+        
+    
+            var icon_e9dd01ec5bbd281bb25abe39fad76162 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f8601035091b39ae7f3433a8b5bda3a0.setIcon(icon_e9dd01ec5bbd281bb25abe39fad76162);
+        
+    
+        var popup_48a0acd674f9dfbda4ffbef2c2205818 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d52f2f8ba591b2a262498729698d096 = $(`<div id="html_7d52f2f8ba591b2a262498729698d096" style="width: 100.0%; height: 100.0%;">La Verriere Noctilien (La Verrière)</div>`)[0];
+                popup_48a0acd674f9dfbda4ffbef2c2205818.setContent(html_7d52f2f8ba591b2a262498729698d096);
+            
+        
+
+        marker_f8601035091b39ae7f3433a8b5bda3a0.bindPopup(popup_48a0acd674f9dfbda4ffbef2c2205818)
+        ;
+
+        
+    
+    
+            var marker_9523fa818d0c5f83f306551616094d0c = L.marker(
+                [48.755566, 1.942579],
+                {}
+            ).addTo(map_8a06d53d58b056c29592479993484abf);
+        
+    
+            var icon_b3ef4f94d525d8cf8ede33559425ee6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9523fa818d0c5f83f306551616094d0c.setIcon(icon_b3ef4f94d525d8cf8ede33559425ee6e);
+        
+    
+        var popup_3e89de4003b68ed57da7680c1b58cdc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9d3e10ffae56ad5748095427b57091e = $(`<div id="html_f9d3e10ffae56ad5748095427b57091e" style="width: 100.0%; height: 100.0%;">La Verriere Noctilien (La Verrière) - 10.2 km</div>`)[0];
+                popup_3e89de4003b68ed57da7680c1b58cdc5.setContent(html_f9d3e10ffae56ad5748095427b57091e);
+            
+        
+
+        marker_9523fa818d0c5f83f306551616094d0c.bindPopup(popup_3e89de4003b68ed57da7680c1b58cdc5)
+        ;
+
+        
+    
+    
+            var poly_line_5295de264a92bd74248a749df3f2ece7 = L.polyline(
+                [[48.838687, 2.316877], [48.755566, 1.942579]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_8a06d53d58b056c29592479993484abf);
+        
+    
+            var marker_94f4b3600a76756faaf2c5a17134669c = L.marker(
+                [48.755566, 1.942579],
+                {}
+            ).addTo(map_8a06d53d58b056c29592479993484abf);
+        
+    
+            var icon_a1e3929e0c5c9d8a70c2373ca2335200 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94f4b3600a76756faaf2c5a17134669c.setIcon(icon_a1e3929e0c5c9d8a70c2373ca2335200);
+        
+    
+        var popup_d5c4e00cd5185079fb4d001a975e9664 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faff53c17601f8c4baa8225f3b22042e = $(`<div id="html_faff53c17601f8c4baa8225f3b22042e" style="width: 100.0%; height: 100.0%;">La Verriere Noctilien (La Verrière) - 10.2 km</div>`)[0];
+                popup_d5c4e00cd5185079fb4d001a975e9664.setContent(html_faff53c17601f8c4baa8225f3b22042e);
+            
+        
+
+        marker_94f4b3600a76756faaf2c5a17134669c.bindPopup(popup_d5c4e00cd5185079fb4d001a975e9664)
+        ;
+
+        
+    
+    
+            var poly_line_569b672bf7714d56509d61ee2b5bb7f1 = L.polyline(
+                [[48.838687, 2.316877], [48.755566, 1.942579]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_8a06d53d58b056c29592479993484abf);
+        
+    
+            var marker_7bf34986d69e122bb59d826e7104aaa3 = L.marker(
+                [48.755566, 1.942579],
+                {}
+            ).addTo(map_8a06d53d58b056c29592479993484abf);
+        
+    
+            var icon_6f2a35d2a525a007bd1bc4a3bcfde6b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7bf34986d69e122bb59d826e7104aaa3.setIcon(icon_6f2a35d2a525a007bd1bc4a3bcfde6b6);
+        
+    
+        var popup_131eded138ce7f1a1fb70d02196c2dde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db7e3b0b6afbff233c0f6ce33848978a = $(`<div id="html_db7e3b0b6afbff233c0f6ce33848978a" style="width: 100.0%; height: 100.0%;">La Verriere Noctilien (La Verrière) - 10.2 km</div>`)[0];
+                popup_131eded138ce7f1a1fb70d02196c2dde.setContent(html_db7e3b0b6afbff233c0f6ce33848978a);
+            
+        
+
+        marker_7bf34986d69e122bb59d826e7104aaa3.bindPopup(popup_131eded138ce7f1a1fb70d02196c2dde)
+        ;
+
+        
+    
+    
+            var poly_line_a067bba64721164178f4bf1ab0a7ce9d = L.polyline(
+                [[48.838687, 2.316877], [48.755566, 1.942579]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_8a06d53d58b056c29592479993484abf);
+        
+    
+            var marker_be38791db2eae7292dc9513e06102963 = L.marker(
+                [48.755566, 1.942579],
+                {}
+            ).addTo(map_8a06d53d58b056c29592479993484abf);
+        
+    
+            var icon_3b2f0349ce2ff6026eedd4d9f732cc68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be38791db2eae7292dc9513e06102963.setIcon(icon_3b2f0349ce2ff6026eedd4d9f732cc68);
+        
+    
+        var popup_67862940557287fcd4e40df091734779 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a64ac2e0ef57ce1fe928e126507c13a9 = $(`<div id="html_a64ac2e0ef57ce1fe928e126507c13a9" style="width: 100.0%; height: 100.0%;">La Verriere Noctilien (La Verrière) - 10.2 km</div>`)[0];
+                popup_67862940557287fcd4e40df091734779.setContent(html_a64ac2e0ef57ce1fe928e126507c13a9);
+            
+        
+
+        marker_be38791db2eae7292dc9513e06102963.bindPopup(popup_67862940557287fcd4e40df091734779)
+        ;
+
+        
+    
+    
+            var poly_line_3df7b50c0c6c5cefa2d9ba36e0b31474 = L.polyline(
+                [[48.838687, 2.316877], [48.755566, 1.942579]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_8a06d53d58b056c29592479993484abf);
+        
+</script>

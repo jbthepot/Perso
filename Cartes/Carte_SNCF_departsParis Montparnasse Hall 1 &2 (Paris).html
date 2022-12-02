@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc97742bfcb5a58dbd89f20cfefe9232 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bc97742bfcb5a58dbd89f20cfefe9232" ></div>
+        
+</body>
+<script>    
+    
+            var map_bc97742bfcb5a58dbd89f20cfefe9232 = L.map(
+                "map_bc97742bfcb5a58dbd89f20cfefe9232",
+                {
+                    center: [48.831726, 1.943228],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e44c16602ba5d7ec5cfaee9f026d3964 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_38b3253d264ff023228c88585e35187f = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_f41d81642e082ced38b13845a99ac6c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_38b3253d264ff023228c88585e35187f.setIcon(icon_f41d81642e082ced38b13845a99ac6c3);
+        
+    
+        var popup_341eaaeb6221513964368ffe3c555cb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce4312ac83cac44f797e55091983fc29 = $(`<div id="html_ce4312ac83cac44f797e55091983fc29" style="width: 100.0%; height: 100.0%;">Plaisir - Grignon (Plaisir)</div>`)[0];
+                popup_341eaaeb6221513964368ffe3c555cb7.setContent(html_ce4312ac83cac44f797e55091983fc29);
+            
+        
+
+        marker_38b3253d264ff023228c88585e35187f.bindPopup(popup_341eaaeb6221513964368ffe3c555cb7)
+        ;
+
+        
+    
+    
+            var marker_737eb1de13e702c919478835613e9830 = L.marker(
+                [48.831726, 1.943228],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_5afdbe88abb576dfebe0e93dc56a1ba4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_737eb1de13e702c919478835613e9830.setIcon(icon_5afdbe88abb576dfebe0e93dc56a1ba4);
+        
+    
+        var popup_2c9b22f8772762d8dc99d2929f9f1693 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b7428ade5377e90e0488e81af4d9fc3 = $(`<div id="html_3b7428ade5377e90e0488e81af4d9fc3" style="width: 100.0%; height: 100.0%;">Plaisir - Grignon (Plaisir) - 6.0 km</div>`)[0];
+                popup_2c9b22f8772762d8dc99d2929f9f1693.setContent(html_3b7428ade5377e90e0488e81af4d9fc3);
+            
+        
+
+        marker_737eb1de13e702c919478835613e9830.bindPopup(popup_2c9b22f8772762d8dc99d2929f9f1693)
+        ;
+
+        
+    
+    
+            var poly_line_aa961fb6ff54f42bd436bf3443bc96a0 = L.polyline(
+                [[48.841172, 2.320514], [48.831726, 1.943228]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_0b8ccaa29d50524d897cc0c58a210afe = L.marker(
+                [48.731492, 1.370164],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_1e17d90a6cd31080be13e5eb66eac2f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0b8ccaa29d50524d897cc0c58a210afe.setIcon(icon_1e17d90a6cd31080be13e5eb66eac2f7);
+        
+    
+        var popup_8dd99a6d268e28580e326cc29aef12d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0a79c1f800d9fa7b4bbd064cf1b7b98 = $(`<div id="html_d0a79c1f800d9fa7b4bbd064cf1b7b98" style="width: 100.0%; height: 100.0%;">Dreux (Dreux) - 15.6 km</div>`)[0];
+                popup_8dd99a6d268e28580e326cc29aef12d5.setContent(html_d0a79c1f800d9fa7b4bbd064cf1b7b98);
+            
+        
+
+        marker_0b8ccaa29d50524d897cc0c58a210afe.bindPopup(popup_8dd99a6d268e28580e326cc29aef12d5)
+        ;
+
+        
+    
+    
+            var poly_line_6397d964ea51742c4ecb9ad92822851c = L.polyline(
+                [[48.841172, 2.320514], [48.731492, 1.370164]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_93de06c163fe2297c395c951e66bd258 = L.marker(
+                [48.831726, 1.943228],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_b797119e0f3bd3db3966f6e2659dc19a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_93de06c163fe2297c395c951e66bd258.setIcon(icon_b797119e0f3bd3db3966f6e2659dc19a);
+        
+    
+        var popup_0a6dffacdd086a337bc7319417b0c23d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e72c77ae6d7f3a9923eb2a917301294a = $(`<div id="html_e72c77ae6d7f3a9923eb2a917301294a" style="width: 100.0%; height: 100.0%;">Plaisir - Grignon (Plaisir) - 6.0 km</div>`)[0];
+                popup_0a6dffacdd086a337bc7319417b0c23d.setContent(html_e72c77ae6d7f3a9923eb2a917301294a);
+            
+        
+
+        marker_93de06c163fe2297c395c951e66bd258.bindPopup(popup_0a6dffacdd086a337bc7319417b0c23d)
+        ;
+
+        
+    
+    
+            var poly_line_d8f4f76e4e4e8ae6a03f12b068746632 = L.polyline(
+                [[48.841172, 2.320514], [48.831726, 1.943228]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_68be1bd22216d74fdd10749664c3dd04 = L.marker(
+                [48.64377, 1.83154],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_9f165f1d5968c04c55610625f06c7225 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_68be1bd22216d74fdd10749664c3dd04.setIcon(icon_9f165f1d5968c04c55610625f06c7225);
+        
+    
+        var popup_0d5bdef7ffb56d830189ad11056e51fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d22da2cfdbd31da01a6d8732b8d327df = $(`<div id="html_d22da2cfdbd31da01a6d8732b8d327df" style="width: 100.0%; height: 100.0%;">Rambouillet (Rambouillet) - 22.1 km</div>`)[0];
+                popup_0d5bdef7ffb56d830189ad11056e51fc.setContent(html_d22da2cfdbd31da01a6d8732b8d327df);
+            
+        
+
+        marker_68be1bd22216d74fdd10749664c3dd04.bindPopup(popup_0d5bdef7ffb56d830189ad11056e51fc)
+        ;
+
+        
+    
+    
+            var poly_line_149a12eb652ede7f9b4291b522521b69 = L.polyline(
+                [[48.841172, 2.320514], [48.64377, 1.83154]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_e0c2bd085b754a5f5fe3064e971621ee = L.marker(
+                [48.731492, 1.370164],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_8255c92a0bd7d01d8e3d0e97a89c8224 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e0c2bd085b754a5f5fe3064e971621ee.setIcon(icon_8255c92a0bd7d01d8e3d0e97a89c8224);
+        
+    
+        var popup_b63bc59f6797a50856102d454f553b05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05a5e800d446f46794226c6a1fab023c = $(`<div id="html_05a5e800d446f46794226c6a1fab023c" style="width: 100.0%; height: 100.0%;">Dreux (Dreux) - 15.6 km</div>`)[0];
+                popup_b63bc59f6797a50856102d454f553b05.setContent(html_05a5e800d446f46794226c6a1fab023c);
+            
+        
+
+        marker_e0c2bd085b754a5f5fe3064e971621ee.bindPopup(popup_b63bc59f6797a50856102d454f553b05)
+        ;
+
+        
+    
+    
+            var poly_line_14c7778a3cd4bf2ecd217a8c4114362c = L.polyline(
+                [[48.841172, 2.320514], [48.731492, 1.370164]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_ed3002bc5aa9980dc88ab07e68118ff1 = L.marker(
+                [48.38762, -4.480306],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_ef74f642d2ddfd2646ae22b8d0d3ddb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed3002bc5aa9980dc88ab07e68118ff1.setIcon(icon_ef74f642d2ddfd2646ae22b8d0d3ddb3);
+        
+    
+        var popup_e9c8be885392eb86913260b3cd848d58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1839e997230018152350baa2be504603 = $(`<div id="html_1839e997230018152350baa2be504603" style="width: 100.0%; height: 100.0%;">Brest (Brest) - 78.8 km</div>`)[0];
+                popup_e9c8be885392eb86913260b3cd848d58.setContent(html_1839e997230018152350baa2be504603);
+            
+        
+
+        marker_ed3002bc5aa9980dc88ab07e68118ff1.bindPopup(popup_e9c8be885392eb86913260b3cd848d58)
+        ;
+
+        
+    
+    
+            var poly_line_691b9aeb5f42976605a5ef44a5c9ee48 = L.polyline(
+                [[48.841172, 2.320514], [48.38762, -4.480306]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_20361b5d90a530acd97665c8028dc347 = L.marker(
+                [48.448202, 1.481313],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_b89c1d5d2f3ced818675d8010fc5678b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20361b5d90a530acd97665c8028dc347.setIcon(icon_b89c1d5d2f3ced818675d8010fc5678b);
+        
+    
+        var popup_572741065bd41e1a2c093ed80a6e9cdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d41f4711b857b5d00859f3944267f91 = $(`<div id="html_1d41f4711b857b5d00859f3944267f91" style="width: 100.0%; height: 100.0%;">Chartres (Chartres) - 43.9 km</div>`)[0];
+                popup_572741065bd41e1a2c093ed80a6e9cdf.setContent(html_1d41f4711b857b5d00859f3944267f91);
+            
+        
+
+        marker_20361b5d90a530acd97665c8028dc347.bindPopup(popup_572741065bd41e1a2c093ed80a6e9cdf)
+        ;
+
+        
+    
+    
+            var poly_line_77e40bff24a71b8996e2a7d54f647d32 = L.polyline(
+                [[48.841172, 2.320514], [48.448202, 1.481313]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_3688a745d40ec1ad06c7c4ffa22fcb82 = L.marker(
+                [48.831726, 1.943228],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_9a39578908af341a9f501c621a986b01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3688a745d40ec1ad06c7c4ffa22fcb82.setIcon(icon_9a39578908af341a9f501c621a986b01);
+        
+    
+        var popup_f59a11a4b15dc47f9a385ad0ef0597a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8594d8a89683a0d549bc106aca555069 = $(`<div id="html_8594d8a89683a0d549bc106aca555069" style="width: 100.0%; height: 100.0%;">Plaisir - Grignon (Plaisir) - 6.0 km</div>`)[0];
+                popup_f59a11a4b15dc47f9a385ad0ef0597a2.setContent(html_8594d8a89683a0d549bc106aca555069);
+            
+        
+
+        marker_3688a745d40ec1ad06c7c4ffa22fcb82.bindPopup(popup_f59a11a4b15dc47f9a385ad0ef0597a2)
+        ;
+
+        
+    
+    
+            var poly_line_ba176b2af47fc395d98a3788cc1518c7 = L.polyline(
+                [[48.841172, 2.320514], [48.831726, 1.943228]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_fd6d65730493cc494303c10ac37b790a = L.marker(
+                [48.64377, 1.83154],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_27cf4fd22b649feaaa2f4df232ff027f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fd6d65730493cc494303c10ac37b790a.setIcon(icon_27cf4fd22b649feaaa2f4df232ff027f);
+        
+    
+        var popup_9bf82c76f6eeaf442650807fc290684f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a4e0f8cb54690bf05f33e0dde88491e = $(`<div id="html_1a4e0f8cb54690bf05f33e0dde88491e" style="width: 100.0%; height: 100.0%;">Rambouillet (Rambouillet) - 22.1 km</div>`)[0];
+                popup_9bf82c76f6eeaf442650807fc290684f.setContent(html_1a4e0f8cb54690bf05f33e0dde88491e);
+            
+        
+
+        marker_fd6d65730493cc494303c10ac37b790a.bindPopup(popup_9bf82c76f6eeaf442650807fc290684f)
+        ;
+
+        
+    
+    
+            var poly_line_2c383248eabb3d0ef1a5b1e06c9b021d = L.polyline(
+                [[48.841172, 2.320514], [48.64377, 1.83154]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_9a4f93145a1b0154d7c0302a9738dbc8 = L.marker(
+                [48.795826, 2.135883],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_87784cf0cdd9fe2a8b212ed202ce64e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a4f93145a1b0154d7c0302a9738dbc8.setIcon(icon_87784cf0cdd9fe2a8b212ed202ce64e5);
+        
+    
+        var popup_52e667556ecb53c139e3e70515475e45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_106f6081a1cbf4ce934b69ae0db3c031 = $(`<div id="html_106f6081a1cbf4ce934b69ae0db3c031" style="width: 100.0%; height: 100.0%;">Versailles Chantiers (Versailles) - 5.6 km</div>`)[0];
+                popup_52e667556ecb53c139e3e70515475e45.setContent(html_106f6081a1cbf4ce934b69ae0db3c031);
+            
+        
+
+        marker_9a4f93145a1b0154d7c0302a9738dbc8.bindPopup(popup_52e667556ecb53c139e3e70515475e45)
+        ;
+
+        
+    
+    
+            var poly_line_279aba30ed5d4fa5bd1569a3f5a18a94 = L.polyline(
+                [[48.841172, 2.320514], [48.795826, 2.135883]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_fe06d1da1303b323074324eb533295b3 = L.marker(
+                [48.831726, 1.943228],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_4e307dff658cd05f55d58bfa74f456c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe06d1da1303b323074324eb533295b3.setIcon(icon_4e307dff658cd05f55d58bfa74f456c7);
+        
+    
+        var popup_646b40c4177b6d1b8348dfd1952cfd7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b99e56794c1298c1a29ae6c6774e5d5 = $(`<div id="html_7b99e56794c1298c1a29ae6c6774e5d5" style="width: 100.0%; height: 100.0%;">Plaisir - Grignon (Plaisir) - 6.0 km</div>`)[0];
+                popup_646b40c4177b6d1b8348dfd1952cfd7b.setContent(html_7b99e56794c1298c1a29ae6c6774e5d5);
+            
+        
+
+        marker_fe06d1da1303b323074324eb533295b3.bindPopup(popup_646b40c4177b6d1b8348dfd1952cfd7b)
+        ;
+
+        
+    
+    
+            var poly_line_a14a4f7f3fdfae31f1479c03bb7d3afe = L.polyline(
+                [[48.841172, 2.320514], [48.831726, 1.943228]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_b1e67e2840e25bf0bea8bce0794184fb = L.marker(
+                [48.731492, 1.370164],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_bac544bb57a2c3309959a203f5c10880 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b1e67e2840e25bf0bea8bce0794184fb.setIcon(icon_bac544bb57a2c3309959a203f5c10880);
+        
+    
+        var popup_25aa52a69b08ef19379968e843245833 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b42e576a7e2a3f9a1febac0e2ec9834 = $(`<div id="html_7b42e576a7e2a3f9a1febac0e2ec9834" style="width: 100.0%; height: 100.0%;">Dreux (Dreux) - 15.6 km</div>`)[0];
+                popup_25aa52a69b08ef19379968e843245833.setContent(html_7b42e576a7e2a3f9a1febac0e2ec9834);
+            
+        
+
+        marker_b1e67e2840e25bf0bea8bce0794184fb.bindPopup(popup_25aa52a69b08ef19379968e843245833)
+        ;
+
+        
+    
+    
+            var poly_line_05d31a2a2722a2c2a6da9223cf32c8d3 = L.polyline(
+                [[48.841172, 2.320514], [48.731492, 1.370164]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_89bcc03d403720c95ef6c37587bbfa26 = L.marker(
+                [48.831726, 1.943228],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_d6d2423adb151ffe2ed73f1603a9a04a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_89bcc03d403720c95ef6c37587bbfa26.setIcon(icon_d6d2423adb151ffe2ed73f1603a9a04a);
+        
+    
+        var popup_a99717bea75ba941d82faedcd759b9db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9816d4d03956651afac2cfeb1c1c6326 = $(`<div id="html_9816d4d03956651afac2cfeb1c1c6326" style="width: 100.0%; height: 100.0%;">Plaisir - Grignon (Plaisir) - 6.0 km</div>`)[0];
+                popup_a99717bea75ba941d82faedcd759b9db.setContent(html_9816d4d03956651afac2cfeb1c1c6326);
+            
+        
+
+        marker_89bcc03d403720c95ef6c37587bbfa26.bindPopup(popup_a99717bea75ba941d82faedcd759b9db)
+        ;
+
+        
+    
+    
+            var poly_line_22deacb0a5d3838448d6901922e3bde7 = L.polyline(
+                [[48.841172, 2.320514], [48.831726, 1.943228]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_c934e6f458098e349688605aa913bac1 = L.marker(
+                [48.64377, 1.83154],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_4acf7628676b18fc29a865c0063a191d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c934e6f458098e349688605aa913bac1.setIcon(icon_4acf7628676b18fc29a865c0063a191d);
+        
+    
+        var popup_6702af68d28294693f56c39bbb29ea56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee85522de49f8b47537554b2aad59ffa = $(`<div id="html_ee85522de49f8b47537554b2aad59ffa" style="width: 100.0%; height: 100.0%;">Rambouillet (Rambouillet) - 22.1 km</div>`)[0];
+                popup_6702af68d28294693f56c39bbb29ea56.setContent(html_ee85522de49f8b47537554b2aad59ffa);
+            
+        
+
+        marker_c934e6f458098e349688605aa913bac1.bindPopup(popup_6702af68d28294693f56c39bbb29ea56)
+        ;
+
+        
+    
+    
+            var poly_line_acea10dcd472c6639a18a2321fe8a8b0 = L.polyline(
+                [[48.841172, 2.320514], [48.64377, 1.83154]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_f8405735987bb631a3d03bc108eac6f8 = L.marker(
+                [48.731492, 1.370164],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_42763bb43c1b6577175a871e1399482a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f8405735987bb631a3d03bc108eac6f8.setIcon(icon_42763bb43c1b6577175a871e1399482a);
+        
+    
+        var popup_f7f66196e5d2027758c526107203aba6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93c621586fc5ee2d5dbc685cc016c8d9 = $(`<div id="html_93c621586fc5ee2d5dbc685cc016c8d9" style="width: 100.0%; height: 100.0%;">Dreux (Dreux) - 15.6 km</div>`)[0];
+                popup_f7f66196e5d2027758c526107203aba6.setContent(html_93c621586fc5ee2d5dbc685cc016c8d9);
+            
+        
+
+        marker_f8405735987bb631a3d03bc108eac6f8.bindPopup(popup_f7f66196e5d2027758c526107203aba6)
+        ;
+
+        
+    
+    
+            var poly_line_8d01f3d62156f6934f65467c28cf8b4c = L.polyline(
+                [[48.841172, 2.320514], [48.731492, 1.370164]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_362cfb59c14c1fa95f633c5a3ed28e20 = L.marker(
+                [48.38762, -4.480306],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_3304a299c34612a2b4f976d5466fd9e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_362cfb59c14c1fa95f633c5a3ed28e20.setIcon(icon_3304a299c34612a2b4f976d5466fd9e9);
+        
+    
+        var popup_adda9149526cd14f827652a930f85ee4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89def7d71d1f3491e71c8ce72e3d5874 = $(`<div id="html_89def7d71d1f3491e71c8ce72e3d5874" style="width: 100.0%; height: 100.0%;">Brest (Brest) - 78.8 km</div>`)[0];
+                popup_adda9149526cd14f827652a930f85ee4.setContent(html_89def7d71d1f3491e71c8ce72e3d5874);
+            
+        
+
+        marker_362cfb59c14c1fa95f633c5a3ed28e20.bindPopup(popup_adda9149526cd14f827652a930f85ee4)
+        ;
+
+        
+    
+    
+            var poly_line_96acb64f47fa19499c2d2123439c38b6 = L.polyline(
+                [[48.841172, 2.320514], [48.38762, -4.480306]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_fb134aadee78f9f4e066983b20a52597 = L.marker(
+                [48.448202, 1.481313],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_b694b6189a34db2ec863572fb687f859 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fb134aadee78f9f4e066983b20a52597.setIcon(icon_b694b6189a34db2ec863572fb687f859);
+        
+    
+        var popup_60295d87cb3a2ef93a87482eb97ab366 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3a693dd08e8450ca26d337935c34cde = $(`<div id="html_d3a693dd08e8450ca26d337935c34cde" style="width: 100.0%; height: 100.0%;">Chartres (Chartres) - 43.9 km</div>`)[0];
+                popup_60295d87cb3a2ef93a87482eb97ab366.setContent(html_d3a693dd08e8450ca26d337935c34cde);
+            
+        
+
+        marker_fb134aadee78f9f4e066983b20a52597.bindPopup(popup_60295d87cb3a2ef93a87482eb97ab366)
+        ;
+
+        
+    
+    
+            var poly_line_4ed460fae1767d7656e03ac6968a3166 = L.polyline(
+                [[48.841172, 2.320514], [48.448202, 1.481313]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_eec08b44fd7dcb16526006a39dd09386 = L.marker(
+                [48.831726, 1.943228],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_5c2bc3ee11dc58fc966b1b86b53bc547 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eec08b44fd7dcb16526006a39dd09386.setIcon(icon_5c2bc3ee11dc58fc966b1b86b53bc547);
+        
+    
+        var popup_eed5fc624ee76d2e909269e202421794 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e291e35a17b415b22965982ae96e758e = $(`<div id="html_e291e35a17b415b22965982ae96e758e" style="width: 100.0%; height: 100.0%;">Plaisir - Grignon (Plaisir) - 6.0 km</div>`)[0];
+                popup_eed5fc624ee76d2e909269e202421794.setContent(html_e291e35a17b415b22965982ae96e758e);
+            
+        
+
+        marker_eec08b44fd7dcb16526006a39dd09386.bindPopup(popup_eed5fc624ee76d2e909269e202421794)
+        ;
+
+        
+    
+    
+            var poly_line_a54b4671ffe7fd281e14f4a08a754059 = L.polyline(
+                [[48.841172, 2.320514], [48.831726, 1.943228]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_4fc87f6d8a8bb001091ad6107fb28428 = L.marker(
+                [48.64377, 1.83154],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_6de150728c77ed95257f89d5cfac73de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4fc87f6d8a8bb001091ad6107fb28428.setIcon(icon_6de150728c77ed95257f89d5cfac73de);
+        
+    
+        var popup_0ab33e7b718c02534a40876e77a71d21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f57dcebabed00a0da448f82b7e89d153 = $(`<div id="html_f57dcebabed00a0da448f82b7e89d153" style="width: 100.0%; height: 100.0%;">Rambouillet (Rambouillet) - 22.1 km</div>`)[0];
+                popup_0ab33e7b718c02534a40876e77a71d21.setContent(html_f57dcebabed00a0da448f82b7e89d153);
+            
+        
+
+        marker_4fc87f6d8a8bb001091ad6107fb28428.bindPopup(popup_0ab33e7b718c02534a40876e77a71d21)
+        ;
+
+        
+    
+    
+            var poly_line_748215793b00783f33bcad0f7c112070 = L.polyline(
+                [[48.841172, 2.320514], [48.64377, 1.83154]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var marker_5d9b226fcde0fa0462ffaf2306591325 = L.marker(
+                [48.795826, 2.135883],
+                {}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+    
+            var icon_63e8e39172fc397897a432fa2ad3b4ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d9b226fcde0fa0462ffaf2306591325.setIcon(icon_63e8e39172fc397897a432fa2ad3b4ed);
+        
+    
+        var popup_b712916b23bb6996c8102a64918576ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e07ad098a7b45c8674b1f5a43a28412e = $(`<div id="html_e07ad098a7b45c8674b1f5a43a28412e" style="width: 100.0%; height: 100.0%;">Versailles Chantiers (Versailles) - 5.6 km</div>`)[0];
+                popup_b712916b23bb6996c8102a64918576ce.setContent(html_e07ad098a7b45c8674b1f5a43a28412e);
+            
+        
+
+        marker_5d9b226fcde0fa0462ffaf2306591325.bindPopup(popup_b712916b23bb6996c8102a64918576ce)
+        ;
+
+        
+    
+    
+            var poly_line_a3a37534986f601e4fb48a54d51d6d67 = L.polyline(
+                [[48.841172, 2.320514], [48.795826, 2.135883]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bc97742bfcb5a58dbd89f20cfefe9232);
+        
+</script>

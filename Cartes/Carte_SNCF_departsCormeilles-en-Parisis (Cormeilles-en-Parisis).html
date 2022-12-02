@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b2c6a00bc10341fdc59f99dd36ccef3a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b2c6a00bc10341fdc59f99dd36ccef3a" ></div>
+        
+</body>
+<script>    
+    
+            var map_b2c6a00bc10341fdc59f99dd36ccef3a = L.map(
+                "map_b2c6a00bc10341fdc59f99dd36ccef3a",
+                {
+                    center: [49.285137, 1.784517],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2a9e768f375007f91c9a70b9101f822b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var marker_3b7f02325214f21cb8d0ac395bf2ad4b = L.marker(
+                [48.968668, 2.193443],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_164523c61eb296373a502a981d50a1e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3b7f02325214f21cb8d0ac395bf2ad4b.setIcon(icon_164523c61eb296373a502a981d50a1e3);
+        
+    
+        var popup_b2085bd470ae7a1c98d75611df90ea6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dabbad1b2121b485ca76cda5ff6316c = $(`<div id="html_0dabbad1b2121b485ca76cda5ff6316c" style="width: 100.0%; height: 100.0%;">Cormeilles-en-Parisis (Cormeilles-en-Parisis)</div>`)[0];
+                popup_b2085bd470ae7a1c98d75611df90ea6c.setContent(html_0dabbad1b2121b485ca76cda5ff6316c);
+            
+        
+
+        marker_3b7f02325214f21cb8d0ac395bf2ad4b.bindPopup(popup_b2085bd470ae7a1c98d75611df90ea6c)
+        ;
+
+        
+    
+    
+            var marker_672c4ae52e1467073282ea4cd7394a0d = L.marker(
+                [49.285137, 1.784517],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_9ab3b0a8900aa81e694cb6f7eb969cf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_672c4ae52e1467073282ea4cd7394a0d.setIcon(icon_9ab3b0a8900aa81e694cb6f7eb969cf7);
+        
+    
+        var popup_813618ddb8aa7c4db5a5d10ac9636719 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_277cf6f7093c5813690c06fae802e82e = $(`<div id="html_277cf6f7093c5813690c06fae802e82e" style="width: 100.0%; height: 100.0%;">Gisors (Gisors)</div>`)[0];
+                popup_813618ddb8aa7c4db5a5d10ac9636719.setContent(html_277cf6f7093c5813690c06fae802e82e);
+            
+        
+
+        marker_672c4ae52e1467073282ea4cd7394a0d.bindPopup(popup_813618ddb8aa7c4db5a5d10ac9636719)
+        ;
+
+        
+    
+    
+            var marker_38e922e60d58d1dcd20382811c5bc6de = L.marker(
+                [48.876242, 2.325331],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_9734ed531dc9f9153c6a79e4d1d31e0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38e922e60d58d1dcd20382811c5bc6de.setIcon(icon_9734ed531dc9f9153c6a79e4d1d31e0b);
+        
+    
+        var popup_8388766eb1117225a171bd83d34c2567 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b21639c370774182cc5d49668936e451 = $(`<div id="html_b21639c370774182cc5d49668936e451" style="width: 100.0%; height: 100.0%;">Paris Saint-Lazare (Paris)</div>`)[0];
+                popup_8388766eb1117225a171bd83d34c2567.setContent(html_b21639c370774182cc5d49668936e451);
+            
+        
+
+        marker_38e922e60d58d1dcd20382811c5bc6de.bindPopup(popup_8388766eb1117225a171bd83d34c2567)
+        ;
+
+        
+    
+    
+            var marker_cb3ca9fb21b8c02744ea88b36d3915ab = L.marker(
+                [48.98984, 1.70337],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_fec98209a0eb399c61d261b6a3ad09af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cb3ca9fb21b8c02744ea88b36d3915ab.setIcon(icon_fec98209a0eb399c61d261b6a3ad09af);
+        
+    
+        var popup_d21d3486c4e34c194e3711ab464c9ddd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_152f9111fb5a0bd4565faf7674fa0eb1 = $(`<div id="html_152f9111fb5a0bd4565faf7674fa0eb1" style="width: 100.0%; height: 100.0%;">Mantes-la-Jolie (Mantes-la-Jolie)</div>`)[0];
+                popup_d21d3486c4e34c194e3711ab464c9ddd.setContent(html_152f9111fb5a0bd4565faf7674fa0eb1);
+            
+        
+
+        marker_cb3ca9fb21b8c02744ea88b36d3915ab.bindPopup(popup_d21d3486c4e34c194e3711ab464c9ddd)
+        ;
+
+        
+    
+    
+            var marker_402a59c00b848c94c8de02ef0bc12d2c = L.marker(
+                [48.876242, 2.325331],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_7a610c2b52c822123d9861fa784e6c40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_402a59c00b848c94c8de02ef0bc12d2c.setIcon(icon_7a610c2b52c822123d9861fa784e6c40);
+        
+    
+        var popup_289cd92546b8d9a4f82f4da883a6a075 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6372d61c6e2422b49b9ba4a7fc8d2806 = $(`<div id="html_6372d61c6e2422b49b9ba4a7fc8d2806" style="width: 100.0%; height: 100.0%;">Paris Saint-Lazare (Paris)</div>`)[0];
+                popup_289cd92546b8d9a4f82f4da883a6a075.setContent(html_6372d61c6e2422b49b9ba4a7fc8d2806);
+            
+        
+
+        marker_402a59c00b848c94c8de02ef0bc12d2c.bindPopup(popup_289cd92546b8d9a4f82f4da883a6a075)
+        ;
+
+        
+    
+    
+            var marker_724323a3296aa90a172179e9cb540dbe = L.marker(
+                [49.07598, 2.02513],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_8d5dc00f3aa77973c3c5a55a80353ffd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_724323a3296aa90a172179e9cb540dbe.setIcon(icon_8d5dc00f3aa77973c3c5a55a80353ffd);
+        
+    
+        var popup_46a3711f221a77d88cc7aa436f056402 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f6e7fb1a841f9e84d780ce371e86cfb = $(`<div id="html_4f6e7fb1a841f9e84d780ce371e86cfb" style="width: 100.0%; height: 100.0%;">Boissy-l'Aillerie (Boissy-l'Aillerie)</div>`)[0];
+                popup_46a3711f221a77d88cc7aa436f056402.setContent(html_4f6e7fb1a841f9e84d780ce371e86cfb);
+            
+        
+
+        marker_724323a3296aa90a172179e9cb540dbe.bindPopup(popup_46a3711f221a77d88cc7aa436f056402)
+        ;
+
+        
+    
+    
+            var marker_8621cb798ed6485b6b1861ebfcf8a876 = L.marker(
+                [48.876242, 2.325331],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_cc16b6a1c7c3adace36c987b4e66a985 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8621cb798ed6485b6b1861ebfcf8a876.setIcon(icon_cc16b6a1c7c3adace36c987b4e66a985);
+        
+    
+        var popup_f181de5bdc637f1f445ca8b11aef2180 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c729b51a29282e8847e92312be339db8 = $(`<div id="html_c729b51a29282e8847e92312be339db8" style="width: 100.0%; height: 100.0%;">Paris Saint-Lazare (Paris)</div>`)[0];
+                popup_f181de5bdc637f1f445ca8b11aef2180.setContent(html_c729b51a29282e8847e92312be339db8);
+            
+        
+
+        marker_8621cb798ed6485b6b1861ebfcf8a876.bindPopup(popup_f181de5bdc637f1f445ca8b11aef2180)
+        ;
+
+        
+    
+    
+            var marker_cffdbd4a9938e91fc8bd3e59c83969cb = L.marker(
+                [48.98984, 1.70337],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_7229aa87f27c5c00c66f428a72486087 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cffdbd4a9938e91fc8bd3e59c83969cb.setIcon(icon_7229aa87f27c5c00c66f428a72486087);
+        
+    
+        var popup_4164aff103826b7e6ee2135d85c3c72f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58249f504ceee6f3d004800eee23b25c = $(`<div id="html_58249f504ceee6f3d004800eee23b25c" style="width: 100.0%; height: 100.0%;">Mantes-la-Jolie (Mantes-la-Jolie)</div>`)[0];
+                popup_4164aff103826b7e6ee2135d85c3c72f.setContent(html_58249f504ceee6f3d004800eee23b25c);
+            
+        
+
+        marker_cffdbd4a9938e91fc8bd3e59c83969cb.bindPopup(popup_4164aff103826b7e6ee2135d85c3c72f)
+        ;
+
+        
+    
+    
+            var marker_9d7c317d7cb1f263c44e9192c6483833 = L.marker(
+                [48.876242, 2.325331],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_8c49533d5676f670c70add0de8ae8190 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d7c317d7cb1f263c44e9192c6483833.setIcon(icon_8c49533d5676f670c70add0de8ae8190);
+        
+    
+        var popup_8a7832782e13bdd1955bfc5ca39ba72f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad0744a35e3dc426ebca9f0d8221d3f8 = $(`<div id="html_ad0744a35e3dc426ebca9f0d8221d3f8" style="width: 100.0%; height: 100.0%;">Paris Saint-Lazare (Paris)</div>`)[0];
+                popup_8a7832782e13bdd1955bfc5ca39ba72f.setContent(html_ad0744a35e3dc426ebca9f0d8221d3f8);
+            
+        
+
+        marker_9d7c317d7cb1f263c44e9192c6483833.bindPopup(popup_8a7832782e13bdd1955bfc5ca39ba72f)
+        ;
+
+        
+    
+    
+            var marker_aa311e97a0c98c43caca38080e4e5e8e = L.marker(
+                [49.07598, 2.02513],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_b2ba39099dfcd921ad69d69d073baccd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa311e97a0c98c43caca38080e4e5e8e.setIcon(icon_b2ba39099dfcd921ad69d69d073baccd);
+        
+    
+        var popup_d24ab0637394f112f1f491dbfca93f20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c464eeac350dfe3aac7f4dacd1cd45bb = $(`<div id="html_c464eeac350dfe3aac7f4dacd1cd45bb" style="width: 100.0%; height: 100.0%;">Boissy-l'Aillerie (Boissy-l'Aillerie)</div>`)[0];
+                popup_d24ab0637394f112f1f491dbfca93f20.setContent(html_c464eeac350dfe3aac7f4dacd1cd45bb);
+            
+        
+
+        marker_aa311e97a0c98c43caca38080e4e5e8e.bindPopup(popup_d24ab0637394f112f1f491dbfca93f20)
+        ;
+
+        
+    
+    
+            var marker_1f25d079cb543e2cfcdfc16b96c63959 = L.marker(
+                [48.876242, 2.325331],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_1b1387b37edbacb11ecdec6907177dcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f25d079cb543e2cfcdfc16b96c63959.setIcon(icon_1b1387b37edbacb11ecdec6907177dcf);
+        
+    
+        var popup_2df059c33e559d258a2431fcf0650e17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_971598fb706f605ae73e19e53f812305 = $(`<div id="html_971598fb706f605ae73e19e53f812305" style="width: 100.0%; height: 100.0%;">Paris Saint-Lazare (Paris)</div>`)[0];
+                popup_2df059c33e559d258a2431fcf0650e17.setContent(html_971598fb706f605ae73e19e53f812305);
+            
+        
+
+        marker_1f25d079cb543e2cfcdfc16b96c63959.bindPopup(popup_2df059c33e559d258a2431fcf0650e17)
+        ;
+
+        
+    
+    
+            var marker_c726939b53072f46e1eebbb330ed247a = L.marker(
+                [49.285137, 1.784517],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_b90e87bc38ada402b22351f0573ca8fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c726939b53072f46e1eebbb330ed247a.setIcon(icon_b90e87bc38ada402b22351f0573ca8fe);
+        
+    
+        var popup_551337ba17b396cb4c7e9bc3d6bcb99e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d49b1cb6d14fcf46681f60ce36f587d = $(`<div id="html_5d49b1cb6d14fcf46681f60ce36f587d" style="width: 100.0%; height: 100.0%;">Gisors (Gisors)</div>`)[0];
+                popup_551337ba17b396cb4c7e9bc3d6bcb99e.setContent(html_5d49b1cb6d14fcf46681f60ce36f587d);
+            
+        
+
+        marker_c726939b53072f46e1eebbb330ed247a.bindPopup(popup_551337ba17b396cb4c7e9bc3d6bcb99e)
+        ;
+
+        
+    
+    
+            var marker_13fd5aa0863a3b87bd01ceadae66d2b6 = L.marker(
+                [48.876242, 2.325331],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_fe8dd5ba91cbb5208a7221bdad31d7ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13fd5aa0863a3b87bd01ceadae66d2b6.setIcon(icon_fe8dd5ba91cbb5208a7221bdad31d7ee);
+        
+    
+        var popup_ad1b18aa905a1e15b30548030642404c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41c99406a8017e678eff7bde4f78640a = $(`<div id="html_41c99406a8017e678eff7bde4f78640a" style="width: 100.0%; height: 100.0%;">Paris Saint-Lazare (Paris)</div>`)[0];
+                popup_ad1b18aa905a1e15b30548030642404c.setContent(html_41c99406a8017e678eff7bde4f78640a);
+            
+        
+
+        marker_13fd5aa0863a3b87bd01ceadae66d2b6.bindPopup(popup_ad1b18aa905a1e15b30548030642404c)
+        ;
+
+        
+    
+    
+            var marker_6010afdbb0bbba4e31416849d0e2d585 = L.marker(
+                [48.98984, 1.70337],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_10f556b2f72747bea92af729cdc25a28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6010afdbb0bbba4e31416849d0e2d585.setIcon(icon_10f556b2f72747bea92af729cdc25a28);
+        
+    
+        var popup_beeed5a1706bc5768130fffe1f6a07b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cfffdd66df16d63bbebe7d670af2cef = $(`<div id="html_2cfffdd66df16d63bbebe7d670af2cef" style="width: 100.0%; height: 100.0%;">Mantes-la-Jolie (Mantes-la-Jolie)</div>`)[0];
+                popup_beeed5a1706bc5768130fffe1f6a07b6.setContent(html_2cfffdd66df16d63bbebe7d670af2cef);
+            
+        
+
+        marker_6010afdbb0bbba4e31416849d0e2d585.bindPopup(popup_beeed5a1706bc5768130fffe1f6a07b6)
+        ;
+
+        
+    
+    
+            var marker_0f81c9b61ad716aa7587e9505a2ee03d = L.marker(
+                [48.876242, 2.325331],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_875ea4b3d27ca2f0038c8dbf3e17f6ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f81c9b61ad716aa7587e9505a2ee03d.setIcon(icon_875ea4b3d27ca2f0038c8dbf3e17f6ff);
+        
+    
+        var popup_7ac59f5a46af0169aafd4ae6333cc589 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25745224dd4876ff8ae6d0152f02e2d5 = $(`<div id="html_25745224dd4876ff8ae6d0152f02e2d5" style="width: 100.0%; height: 100.0%;">Paris Saint-Lazare (Paris)</div>`)[0];
+                popup_7ac59f5a46af0169aafd4ae6333cc589.setContent(html_25745224dd4876ff8ae6d0152f02e2d5);
+            
+        
+
+        marker_0f81c9b61ad716aa7587e9505a2ee03d.bindPopup(popup_7ac59f5a46af0169aafd4ae6333cc589)
+        ;
+
+        
+    
+    
+            var marker_22a83b89729f9b478764df6baa4af2bf = L.marker(
+                [49.07598, 2.02513],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_3e91d44c2c5558d6a77c9702d4ce5e58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_22a83b89729f9b478764df6baa4af2bf.setIcon(icon_3e91d44c2c5558d6a77c9702d4ce5e58);
+        
+    
+        var popup_4d01ffd3137c6ae66e6b3c5225bae254 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a34f5fcd6a008cf796394070e4fb2d5 = $(`<div id="html_9a34f5fcd6a008cf796394070e4fb2d5" style="width: 100.0%; height: 100.0%;">Boissy-l'Aillerie (Boissy-l'Aillerie)</div>`)[0];
+                popup_4d01ffd3137c6ae66e6b3c5225bae254.setContent(html_9a34f5fcd6a008cf796394070e4fb2d5);
+            
+        
+
+        marker_22a83b89729f9b478764df6baa4af2bf.bindPopup(popup_4d01ffd3137c6ae66e6b3c5225bae254)
+        ;
+
+        
+    
+    
+            var marker_c4363218b9820f01a9463e184dd256f5 = L.marker(
+                [48.876242, 2.325331],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_434e5a8862472c7b1823802f6d85f8bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c4363218b9820f01a9463e184dd256f5.setIcon(icon_434e5a8862472c7b1823802f6d85f8bd);
+        
+    
+        var popup_a1967b3dd6ca6a443047deecf374e951 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67a2c2f506787bca8f838a68a9d26de2 = $(`<div id="html_67a2c2f506787bca8f838a68a9d26de2" style="width: 100.0%; height: 100.0%;">Paris Saint-Lazare (Paris)</div>`)[0];
+                popup_a1967b3dd6ca6a443047deecf374e951.setContent(html_67a2c2f506787bca8f838a68a9d26de2);
+            
+        
+
+        marker_c4363218b9820f01a9463e184dd256f5.bindPopup(popup_a1967b3dd6ca6a443047deecf374e951)
+        ;
+
+        
+    
+    
+            var marker_ca30c5903f59fad1b876a43445214107 = L.marker(
+                [48.98984, 1.70337],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_72f782dd7d73a7592d8aca29c45f8a05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca30c5903f59fad1b876a43445214107.setIcon(icon_72f782dd7d73a7592d8aca29c45f8a05);
+        
+    
+        var popup_65b837f00e051eb39172ae4590cd914d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f61c0f546ad476b4d8ce30edf784480 = $(`<div id="html_4f61c0f546ad476b4d8ce30edf784480" style="width: 100.0%; height: 100.0%;">Mantes-la-Jolie (Mantes-la-Jolie)</div>`)[0];
+                popup_65b837f00e051eb39172ae4590cd914d.setContent(html_4f61c0f546ad476b4d8ce30edf784480);
+            
+        
+
+        marker_ca30c5903f59fad1b876a43445214107.bindPopup(popup_65b837f00e051eb39172ae4590cd914d)
+        ;
+
+        
+    
+    
+            var marker_b50fc5d2dc86277466685d53b0a4f223 = L.marker(
+                [48.876242, 2.325331],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_0bd7fbaf602dbb32436d92d5c49c2d42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b50fc5d2dc86277466685d53b0a4f223.setIcon(icon_0bd7fbaf602dbb32436d92d5c49c2d42);
+        
+    
+        var popup_f7eb1952347ace64ccd97ac23e606561 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ebf0c543edd5117dda941853fe96bc2 = $(`<div id="html_1ebf0c543edd5117dda941853fe96bc2" style="width: 100.0%; height: 100.0%;">Paris Saint-Lazare (Paris)</div>`)[0];
+                popup_f7eb1952347ace64ccd97ac23e606561.setContent(html_1ebf0c543edd5117dda941853fe96bc2);
+            
+        
+
+        marker_b50fc5d2dc86277466685d53b0a4f223.bindPopup(popup_f7eb1952347ace64ccd97ac23e606561)
+        ;
+
+        
+    
+    
+            var marker_7c30b3319c76f5569f1446a0cda29f5e = L.marker(
+                [49.07598, 2.02513],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_f7ed3538941157b0239d0b5727ac2723 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c30b3319c76f5569f1446a0cda29f5e.setIcon(icon_f7ed3538941157b0239d0b5727ac2723);
+        
+    
+        var popup_5a6ced1b812af4e86e987f213323fd47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16b0b75f6e85fc7d58c762e32050a7ac = $(`<div id="html_16b0b75f6e85fc7d58c762e32050a7ac" style="width: 100.0%; height: 100.0%;">Boissy-l'Aillerie (Boissy-l'Aillerie)</div>`)[0];
+                popup_5a6ced1b812af4e86e987f213323fd47.setContent(html_16b0b75f6e85fc7d58c762e32050a7ac);
+            
+        
+
+        marker_7c30b3319c76f5569f1446a0cda29f5e.bindPopup(popup_5a6ced1b812af4e86e987f213323fd47)
+        ;
+
+        
+    
+    
+            var marker_ac4f61bcce5f4dc7d6da75d8803bb121 = L.marker(
+                [48.876242, 2.325331],
+                {}
+            ).addTo(map_b2c6a00bc10341fdc59f99dd36ccef3a);
+        
+    
+            var icon_e095f34fa7f00cf6133be3e59ac1b4ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac4f61bcce5f4dc7d6da75d8803bb121.setIcon(icon_e095f34fa7f00cf6133be3e59ac1b4ac);
+        
+    
+        var popup_34e67a16385a82cb061e34e1dfdb67db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_850603769d9009b5e011c24ada1667e7 = $(`<div id="html_850603769d9009b5e011c24ada1667e7" style="width: 100.0%; height: 100.0%;">Paris Saint-Lazare (Paris)</div>`)[0];
+                popup_34e67a16385a82cb061e34e1dfdb67db.setContent(html_850603769d9009b5e011c24ada1667e7);
+            
+        
+
+        marker_ac4f61bcce5f4dc7d6da75d8803bb121.bindPopup(popup_34e67a16385a82cb061e34e1dfdb67db)
+        ;
+
+        
+    
+</script>

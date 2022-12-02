@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8e7be7a7e2772a22394fc7b8a2bd6780 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8e7be7a7e2772a22394fc7b8a2bd6780" ></div>
+        
+</body>
+<script>    
+    
+            var map_8e7be7a7e2772a22394fc7b8a2bd6780 = L.map(
+                "map_8e7be7a7e2772a22394fc7b8a2bd6780",
+                {
+                    center: [48.957301, 2.873823],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af41e268d8e48c38a7615ffecd1276cc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var marker_8ffd39c3729299c8522af30672399c0b = L.marker(
+                [48.876742, 2.358424],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_6ed4eaf1d90e43341827ba1c6a0b587b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8ffd39c3729299c8522af30672399c0b.setIcon(icon_6ed4eaf1d90e43341827ba1c6a0b587b);
+        
+    
+        var popup_d5db0efd7ea017cf80fe9b462501c304 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d446eae2c4ad1e78553fa0f915dfc81 = $(`<div id="html_6d446eae2c4ad1e78553fa0f915dfc81" style="width: 100.0%; height: 100.0%;">Paris Est (Paris)</div>`)[0];
+                popup_d5db0efd7ea017cf80fe9b462501c304.setContent(html_6d446eae2c4ad1e78553fa0f915dfc81);
+            
+        
+
+        marker_8ffd39c3729299c8522af30672399c0b.bindPopup(popup_d5db0efd7ea017cf80fe9b462501c304)
+        ;
+
+        
+    
+    
+            var marker_8fac328eadd6385110e8d4432f9a2daf = L.marker(
+                [48.957301, 2.873823],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_cf8cf5c0a9b013a871691be91536d9bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8fac328eadd6385110e8d4432f9a2daf.setIcon(icon_cf8cf5c0a9b013a871691be91536d9bd);
+        
+    
+        var popup_927668a25ced5d24164f85c5129d7909 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4068a3176d90cd16d7d6162cc985585a = $(`<div id="html_4068a3176d90cd16d7d6162cc985585a" style="width: 100.0%; height: 100.0%;">Meaux (Meaux)</div>`)[0];
+                popup_927668a25ced5d24164f85c5129d7909.setContent(html_4068a3176d90cd16d7d6162cc985585a);
+            
+        
+
+        marker_8fac328eadd6385110e8d4432f9a2daf.bindPopup(popup_927668a25ced5d24164f85c5129d7909)
+        ;
+
+        
+    
+    
+            var marker_bba2b2bbedf98b9a6e8bfe9c3cf15ab8 = L.marker(
+                [47.323411, 5.027256],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_7dac396230caf15fb4462f6a8a70ecc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bba2b2bbedf98b9a6e8bfe9c3cf15ab8.setIcon(icon_7dac396230caf15fb4462f6a8a70ecc5);
+        
+    
+        var popup_372efdb18893ce4ce9a2f5d403f2f179 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4ed9e1074d693ada83168d60ba9afc5 = $(`<div id="html_f4ed9e1074d693ada83168d60ba9afc5" style="width: 100.0%; height: 100.0%;">Dijon (Dijon)</div>`)[0];
+                popup_372efdb18893ce4ce9a2f5d403f2f179.setContent(html_f4ed9e1074d693ada83168d60ba9afc5);
+            
+        
+
+        marker_bba2b2bbedf98b9a6e8bfe9c3cf15ab8.bindPopup(popup_372efdb18893ce4ce9a2f5d403f2f179)
+        ;
+
+        
+    
+    
+            var marker_6d35533791cc0fb8610269aaefbac967 = L.marker(
+                [48.555737, 3.302837],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_497667cad2eb33526c8ab8bcb2655386 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d35533791cc0fb8610269aaefbac967.setIcon(icon_497667cad2eb33526c8ab8bcb2655386);
+        
+    
+        var popup_9d79e59dd8806c8236346d46823a7f1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0d9233be2e54bed323e293b81e849ed = $(`<div id="html_c0d9233be2e54bed323e293b81e849ed" style="width: 100.0%; height: 100.0%;">Provins (Provins)</div>`)[0];
+                popup_9d79e59dd8806c8236346d46823a7f1e.setContent(html_c0d9233be2e54bed323e293b81e849ed);
+            
+        
+
+        marker_6d35533791cc0fb8610269aaefbac967.bindPopup(popup_9d79e59dd8806c8236346d46823a7f1e)
+        ;
+
+        
+    
+    
+            var marker_ea8eb507449d3477bc2eaa3e25b793ba = L.marker(
+                [49.03814, 3.409302],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_05e85ef4df825f4a61e92aa85292aba6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea8eb507449d3477bc2eaa3e25b793ba.setIcon(icon_05e85ef4df825f4a61e92aa85292aba6);
+        
+    
+        var popup_97c0857e44a7a4b0696e691e81ed8fe2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54d7237fcff135d74c1389d19e6af084 = $(`<div id="html_54d7237fcff135d74c1389d19e6af084" style="width: 100.0%; height: 100.0%;">Château-Thierry (Château-Thierry)</div>`)[0];
+                popup_97c0857e44a7a4b0696e691e81ed8fe2.setContent(html_54d7237fcff135d74c1389d19e6af084);
+            
+        
+
+        marker_ea8eb507449d3477bc2eaa3e25b793ba.bindPopup(popup_97c0857e44a7a4b0696e691e81ed8fe2)
+        ;
+
+        
+    
+    
+            var marker_c24fcd66153586ee358d853bcb52925f = L.marker(
+                [48.957301, 2.873823],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_c86b6ef3eaeb15929a6f29af682bff24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c24fcd66153586ee358d853bcb52925f.setIcon(icon_c86b6ef3eaeb15929a6f29af682bff24);
+        
+    
+        var popup_c2318d61570994dbecf71c7a50b99ca2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56c4ad7ede7ac375b41a20355f12dcbd = $(`<div id="html_56c4ad7ede7ac375b41a20355f12dcbd" style="width: 100.0%; height: 100.0%;">Meaux (Meaux)</div>`)[0];
+                popup_c2318d61570994dbecf71c7a50b99ca2.setContent(html_56c4ad7ede7ac375b41a20355f12dcbd);
+            
+        
+
+        marker_c24fcd66153586ee358d853bcb52925f.bindPopup(popup_c2318d61570994dbecf71c7a50b99ca2)
+        ;
+
+        
+    
+    
+            var marker_7d9ca122c0ada7380be68822dbe77ede = L.marker(
+                [48.807783, 3.082122],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_3f1e1eae6a3a1ca71783de52e8d44919 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7d9ca122c0ada7380be68822dbe77ede.setIcon(icon_3f1e1eae6a3a1ca71783de52e8d44919);
+        
+    
+        var popup_f64c5a01c31a3e9e095d71116c744bed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd22ba31dd14e6351fab044c8b6d2196 = $(`<div id="html_dd22ba31dd14e6351fab044c8b6d2196" style="width: 100.0%; height: 100.0%;">Coulommiers (Coulommiers)</div>`)[0];
+                popup_f64c5a01c31a3e9e095d71116c744bed.setContent(html_dd22ba31dd14e6351fab044c8b6d2196);
+            
+        
+
+        marker_7d9ca122c0ada7380be68822dbe77ede.bindPopup(popup_f64c5a01c31a3e9e095d71116c744bed)
+        ;
+
+        
+    
+    
+            var marker_d0632c8731c1ef317b1702b832dfcb42 = L.marker(
+                [48.016342, 6.598879],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_060a14c036a41cf274aa0a66067e75d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d0632c8731c1ef317b1702b832dfcb42.setIcon(icon_060a14c036a41cf274aa0a66067e75d2);
+        
+    
+        var popup_4f82fd7252df8272d309371893732d3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31a7fbf7e5261d99c43889bf0554843d = $(`<div id="html_31a7fbf7e5261d99c43889bf0554843d" style="width: 100.0%; height: 100.0%;">Remiremont (Remiremont)</div>`)[0];
+                popup_4f82fd7252df8272d309371893732d3b.setContent(html_31a7fbf7e5261d99c43889bf0554843d);
+            
+        
+
+        marker_d0632c8731c1ef317b1702b832dfcb42.bindPopup(popup_4f82fd7252df8272d309371893732d3b)
+        ;
+
+        
+    
+    
+            var marker_4450e57b50e19c60b0d0373115150f0f = L.marker(
+                [48.957301, 2.873823],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_e21e50624ee5391680675b88e92a525b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4450e57b50e19c60b0d0373115150f0f.setIcon(icon_e21e50624ee5391680675b88e92a525b);
+        
+    
+        var popup_c54bec2d84b833719b6a3cea6fc5222b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d55e3bf661a0a8aec52ca8f46da4e46 = $(`<div id="html_2d55e3bf661a0a8aec52ca8f46da4e46" style="width: 100.0%; height: 100.0%;">Meaux (Meaux)</div>`)[0];
+                popup_c54bec2d84b833719b6a3cea6fc5222b.setContent(html_2d55e3bf661a0a8aec52ca8f46da4e46);
+            
+        
+
+        marker_4450e57b50e19c60b0d0373115150f0f.bindPopup(popup_c54bec2d84b833719b6a3cea6fc5222b)
+        ;
+
+        
+    
+    
+            var marker_eda06923ad48bbb02ecfedbb4f3720c4 = L.marker(
+                [48.955252, 4.348656],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_34a4ba719bb1f5e28e03f0499f130a31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eda06923ad48bbb02ecfedbb4f3720c4.setIcon(icon_34a4ba719bb1f5e28e03f0499f130a31);
+        
+    
+        var popup_528f31c744cadb43d28529f3e506066f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56466b7541c2dfb6d79f55b7044c7b8a = $(`<div id="html_56466b7541c2dfb6d79f55b7044c7b8a" style="width: 100.0%; height: 100.0%;">Châlons-en-Champagne (Châlons-en-Champagne)</div>`)[0];
+                popup_528f31c744cadb43d28529f3e506066f.setContent(html_56466b7541c2dfb6d79f55b7044c7b8a);
+            
+        
+
+        marker_eda06923ad48bbb02ecfedbb4f3720c4.bindPopup(popup_528f31c744cadb43d28529f3e506066f)
+        ;
+
+        
+    
+    
+            var marker_c3e4b47aadaf2c6e42e43a67322890b2 = L.marker(
+                [48.296069, 4.065281],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_62cdf9f704d25696875006ede34f1435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3e4b47aadaf2c6e42e43a67322890b2.setIcon(icon_62cdf9f704d25696875006ede34f1435);
+        
+    
+        var popup_2936d1359dda82f8caf3c51e5f075ac7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc771445238644bc7192a4f8cdc6597e = $(`<div id="html_fc771445238644bc7192a4f8cdc6597e" style="width: 100.0%; height: 100.0%;">Troyes (Troyes)</div>`)[0];
+                popup_2936d1359dda82f8caf3c51e5f075ac7.setContent(html_fc771445238644bc7192a4f8cdc6597e);
+            
+        
+
+        marker_c3e4b47aadaf2c6e42e43a67322890b2.bindPopup(popup_2936d1359dda82f8caf3c51e5f075ac7)
+        ;
+
+        
+    
+    
+            var marker_27deedc64d2d0a66830bce7c137481ab = L.marker(
+                [48.957301, 2.873823],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_c18654cf371e920a92f0f55d4439734d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_27deedc64d2d0a66830bce7c137481ab.setIcon(icon_c18654cf371e920a92f0f55d4439734d);
+        
+    
+        var popup_57cb1eca22ae19a2728a696f4cfb39f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfae4d43730bdc00dfbfb09b8b22e182 = $(`<div id="html_dfae4d43730bdc00dfbfb09b8b22e182" style="width: 100.0%; height: 100.0%;">Meaux (Meaux)</div>`)[0];
+                popup_57cb1eca22ae19a2728a696f4cfb39f8.setContent(html_dfae4d43730bdc00dfbfb09b8b22e182);
+            
+        
+
+        marker_27deedc64d2d0a66830bce7c137481ab.bindPopup(popup_57cb1eca22ae19a2728a696f4cfb39f8)
+        ;
+
+        
+    
+    
+            var marker_10cf62be38b5901d76e2daba720f972e = L.marker(
+                [47.323411, 5.027256],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_81d3e209b3e40572623728f81d09eafa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10cf62be38b5901d76e2daba720f972e.setIcon(icon_81d3e209b3e40572623728f81d09eafa);
+        
+    
+        var popup_9a5facd31a5154181d7468a5ba474dc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_407a155f52ffcf45f5d0c5e88e0e4622 = $(`<div id="html_407a155f52ffcf45f5d0c5e88e0e4622" style="width: 100.0%; height: 100.0%;">Dijon (Dijon)</div>`)[0];
+                popup_9a5facd31a5154181d7468a5ba474dc2.setContent(html_407a155f52ffcf45f5d0c5e88e0e4622);
+            
+        
+
+        marker_10cf62be38b5901d76e2daba720f972e.bindPopup(popup_9a5facd31a5154181d7468a5ba474dc2)
+        ;
+
+        
+    
+    
+            var marker_f7e32cf33ac29277d6f36d69f69fe9d4 = L.marker(
+                [48.555737, 3.302837],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_276ea40346d8ddebc44281388d558629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f7e32cf33ac29277d6f36d69f69fe9d4.setIcon(icon_276ea40346d8ddebc44281388d558629);
+        
+    
+        var popup_77babad8eeff9307e57f812bc81d84c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9d3a5d8571b050eb7860eb927a060b2 = $(`<div id="html_d9d3a5d8571b050eb7860eb927a060b2" style="width: 100.0%; height: 100.0%;">Provins (Provins)</div>`)[0];
+                popup_77babad8eeff9307e57f812bc81d84c6.setContent(html_d9d3a5d8571b050eb7860eb927a060b2);
+            
+        
+
+        marker_f7e32cf33ac29277d6f36d69f69fe9d4.bindPopup(popup_77babad8eeff9307e57f812bc81d84c6)
+        ;
+
+        
+    
+    
+            var marker_aa1ed93880cc0bd996da6801e4540198 = L.marker(
+                [49.03814, 3.409302],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_de23b95cc2f0d73ae3730a56bddc23cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa1ed93880cc0bd996da6801e4540198.setIcon(icon_de23b95cc2f0d73ae3730a56bddc23cb);
+        
+    
+        var popup_3b7a0468f4daf883efa8d057751e8767 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddac5ed74c5030d42dee7d84ebdd40b6 = $(`<div id="html_ddac5ed74c5030d42dee7d84ebdd40b6" style="width: 100.0%; height: 100.0%;">Château-Thierry (Château-Thierry)</div>`)[0];
+                popup_3b7a0468f4daf883efa8d057751e8767.setContent(html_ddac5ed74c5030d42dee7d84ebdd40b6);
+            
+        
+
+        marker_aa1ed93880cc0bd996da6801e4540198.bindPopup(popup_3b7a0468f4daf883efa8d057751e8767)
+        ;
+
+        
+    
+    
+            var marker_65caacee9d4e38ad9044e8ebcf653e00 = L.marker(
+                [48.957301, 2.873823],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_20fd11c40a7c6c940d781176f79a602c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65caacee9d4e38ad9044e8ebcf653e00.setIcon(icon_20fd11c40a7c6c940d781176f79a602c);
+        
+    
+        var popup_7914b13652efb4025534c2ae6a97b7df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e72272060d4cdccad65d627cc746cc2 = $(`<div id="html_5e72272060d4cdccad65d627cc746cc2" style="width: 100.0%; height: 100.0%;">Meaux (Meaux)</div>`)[0];
+                popup_7914b13652efb4025534c2ae6a97b7df.setContent(html_5e72272060d4cdccad65d627cc746cc2);
+            
+        
+
+        marker_65caacee9d4e38ad9044e8ebcf653e00.bindPopup(popup_7914b13652efb4025534c2ae6a97b7df)
+        ;
+
+        
+    
+    
+            var marker_162456536cce1f8fd3b35beb9ec8e737 = L.marker(
+                [48.807783, 3.082122],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_64c124faf31124e93a16b568de0bd78c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_162456536cce1f8fd3b35beb9ec8e737.setIcon(icon_64c124faf31124e93a16b568de0bd78c);
+        
+    
+        var popup_0e22b99fbb7cbae31424ffa5075e1b8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9149d192e44dae3d0aac0d134f6c37a = $(`<div id="html_b9149d192e44dae3d0aac0d134f6c37a" style="width: 100.0%; height: 100.0%;">Coulommiers (Coulommiers)</div>`)[0];
+                popup_0e22b99fbb7cbae31424ffa5075e1b8f.setContent(html_b9149d192e44dae3d0aac0d134f6c37a);
+            
+        
+
+        marker_162456536cce1f8fd3b35beb9ec8e737.bindPopup(popup_0e22b99fbb7cbae31424ffa5075e1b8f)
+        ;
+
+        
+    
+    
+            var marker_866e7e42a892be89e0a02d50bd7bd82b = L.marker(
+                [48.016342, 6.598879],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_0a02cb5146d09c7dc305d1c194e1c732 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_866e7e42a892be89e0a02d50bd7bd82b.setIcon(icon_0a02cb5146d09c7dc305d1c194e1c732);
+        
+    
+        var popup_7e0bccafc9735277a60bbd6b4c7d692d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ab0d99933c39dfe9a2ff577824c6477 = $(`<div id="html_7ab0d99933c39dfe9a2ff577824c6477" style="width: 100.0%; height: 100.0%;">Remiremont (Remiremont)</div>`)[0];
+                popup_7e0bccafc9735277a60bbd6b4c7d692d.setContent(html_7ab0d99933c39dfe9a2ff577824c6477);
+            
+        
+
+        marker_866e7e42a892be89e0a02d50bd7bd82b.bindPopup(popup_7e0bccafc9735277a60bbd6b4c7d692d)
+        ;
+
+        
+    
+    
+            var marker_21b8b8f72f91fc20c330f2c0eb56bf8a = L.marker(
+                [48.957301, 2.873823],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_35439b489153d0ce276c76742064db13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21b8b8f72f91fc20c330f2c0eb56bf8a.setIcon(icon_35439b489153d0ce276c76742064db13);
+        
+    
+        var popup_9df6b05a1ff4b800ffc2ab5b746e4282 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d691e211641df6ecbd62268ad7bb81f = $(`<div id="html_7d691e211641df6ecbd62268ad7bb81f" style="width: 100.0%; height: 100.0%;">Meaux (Meaux)</div>`)[0];
+                popup_9df6b05a1ff4b800ffc2ab5b746e4282.setContent(html_7d691e211641df6ecbd62268ad7bb81f);
+            
+        
+
+        marker_21b8b8f72f91fc20c330f2c0eb56bf8a.bindPopup(popup_9df6b05a1ff4b800ffc2ab5b746e4282)
+        ;
+
+        
+    
+    
+            var marker_4b6614c56c85d40782e4be6b6c7fd745 = L.marker(
+                [48.955252, 4.348656],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_e156318e96649ea945601faf8c32af56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b6614c56c85d40782e4be6b6c7fd745.setIcon(icon_e156318e96649ea945601faf8c32af56);
+        
+    
+        var popup_a799aa41dc4295760d5220b81d860926 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d86cd5597013fa90eb967dc1aca17370 = $(`<div id="html_d86cd5597013fa90eb967dc1aca17370" style="width: 100.0%; height: 100.0%;">Châlons-en-Champagne (Châlons-en-Champagne)</div>`)[0];
+                popup_a799aa41dc4295760d5220b81d860926.setContent(html_d86cd5597013fa90eb967dc1aca17370);
+            
+        
+
+        marker_4b6614c56c85d40782e4be6b6c7fd745.bindPopup(popup_a799aa41dc4295760d5220b81d860926)
+        ;
+
+        
+    
+    
+            var marker_b2b81467a7b9c6e946bddb20892bbb7a = L.marker(
+                [48.296069, 4.065281],
+                {}
+            ).addTo(map_8e7be7a7e2772a22394fc7b8a2bd6780);
+        
+    
+            var icon_3d47787cba1a5b1138a888a016b89088 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b2b81467a7b9c6e946bddb20892bbb7a.setIcon(icon_3d47787cba1a5b1138a888a016b89088);
+        
+    
+        var popup_81dc78b24ae80e2b61a4f07f146528c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0017ed4a647cf3d2ad4ef5a3fe4408cf = $(`<div id="html_0017ed4a647cf3d2ad4ef5a3fe4408cf" style="width: 100.0%; height: 100.0%;">Troyes (Troyes)</div>`)[0];
+                popup_81dc78b24ae80e2b61a4f07f146528c2.setContent(html_0017ed4a647cf3d2ad4ef5a3fe4408cf);
+            
+        
+
+        marker_b2b81467a7b9c6e946bddb20892bbb7a.bindPopup(popup_81dc78b24ae80e2b61a4f07f146528c2)
+        ;
+
+        
+    
+</script>

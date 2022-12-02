@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d139bd4d835677fa2292e1cad1da4ba0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d139bd4d835677fa2292e1cad1da4ba0" ></div>
+        
+</body>
+<script>    
+    
+            var map_d139bd4d835677fa2292e1cad1da4ba0 = L.map(
+                "map_d139bd4d835677fa2292e1cad1da4ba0",
+                {
+                    center: [43.704556, 7.261904],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d53ce5da166cb98ec6957be586f55e9d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var marker_bc629ee8cbca4bb1095ad1885c19695a = L.marker(
+                [43.722692, 7.291671],
+                {}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var icon_af6a15c4fc7ea9178e605afc07bf7c09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bc629ee8cbca4bb1095ad1885c19695a.setIcon(icon_af6a15c4fc7ea9178e605afc07bf7c09);
+        
+    
+        var popup_bd323741f4b316d5f1b20e7fcb32dace = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a8b06b88428574dc231391965c37d93 = $(`<div id="html_9a8b06b88428574dc231391965c37d93" style="width: 100.0%; height: 100.0%;">Nice-Ville (Nice)</div>`)[0];
+                popup_bd323741f4b316d5f1b20e7fcb32dace.setContent(html_9a8b06b88428574dc231391965c37d93);
+            
+        
+
+        marker_bc629ee8cbca4bb1095ad1885c19695a.bindPopup(popup_bd323741f4b316d5f1b20e7fcb32dace)
+        ;
+
+        
+    
+    
+            var marker_6fe0c93fa055abcf0938ec8be3fa0767 = L.marker(
+                [43.704556, 7.261904],
+                {}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var icon_6ec068ecc7e48b12a0ab83af9ab17a16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6fe0c93fa055abcf0938ec8be3fa0767.setIcon(icon_6ec068ecc7e48b12a0ab83af9ab17a16);
+        
+    
+        var popup_9d041dcb1ce1e1608de25204f0f7da5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c17347f17fc1e351d2fe0709c5ad36c7 = $(`<div id="html_c17347f17fc1e351d2fe0709c5ad36c7" style="width: 100.0%; height: 100.0%;">Nice-Ville (Nice)</div>`)[0];
+                popup_9d041dcb1ce1e1608de25204f0f7da5a.setContent(html_c17347f17fc1e351d2fe0709c5ad36c7);
+            
+        
+
+        marker_6fe0c93fa055abcf0938ec8be3fa0767.bindPopup(popup_9d041dcb1ce1e1608de25204f0f7da5a)
+        ;
+
+        
+    
+    
+            var marker_390a4723a53c3a4a07783694ec6beaea = L.marker(
+                [43.944057, 7.516446],
+                {}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var icon_889c9b77f74413aca4ba8861ef38856d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_390a4723a53c3a4a07783694ec6beaea.setIcon(icon_889c9b77f74413aca4ba8861ef38856d);
+        
+    
+        var popup_cfea6e59b2e0db701ac8b41b3a3c522d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8807df8dff4c06b44eb8822d800ad341 = $(`<div id="html_8807df8dff4c06b44eb8822d800ad341" style="width: 100.0%; height: 100.0%;">Breil-sur-Roya (Breil-sur-Roya)</div>`)[0];
+                popup_cfea6e59b2e0db701ac8b41b3a3c522d.setContent(html_8807df8dff4c06b44eb8822d800ad341);
+            
+        
+
+        marker_390a4723a53c3a4a07783694ec6beaea.bindPopup(popup_cfea6e59b2e0db701ac8b41b3a3c522d)
+        ;
+
+        
+    
+    
+            var marker_867bdc70dac5503720965b31e9a689ef = L.marker(
+                [43.944057, 7.516446],
+                {}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var icon_471cbf143677dad67cb1d8e595196701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_867bdc70dac5503720965b31e9a689ef.setIcon(icon_471cbf143677dad67cb1d8e595196701);
+        
+    
+        var popup_43c2c2a2c1a5d952a32be5fda3fdc59a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c35044eb4cd7e3b541743c7bd76e5b03 = $(`<div id="html_c35044eb4cd7e3b541743c7bd76e5b03" style="width: 100.0%; height: 100.0%;">Breil-sur-Roya (Breil-sur-Roya)</div>`)[0];
+                popup_43c2c2a2c1a5d952a32be5fda3fdc59a.setContent(html_c35044eb4cd7e3b541743c7bd76e5b03);
+            
+        
+
+        marker_867bdc70dac5503720965b31e9a689ef.bindPopup(popup_43c2c2a2c1a5d952a32be5fda3fdc59a)
+        ;
+
+        
+    
+    
+            var marker_f6dbc5d4012a76cb149480a19d9b5f25 = L.marker(
+                [43.944057, 7.516446],
+                {}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var icon_f1b798f6309d77a9b21d71119cbd7171 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6dbc5d4012a76cb149480a19d9b5f25.setIcon(icon_f1b798f6309d77a9b21d71119cbd7171);
+        
+    
+        var popup_f85a40802cbfc4dc23f63ebeb8a7b284 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeda74c6dda2830ef90e67d7782593f9 = $(`<div id="html_eeda74c6dda2830ef90e67d7782593f9" style="width: 100.0%; height: 100.0%;">Breil-sur-Roya (Breil-sur-Roya)</div>`)[0];
+                popup_f85a40802cbfc4dc23f63ebeb8a7b284.setContent(html_eeda74c6dda2830ef90e67d7782593f9);
+            
+        
+
+        marker_f6dbc5d4012a76cb149480a19d9b5f25.bindPopup(popup_f85a40802cbfc4dc23f63ebeb8a7b284)
+        ;
+
+        
+    
+    
+            var marker_4179845ea8d0fcd2921b4ecf44651954 = L.marker(
+                [43.704556, 7.261904],
+                {}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var icon_0164b0ad8edd7229706b43f764e7c4d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4179845ea8d0fcd2921b4ecf44651954.setIcon(icon_0164b0ad8edd7229706b43f764e7c4d2);
+        
+    
+        var popup_4d23cbbd4deaa1f4f7faf375e788e6ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0764353241d3938acf164e557524b7d = $(`<div id="html_a0764353241d3938acf164e557524b7d" style="width: 100.0%; height: 100.0%;">Nice-Ville (Nice)</div>`)[0];
+                popup_4d23cbbd4deaa1f4f7faf375e788e6ef.setContent(html_a0764353241d3938acf164e557524b7d);
+            
+        
+
+        marker_4179845ea8d0fcd2921b4ecf44651954.bindPopup(popup_4d23cbbd4deaa1f4f7faf375e788e6ef)
+        ;
+
+        
+    
+    
+            var marker_d4e5da72df29926feed36d9268aa3dc2 = L.marker(
+                [43.944057, 7.516446],
+                {}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var icon_436893511429fe182d7f5e2c4fd45e6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d4e5da72df29926feed36d9268aa3dc2.setIcon(icon_436893511429fe182d7f5e2c4fd45e6c);
+        
+    
+        var popup_56729e57dcdde55b5510e74caa9e4ece = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7e5595048907c9992cd3348f5b38aad = $(`<div id="html_b7e5595048907c9992cd3348f5b38aad" style="width: 100.0%; height: 100.0%;">Breil-sur-Roya (Breil-sur-Roya)</div>`)[0];
+                popup_56729e57dcdde55b5510e74caa9e4ece.setContent(html_b7e5595048907c9992cd3348f5b38aad);
+            
+        
+
+        marker_d4e5da72df29926feed36d9268aa3dc2.bindPopup(popup_56729e57dcdde55b5510e74caa9e4ece)
+        ;
+
+        
+    
+    
+            var marker_8a8144fe27470ece4dcb23b893b81457 = L.marker(
+                [43.704556, 7.261904],
+                {}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var icon_0c5f0d6e9b2441a34fdd52381c8f3150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a8144fe27470ece4dcb23b893b81457.setIcon(icon_0c5f0d6e9b2441a34fdd52381c8f3150);
+        
+    
+        var popup_39f335b408c9de90ef79f3ffedb66528 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4812fdc31d459976223984cc74400d1 = $(`<div id="html_a4812fdc31d459976223984cc74400d1" style="width: 100.0%; height: 100.0%;">Nice-Ville (Nice)</div>`)[0];
+                popup_39f335b408c9de90ef79f3ffedb66528.setContent(html_a4812fdc31d459976223984cc74400d1);
+            
+        
+
+        marker_8a8144fe27470ece4dcb23b893b81457.bindPopup(popup_39f335b408c9de90ef79f3ffedb66528)
+        ;
+
+        
+    
+    
+            var marker_5139fa2cdaa3d4f91ba198cb7f8279b5 = L.marker(
+                [43.944057, 7.516446],
+                {}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var icon_a2e37dccc7bcd23bf5b25e27fbd09958 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5139fa2cdaa3d4f91ba198cb7f8279b5.setIcon(icon_a2e37dccc7bcd23bf5b25e27fbd09958);
+        
+    
+        var popup_fad0c06cfa26a67a9dbc169ee3e55881 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18425827f1b9b22c36a0640524d1417f = $(`<div id="html_18425827f1b9b22c36a0640524d1417f" style="width: 100.0%; height: 100.0%;">Breil-sur-Roya (Breil-sur-Roya)</div>`)[0];
+                popup_fad0c06cfa26a67a9dbc169ee3e55881.setContent(html_18425827f1b9b22c36a0640524d1417f);
+            
+        
+
+        marker_5139fa2cdaa3d4f91ba198cb7f8279b5.bindPopup(popup_fad0c06cfa26a67a9dbc169ee3e55881)
+        ;
+
+        
+    
+    
+            var marker_625393c63675381f9dc725585f733e47 = L.marker(
+                [43.704556, 7.261904],
+                {}
+            ).addTo(map_d139bd4d835677fa2292e1cad1da4ba0);
+        
+    
+            var icon_bcd4bb3e3b59c11c23891f1c687129f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_625393c63675381f9dc725585f733e47.setIcon(icon_bcd4bb3e3b59c11c23891f1c687129f1);
+        
+    
+        var popup_464a1cebaf45057b9f5ca652a5706335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35a1abe55339eea875c1d9ab2124b70b = $(`<div id="html_35a1abe55339eea875c1d9ab2124b70b" style="width: 100.0%; height: 100.0%;">Nice-Ville (Nice)</div>`)[0];
+                popup_464a1cebaf45057b9f5ca652a5706335.setContent(html_35a1abe55339eea875c1d9ab2124b70b);
+            
+        
+
+        marker_625393c63675381f9dc725585f733e47.bindPopup(popup_464a1cebaf45057b9f5ca652a5706335)
+        ;
+
+        
+    
+</script>

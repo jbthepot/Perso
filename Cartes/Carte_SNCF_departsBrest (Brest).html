@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_992d7afa10cae300882ac7c7afeeab30 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_992d7afa10cae300882ac7c7afeeab30" ></div>
+        
+</body>
+<script>    
+    
+            var map_992d7afa10cae300882ac7c7afeeab30 = L.map(
+                "map_992d7afa10cae300882ac7c7afeeab30",
+                {
+                    center: [48.841172, 2.320514],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_86a54b99c248ea0f2e44d9b0b3c08842 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_a9481180a5c373b7cc4d8ba8fb9f581d = L.marker(
+                [48.38762, -4.480306],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_ea9c2de81e041d5344a19df6809dbb3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a9481180a5c373b7cc4d8ba8fb9f581d.setIcon(icon_ea9c2de81e041d5344a19df6809dbb3e);
+        
+    
+        var popup_2164c91f2061c49e3066e4c29457f61e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b14349d5312a9ee0fbf900e922a373d4 = $(`<div id="html_b14349d5312a9ee0fbf900e922a373d4" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris)</div>`)[0];
+                popup_2164c91f2061c49e3066e4c29457f61e.setContent(html_b14349d5312a9ee0fbf900e922a373d4);
+            
+        
+
+        marker_a9481180a5c373b7cc4d8ba8fb9f581d.bindPopup(popup_2164c91f2061c49e3066e4c29457f61e)
+        ;
+
+        
+    
+    
+            var marker_6b17344d92f8d6a9a43d81b1e1d0a48c = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_e539ea6e243d23954eb93d07ec93d53e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b17344d92f8d6a9a43d81b1e1d0a48c.setIcon(icon_e539ea6e243d23954eb93d07ec93d53e);
+        
+    
+        var popup_598101b198975641180839133989c660 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8813bb565d69f1219b79805d742cd42 = $(`<div id="html_e8813bb565d69f1219b79805d742cd42" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 78.8 km</div>`)[0];
+                popup_598101b198975641180839133989c660.setContent(html_e8813bb565d69f1219b79805d742cd42);
+            
+        
+
+        marker_6b17344d92f8d6a9a43d81b1e1d0a48c.bindPopup(popup_598101b198975641180839133989c660)
+        ;
+
+        
+    
+    
+            var poly_line_fcbc4a73aa7b61cb2b6e038cb1e7454d = L.polyline(
+                [[48.38762, -4.480306], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_19e2bb23780d4dbdaf9b678d3ce9bd69 = L.marker(
+                [48.103517, -1.672744],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_0af75f5a1d4fc7cd1ac7da58de090fc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_19e2bb23780d4dbdaf9b678d3ce9bd69.setIcon(icon_0af75f5a1d4fc7cd1ac7da58de090fc9);
+        
+    
+        var popup_10f28dcaa7add92306e8560cf8bbfcfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c658ff54c8cf466169552bc0587f8e87 = $(`<div id="html_c658ff54c8cf466169552bc0587f8e87" style="width: 100.0%; height: 100.0%;">Rennes (Rennes) - 139.1 km</div>`)[0];
+                popup_10f28dcaa7add92306e8560cf8bbfcfc.setContent(html_c658ff54c8cf466169552bc0587f8e87);
+            
+        
+
+        marker_19e2bb23780d4dbdaf9b678d3ce9bd69.bindPopup(popup_10f28dcaa7add92306e8560cf8bbfcfc)
+        ;
+
+        
+    
+    
+            var poly_line_d40c2418d9d1390902f0952e6702bf65 = L.polyline(
+                [[48.38762, -4.480306], [48.103517, -1.672744]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_873f6a63ef14e8ceda25ea63db61236f = L.marker(
+                [47.217491, -1.542077],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_a054f38a050cda1b25221b845af63ca1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_873f6a63ef14e8ceda25ea63db61236f.setIcon(icon_a054f38a050cda1b25221b845af63ca1);
+        
+    
+        var popup_6d177701cd855dc70fe8482e385a7d30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1ffb8750ce449e5ceaaebd65c4bb456 = $(`<div id="html_e1ffb8750ce449e5ceaaebd65c4bb456" style="width: 100.0%; height: 100.0%;">Nantes (Nantes) - 285.5 km</div>`)[0];
+                popup_6d177701cd855dc70fe8482e385a7d30.setContent(html_e1ffb8750ce449e5ceaaebd65c4bb456);
+            
+        
+
+        marker_873f6a63ef14e8ceda25ea63db61236f.bindPopup(popup_6d177701cd855dc70fe8482e385a7d30)
+        ;
+
+        
+    
+    
+            var poly_line_b833ea4e232ee574d44aacaa508b9469 = L.polyline(
+                [[48.38762, -4.480306], [47.217491, -1.542077]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_f9b551f10d6aa6342c6be691a42fce5b = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_51ce30289f6b136fb17b027e0c12054f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f9b551f10d6aa6342c6be691a42fce5b.setIcon(icon_51ce30289f6b136fb17b027e0c12054f);
+        
+    
+        var popup_c12333495c279f9989cb210ab8760751 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cfaf9086f7e17ae06a04739ce72e227 = $(`<div id="html_6cfaf9086f7e17ae06a04739ce72e227" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 78.8 km</div>`)[0];
+                popup_c12333495c279f9989cb210ab8760751.setContent(html_6cfaf9086f7e17ae06a04739ce72e227);
+            
+        
+
+        marker_f9b551f10d6aa6342c6be691a42fce5b.bindPopup(popup_c12333495c279f9989cb210ab8760751)
+        ;
+
+        
+    
+    
+            var poly_line_abc414860106ef30a485db6f2e6c922b = L.polyline(
+                [[48.38762, -4.480306], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_9ed0cbf9ad1754c4b0acd813e351e90e = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_cce1cbd0fa139e1000093c22bffd15a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ed0cbf9ad1754c4b0acd813e351e90e.setIcon(icon_cce1cbd0fa139e1000093c22bffd15a3);
+        
+    
+        var popup_e32ce3eb31f520faa3f1faa91d9e93ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f58344b6d05bba60848b17b5544acaef = $(`<div id="html_f58344b6d05bba60848b17b5544acaef" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 48.4 km</div>`)[0];
+                popup_e32ce3eb31f520faa3f1faa91d9e93ae.setContent(html_f58344b6d05bba60848b17b5544acaef);
+            
+        
+
+        marker_9ed0cbf9ad1754c4b0acd813e351e90e.bindPopup(popup_e32ce3eb31f520faa3f1faa91d9e93ae)
+        ;
+
+        
+    
+    
+            var poly_line_2dddd557f7a2eca1a3714e093748535c = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_3c115de2ac0c14dba4b915a44a9d9538 = L.marker(
+                [48.57797, -3.832514],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_e3b0befe2ddf7755997a14b14d15d6bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c115de2ac0c14dba4b915a44a9d9538.setIcon(icon_e3b0befe2ddf7755997a14b14d15d6bf);
+        
+    
+        var popup_e31be3f7d79ae0aa0625128fd5c0e1ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8302330d82328ff613bfcf762b932a0d = $(`<div id="html_8302330d82328ff613bfcf762b932a0d" style="width: 100.0%; height: 100.0%;">Morlaix (Morlaix) - 26.0 km</div>`)[0];
+                popup_e31be3f7d79ae0aa0625128fd5c0e1ce.setContent(html_8302330d82328ff613bfcf762b932a0d);
+            
+        
+
+        marker_3c115de2ac0c14dba4b915a44a9d9538.bindPopup(popup_e31be3f7d79ae0aa0625128fd5c0e1ce)
+        ;
+
+        
+    
+    
+            var poly_line_08a5fbac90a965c62730b67298451243 = L.polyline(
+                [[48.38762, -4.480306], [48.57797, -3.832514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_5a503830bf4b4f0665b4d57910a131a3 = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_a6cea4f21b58502e206479f45413040f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a503830bf4b4f0665b4d57910a131a3.setIcon(icon_a6cea4f21b58502e206479f45413040f);
+        
+    
+        var popup_81c22aa1cc57ceb2b1118af07da08113 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f28e86f53d2113b04994212936ff2df = $(`<div id="html_9f28e86f53d2113b04994212936ff2df" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 48.4 km</div>`)[0];
+                popup_81c22aa1cc57ceb2b1118af07da08113.setContent(html_9f28e86f53d2113b04994212936ff2df);
+            
+        
+
+        marker_5a503830bf4b4f0665b4d57910a131a3.bindPopup(popup_81c22aa1cc57ceb2b1118af07da08113)
+        ;
+
+        
+    
+    
+            var poly_line_2723930433dda20a70e9acf8c3003df2 = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_28b56045a1cc44f36869ba35d07a3fb3 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_f96171cdc9944fa270d635a2c5a0b812 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_28b56045a1cc44f36869ba35d07a3fb3.setIcon(icon_f96171cdc9944fa270d635a2c5a0b812);
+        
+    
+        var popup_47a1a9656bf23946321fcedd4bb39050 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f66a527bb217ba6180915c0eb6ab1ea1 = $(`<div id="html_f66a527bb217ba6180915c0eb6ab1ea1" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 78.8 km</div>`)[0];
+                popup_47a1a9656bf23946321fcedd4bb39050.setContent(html_f66a527bb217ba6180915c0eb6ab1ea1);
+            
+        
+
+        marker_28b56045a1cc44f36869ba35d07a3fb3.bindPopup(popup_47a1a9656bf23946321fcedd4bb39050)
+        ;
+
+        
+    
+    
+            var poly_line_0b90ace89e44f477e56f6cda1681a6ff = L.polyline(
+                [[48.38762, -4.480306], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_49f1a690372553198bd4ce55a45e0285 = L.marker(
+                [48.453572, -4.256528],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_5369d0d0ae0c8f8bd4f1de23de91443b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49f1a690372553198bd4ce55a45e0285.setIcon(icon_5369d0d0ae0c8f8bd4f1de23de91443b);
+        
+    
+        var popup_a637bec7549e1764be8569b94123ac00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e3358e9018bb39588a73228f5fe16c5 = $(`<div id="html_4e3358e9018bb39588a73228f5fe16c5" style="width: 100.0%; height: 100.0%;">Landerneau (Landerneau) - 10.0 km</div>`)[0];
+                popup_a637bec7549e1764be8569b94123ac00.setContent(html_4e3358e9018bb39588a73228f5fe16c5);
+            
+        
+
+        marker_49f1a690372553198bd4ce55a45e0285.bindPopup(popup_a637bec7549e1764be8569b94123ac00)
+        ;
+
+        
+    
+    
+            var poly_line_d931e89ce5aa9995352b4c0ab5f0d134 = L.polyline(
+                [[48.38762, -4.480306], [48.453572, -4.256528]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_c6e2e9c77e962009fc93d3267e4343c6 = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_6522c67d92c27cae1c8ce71a7769e09a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6e2e9c77e962009fc93d3267e4343c6.setIcon(icon_6522c67d92c27cae1c8ce71a7769e09a);
+        
+    
+        var popup_079724ec24ec87b65169d540aa2c91bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd5337e1259fee4f9886f5e1a3f4d0fc = $(`<div id="html_bd5337e1259fee4f9886f5e1a3f4d0fc" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 48.4 km</div>`)[0];
+                popup_079724ec24ec87b65169d540aa2c91bc.setContent(html_bd5337e1259fee4f9886f5e1a3f4d0fc);
+            
+        
+
+        marker_c6e2e9c77e962009fc93d3267e4343c6.bindPopup(popup_079724ec24ec87b65169d540aa2c91bc)
+        ;
+
+        
+    
+    
+            var poly_line_362f78f39b9c1cbd583ecaeeef8094e7 = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_20dcd4e87687f608af047a430072d121 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_7de24ba2c75d4c21fe4ecdcc57a66c9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20dcd4e87687f608af047a430072d121.setIcon(icon_7de24ba2c75d4c21fe4ecdcc57a66c9b);
+        
+    
+        var popup_9e972c44c7d07f01384fc6d033a11719 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f5541df576e92398a24802a254448dc = $(`<div id="html_6f5541df576e92398a24802a254448dc" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 78.8 km</div>`)[0];
+                popup_9e972c44c7d07f01384fc6d033a11719.setContent(html_6f5541df576e92398a24802a254448dc);
+            
+        
+
+        marker_20dcd4e87687f608af047a430072d121.bindPopup(popup_9e972c44c7d07f01384fc6d033a11719)
+        ;
+
+        
+    
+    
+            var poly_line_b79133b5ac0ed75b40e85db838e37c61 = L.polyline(
+                [[48.38762, -4.480306], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_77f1266483ed49ce8aab4e70fba9d232 = L.marker(
+                [48.103517, -1.672744],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_ce3dce68bd7316165a16f55e9cbedf5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_77f1266483ed49ce8aab4e70fba9d232.setIcon(icon_ce3dce68bd7316165a16f55e9cbedf5a);
+        
+    
+        var popup_5af92a3e5990635219d43d1bcf7d3906 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e36ce42abf3fba1f4cc0710b0ba9498f = $(`<div id="html_e36ce42abf3fba1f4cc0710b0ba9498f" style="width: 100.0%; height: 100.0%;">Rennes (Rennes) - 139.1 km</div>`)[0];
+                popup_5af92a3e5990635219d43d1bcf7d3906.setContent(html_e36ce42abf3fba1f4cc0710b0ba9498f);
+            
+        
+
+        marker_77f1266483ed49ce8aab4e70fba9d232.bindPopup(popup_5af92a3e5990635219d43d1bcf7d3906)
+        ;
+
+        
+    
+    
+            var poly_line_be53482943af282c0a728a16e2fc7b5a = L.polyline(
+                [[48.38762, -4.480306], [48.103517, -1.672744]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_965726358b1b2d0c541a2353acb1fe04 = L.marker(
+                [47.217491, -1.542077],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_8468560d51a14c5c26be47ae4bbe2396 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_965726358b1b2d0c541a2353acb1fe04.setIcon(icon_8468560d51a14c5c26be47ae4bbe2396);
+        
+    
+        var popup_a32c3a75c244890b414ec4d88a8d42c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fc816c5f931f31648918d58b93e4f53 = $(`<div id="html_7fc816c5f931f31648918d58b93e4f53" style="width: 100.0%; height: 100.0%;">Nantes (Nantes) - 285.5 km</div>`)[0];
+                popup_a32c3a75c244890b414ec4d88a8d42c8.setContent(html_7fc816c5f931f31648918d58b93e4f53);
+            
+        
+
+        marker_965726358b1b2d0c541a2353acb1fe04.bindPopup(popup_a32c3a75c244890b414ec4d88a8d42c8)
+        ;
+
+        
+    
+    
+            var poly_line_03fc54583847c3b39904f3b881964cc4 = L.polyline(
+                [[48.38762, -4.480306], [47.217491, -1.542077]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_78233852af3fd3a370d9ccb845971ea7 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_d9dbbb7e7f0fc9df1331ad08c5a4f9ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_78233852af3fd3a370d9ccb845971ea7.setIcon(icon_d9dbbb7e7f0fc9df1331ad08c5a4f9ba);
+        
+    
+        var popup_16db7b2ec69293ed787b0a8ab2ed3d69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4abb5002fc60bc5992558564dab9599 = $(`<div id="html_f4abb5002fc60bc5992558564dab9599" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 78.8 km</div>`)[0];
+                popup_16db7b2ec69293ed787b0a8ab2ed3d69.setContent(html_f4abb5002fc60bc5992558564dab9599);
+            
+        
+
+        marker_78233852af3fd3a370d9ccb845971ea7.bindPopup(popup_16db7b2ec69293ed787b0a8ab2ed3d69)
+        ;
+
+        
+    
+    
+            var poly_line_3f7baf226ce913d0487251bc00094940 = L.polyline(
+                [[48.38762, -4.480306], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_4c8346f837338e3de6a1374152ddad36 = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_4688024a6a26e38fc2f2280c6ab0a543 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4c8346f837338e3de6a1374152ddad36.setIcon(icon_4688024a6a26e38fc2f2280c6ab0a543);
+        
+    
+        var popup_d3815b79bd1b9338917be374b989c7c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_473a23c8941987582905ffcecbbb77eb = $(`<div id="html_473a23c8941987582905ffcecbbb77eb" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 48.4 km</div>`)[0];
+                popup_d3815b79bd1b9338917be374b989c7c5.setContent(html_473a23c8941987582905ffcecbbb77eb);
+            
+        
+
+        marker_4c8346f837338e3de6a1374152ddad36.bindPopup(popup_d3815b79bd1b9338917be374b989c7c5)
+        ;
+
+        
+    
+    
+            var poly_line_659541d51cdaec6dd360d3b2c4610d3e = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_1e20519b53511435f142253dc64dc484 = L.marker(
+                [48.57797, -3.832514],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_db2863d714b4e63850f241b90aa982f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e20519b53511435f142253dc64dc484.setIcon(icon_db2863d714b4e63850f241b90aa982f9);
+        
+    
+        var popup_4f112a4e43d53acd8ea15362694c9d0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2971bfb35b1c312727f95ccbf64a0a17 = $(`<div id="html_2971bfb35b1c312727f95ccbf64a0a17" style="width: 100.0%; height: 100.0%;">Morlaix (Morlaix) - 26.0 km</div>`)[0];
+                popup_4f112a4e43d53acd8ea15362694c9d0e.setContent(html_2971bfb35b1c312727f95ccbf64a0a17);
+            
+        
+
+        marker_1e20519b53511435f142253dc64dc484.bindPopup(popup_4f112a4e43d53acd8ea15362694c9d0e)
+        ;
+
+        
+    
+    
+            var poly_line_87347ae313727b1ba71f6063f5dade7d = L.polyline(
+                [[48.38762, -4.480306], [48.57797, -3.832514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_be805048d067127e8d5c8e92ff0ca0c5 = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_ce9cbdbdcd1e2f02b8cee639c7ddde89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be805048d067127e8d5c8e92ff0ca0c5.setIcon(icon_ce9cbdbdcd1e2f02b8cee639c7ddde89);
+        
+    
+        var popup_73c14ff8f5237f71279f3f6fe2ef0fce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_079344b0fc3de9ee79cd124d4cdc1f6d = $(`<div id="html_079344b0fc3de9ee79cd124d4cdc1f6d" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 48.4 km</div>`)[0];
+                popup_73c14ff8f5237f71279f3f6fe2ef0fce.setContent(html_079344b0fc3de9ee79cd124d4cdc1f6d);
+            
+        
+
+        marker_be805048d067127e8d5c8e92ff0ca0c5.bindPopup(popup_73c14ff8f5237f71279f3f6fe2ef0fce)
+        ;
+
+        
+    
+    
+            var poly_line_5d7560c5d47f054b84eaf637f652c2a1 = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_640a622db0834a3a3ccb9f99b8218940 = L.marker(
+                [48.841172, 2.320514],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_cce13c5c2b1ee42d03de28ab7d074025 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_640a622db0834a3a3ccb9f99b8218940.setIcon(icon_cce13c5c2b1ee42d03de28ab7d074025);
+        
+    
+        var popup_b571571b74fa7ea01696e8161e60687b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fd300c2cea3bbe2b4b04744bdb78f4b = $(`<div id="html_4fd300c2cea3bbe2b4b04744bdb78f4b" style="width: 100.0%; height: 100.0%;">Paris Montparnasse Hall 1 &2 (Paris) - 78.8 km</div>`)[0];
+                popup_b571571b74fa7ea01696e8161e60687b.setContent(html_4fd300c2cea3bbe2b4b04744bdb78f4b);
+            
+        
+
+        marker_640a622db0834a3a3ccb9f99b8218940.bindPopup(popup_b571571b74fa7ea01696e8161e60687b)
+        ;
+
+        
+    
+    
+            var poly_line_8de61eb08ad590f9c2f22c7ce769c211 = L.polyline(
+                [[48.38762, -4.480306], [48.841172, 2.320514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_1dfbe93cb3c0ace6278adc48cbc0b17b = L.marker(
+                [48.453572, -4.256528],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_ebd28762d0e057b5f72d26afbf952ac9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1dfbe93cb3c0ace6278adc48cbc0b17b.setIcon(icon_ebd28762d0e057b5f72d26afbf952ac9);
+        
+    
+        var popup_6b4608605e9e4afd94ee8a7355a3633c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d211000ec2a51c2cb8f651c1235bd04 = $(`<div id="html_1d211000ec2a51c2cb8f651c1235bd04" style="width: 100.0%; height: 100.0%;">Landerneau (Landerneau) - 10.0 km</div>`)[0];
+                popup_6b4608605e9e4afd94ee8a7355a3633c.setContent(html_1d211000ec2a51c2cb8f651c1235bd04);
+            
+        
+
+        marker_1dfbe93cb3c0ace6278adc48cbc0b17b.bindPopup(popup_6b4608605e9e4afd94ee8a7355a3633c)
+        ;
+
+        
+    
+    
+            var poly_line_00480dc25b63595332a8807261f54afa = L.polyline(
+                [[48.38762, -4.480306], [48.453572, -4.256528]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var marker_c327281600c042763e7b4b1fc4e8d275 = L.marker(
+                [47.994455, -4.092103],
+                {}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+    
+            var icon_646634092fda88b1500a90e911be1fb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c327281600c042763e7b4b1fc4e8d275.setIcon(icon_646634092fda88b1500a90e911be1fb1);
+        
+    
+        var popup_c2e259001e14dab46872311ea27dbe5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c24e46d9fc5f7d78230478ffdb60a21 = $(`<div id="html_8c24e46d9fc5f7d78230478ffdb60a21" style="width: 100.0%; height: 100.0%;">Quimper (Quimper) - 48.4 km</div>`)[0];
+                popup_c2e259001e14dab46872311ea27dbe5b.setContent(html_8c24e46d9fc5f7d78230478ffdb60a21);
+            
+        
+
+        marker_c327281600c042763e7b4b1fc4e8d275.bindPopup(popup_c2e259001e14dab46872311ea27dbe5b)
+        ;
+
+        
+    
+    
+            var poly_line_a4b13cb8fdc410c81a1b721b71d51fc2 = L.polyline(
+                [[48.38762, -4.480306], [47.994455, -4.092103]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_992d7afa10cae300882ac7c7afeeab30);
+        
+</script>
